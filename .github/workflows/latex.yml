@@ -2,15 +2,17 @@ name: Build LaTeX document
 
 on:
   push:
-    branches: [main]
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
-  build_latex:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: action/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up TeX Live
         uses: xu-cheng/latex-action@v3
