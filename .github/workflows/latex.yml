@@ -2,9 +2,9 @@ name: Build LaTeX document
 
 on:
   push:
-    branches: [ "main" ]
+    branches: ["main"]
   pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
   workflow_dispatch:
 
 jobs:
@@ -17,7 +17,7 @@ jobs:
       - name: Set up TeX Live
         uses: xu-cheng/latex-action@v3
         with:
-          root_files: main.tex
+          root_file: main.tex
           latexmk_use_lualatex: false
           latexmk_shell_escape: false
 
