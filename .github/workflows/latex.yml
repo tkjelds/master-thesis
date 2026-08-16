@@ -14,15 +14,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up TeX Live
+      - name: Set up TeX Live for thesis
         uses: xu-cheng/latex-action@v3
         with:
           root_file: main.tex
           latexmk_use_lualatex: false
           latexmk_shell_escape: false
 
-      - name: Upload PDF artifact
+      - name: Set up TeX Live for preliminary problem statement
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: preliminary_problem_statement.tex
+          latexmk_use_lualatex: false
+          latexmk_shell_escape: false
+
+      - name: Upload PDF thesis
         uses: actions/upload-artifact@v4
         with:
-          name: thesis-pdf
+          name: thesis
           path: main.pdf
+
+      - name: Upload PDF Preliminary Problem Statement
+        uses: actions/upload-artifact@v4
+        with:
+          name: Preliminary_problem_statement(tokj@itu.dk)
+          path: preliminary_problem_statement.pdf
