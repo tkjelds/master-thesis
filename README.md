@@ -3,33 +3,37 @@ Concurrency analysis of LLM-generated code.
 
 ## Prompt generator
 
-`prompt_generator` is a dependency-free Python tool for producing prompt
-datasets from a template and CSV files.
-
-Create `prompt_generator/template.txt`, for example:
-
-```text
-Generate a Java file where you have implemented the data structure $DATASTRUCTURE using locks. Do not use any libraries.
-```
-
-Each CSV can contain one value per row, or a named column matching its
-wildcard. Run the generator from the repository root:
+`pipeline.prompt_generator` uses `pipeline/base_prompt.py` and
+`pipeline/datastructures.py` to generate one prompt for each data structure.
+Run it from the repository root:
 
 ```text
-python -m prompt_generator.generator prompt_generator/template.txt prompts.json --data DATASTRUCTURE=prompt_generator/data_structures.csv
+uv run python -m pipeline.prompt_generator.generator
 ```
 
-For multiple wildcards, repeat `--data`:
-
-```text
-python -m prompt_generator.generator prompt_generator/template.txt prompts.json --data LANGUAGE=prompt_generator/languages.csv --data DATASTRUCTURE=prompt_generator/data_structures.csv
-```
-
-The JSON output contains the original template, wildcard names, generated
-prompt count, and each prompt together with the values used to create it.
+Each run writes a new file under `prompts/` named
+`data:<timestamp>.json`. The file has a `header` containing the generation
+`date`, `timestamp`, and prompt `count`, plus a `prompts` list of fully
+expanded prompt strings ready to iterate over and execute.
 
 Run the tests with:
 
 ```text
-python -m unittest discover -s prompt_generator/tests
+python -m unittest discover -s pipeline/prompt_generator/tests
 ```
+
+## GitHub Copilot client
+
+`pipeline.clients.copilot.call_copilot(prompt, modelname)` invokes the local
+GitHub Copilot CLI and returns its response:
+
+```python
+from pipeline.clients.copilot import call_copilot
+
+response = call_copilot("Explain this code", "gpt-5")
+```
+
+The client runs `copilot -p <prompt> --model <modelname>` without a shell and
+does not pass tool-enabling options. The GitHub Copilot CLI must be installed
+and authenticated in the environment. CLI failures are returned as readable
+error strings.
