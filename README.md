@@ -24,16 +24,48 @@ python -m unittest discover -s pipeline/prompt_generator/tests
 
 ## GitHub Copilot client
 
-`pipeline.clients.copilot.call_copilot(prompt, modelname)` invokes the local
-GitHub Copilot CLI and returns its response:
+`pipeline.clients.copilot.CopilotClient` invokes the local GitHub Copilot CLI.
+The model is selected when the client is created:
 
 ```python
-from pipeline.clients.copilot import call_copilot
+from pipeline.clients.copilot import CopilotClient
 
-response = call_copilot("Explain this code", "gpt-5")
+client = CopilotClient(model="gpt-5.6-luna")
+response = client.call("Explain this code")
 ```
 
 The client runs `copilot -p <prompt> --model <modelname>` without a shell and
 does not pass tool-enabling options. The GitHub Copilot CLI must be installed
-and authenticated in the environment. CLI failures are returned as readable
-error strings.
+and authenticated in the environment.
+
+`CopilotClientNoTools` adds explicit non-interactive restrictions: it disables
+available tools, built-in MCPs, custom instructions, user prompts, remote
+features, auto-updates, and streaming so the response is closer to a plain
+completion.
+
+## Generation runner
+
+The runner starts with one client: Copilot using the `gpt-5.6-luna` model. It
+loads the newest generated prompt file from `prompts/` and writes successful
+responses to:
+
+```text
+Generations/date:{timestamp}/copilot/gpt-5.6-luna/{datastructure}.java
+```
+
+Run it with:
+
+```text
+uv run python -m pipeline.runner.runner
+```
+
+To use a specific generated prompt file or output directory:
+
+```text
+uv run python -m pipeline.runner.runner \
+  --prompt-file prompts/date:2026-09-15T16-55-56-410660+0200.json \
+  --output-dir Generations
+```
+
+Individual failures are reported and do not prevent remaining prompts from
+being processed.

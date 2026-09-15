@@ -13,12 +13,17 @@ from pipeline.datastructures import datastructures
 DEFAULT_OUTPUT_DIR = Path("prompts")
 
 
-def build_prompts() -> list[str]:
-    return [
-        base_prompt.replace("$datastructure", datastructure)
-        for datastructure in datastructures
-    ]
 
+def build_prompts() -> list[dict]:
+    result = []
+    for datastructure in datastructures:
+       result.append(
+            {
+                "datastructure": datastructure,
+                "prompt": base_prompt.replace("$datastructure", datastructure)
+            }
+        ) 
+    return result
 
 def write_prompts(output_dir: Path = DEFAULT_OUTPUT_DIR) -> Path:
     generated_at = datetime.now().astimezone()
