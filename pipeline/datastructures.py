@@ -11,4 +11,13 @@ datastructures = [
     "array_queue",
     "priority_queue",
     "delay_queue",
+    "stack",
+    "collection",
+    "dictionary"
+    "bag",
+    "counter",
+    "binary_search_tree",
+    "red_black_tree",
+    "b_tres"
+    "linked_list"
 ]

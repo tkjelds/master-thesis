@@ -53,6 +53,10 @@ responses to:
 Generations/date:{timestamp}/copilot/gpt-5.6-luna/{datastructure}.java
 ```
 
+The runner names each file after its detected public top-level Java type, for
+example `ConcurrentSet.java`. It falls back to `{datastructure}.java` when no
+public type is present.
+
 Run it with:
 
 ```text
@@ -69,3 +73,35 @@ uv run python -m pipeline.runner.runner \
 
 Individual failures are reported and do not prevent remaining prompts from
 being processed.
+
+## Java compilation verifier
+
+`pipeline.verifier.java_verifier` checks generated Java files with `javac` and
+writes one report per model directory. The verifier expects a mounted date
+directory with this structure:
+
+```text
+date-root/
+  client/
+    model/
+      implementation.java
+```
+
+Reports are written under `date-root/results/client/model.json`. Each report
+contains a timezone-aware `timestamp`, the `model`, and a `files` list with one
+record per Java file. Records include `compiled`, `exit_code`, `stdout`, and
+`stderr`.
+
+Build the verifier image and run it against a generated date directory:
+
+```text
+docker build -f Dockerfile.verifier -t master-thesis-java-verifier .
+docker run --rm \
+  --mount "type=bind,source=$PWD/Generations/date:2026-09-15T17-28,target=/data" \
+  master-thesis-java-verifier
+```
+
+The image uses Python 3.14 and JDK 21. A nonzero container exit status means at
+least one Java file failed to compile; reports are still written for all model
+directories. The generation runner names each Java file after its detected
+public top-level type, so the files can be passed directly to `javac`.

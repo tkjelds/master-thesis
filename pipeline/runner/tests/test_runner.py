@@ -4,7 +4,8 @@ import unittest
 from pathlib import Path
 from unittest.mock import Mock
 
-from pipeline.runner.runner import find_latest_prompt_file, load_prompts, run
+from pipeline.helpers import find_latest_file
+from pipeline.runner.runner import java_filename, load_prompts, run
 
 
 class RunnerTests(unittest.TestCase):
@@ -23,14 +24,14 @@ class RunnerTests(unittest.TestCase):
             older.touch()
             newer.touch()
 
-            self.assertEqual(find_latest_prompt_file(prompt_dir), newer)
+            self.assertEqual(find_latest_file(prompt_dir, "date:*.json"), newer)
             self.assertEqual(load_prompts(newer)[0]["datastructure"], "map")
 
     def test_writes_expected_java_path(self):
         client = Mock()
         client.name = "copilot"
         client.model = "gpt-5.6-luna"
-        client.call.return_value = "class Map {}"
+        client.call.return_value = "public final class ConcurrentMap {}"
         prompt = {"datastructure": "map", "prompt": "generate map"}
 
         with tempfile.TemporaryDirectory() as directory:
@@ -39,14 +40,23 @@ class RunnerTests(unittest.TestCase):
             self.assertEqual(failures, [])
             run_directories = list(Path(directory).glob("date:*"))
             self.assertEqual(len(run_directories), 1)
-            self.assertRegex(run_directories[0].name, r"^date:\d{4}-\d{2}-\d{2}T")
+            self.assertRegex(
+                run_directories[0].name,
+                r"^date:\d{4}-\d{2}-\d{2}T\d{2}-\d{2}$",
+            )
             output = (
                 run_directories[0]
                 / "copilot"
                 / "gpt-5.6-luna"
-                / "map.java"
+                / "ConcurrentMap.java"
             )
-            self.assertEqual(output.read_text(encoding="utf-8"), "class Map {}\n")
+            self.assertEqual(
+                output.read_text(encoding="utf-8"),
+                "public final class ConcurrentMap {}\n",
+            )
+
+    def test_falls_back_to_prompt_name_without_public_type(self):
+        self.assertEqual(java_filename("class Map {}", "map"), "map.java")
 
     def test_continues_after_client_failure(self):
         client = Mock()
