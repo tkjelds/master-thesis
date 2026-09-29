@@ -18,6 +18,6 @@ datastructures = [
     "counter",
     "binary_search_tree",
     "red_black_tree",
-    "b_tres"
+    "b_tres",
     "linked_list"
 ]

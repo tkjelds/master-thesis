@@ -67,7 +67,7 @@ To use a specific generated prompt file or output directory:
 
 ```text
 uv run python -m pipeline.runner.runner \
-  --prompt-file prompts/date:2026-09-15T16-55-56-410660+0200.json \
+  --prompt-file prompts/date:2026-09-15T16-55.json \
   --output-dir Generations
 ```
 
@@ -85,9 +85,12 @@ date-root/
   client/
     model/
       implementation.java
+      results/
+        model.results.json
 ```
 
-Reports are written under `date-root/results/client/model.json`. Each report
+Each model's report is written to
+`date-root/client/model/results/model.results.json`. Each report
 contains a timezone-aware `timestamp`, the `model`, and a `files` list with one
 record per Java file. Records include `compiled`, `exit_code`, `stdout`, and
 `stderr`.
@@ -105,3 +108,21 @@ The image uses Python 3.14 and JDK 21. A nonzero container exit status means at
 least one Java file failed to compile; reports are still written for all model
 directories. The generation runner names each Java file after its detected
 public top-level type, so the files can be passed directly to `javac`.
+
+## CodeQL databases
+
+`pipeline.codeql.database_builder` creates one CodeQL Java database per model
+directory in a generation, at
+`date-root/client/model/results/model.codeql-db/`. It uses CodeQL's manual
+build mode: CodeQL traces `pipeline/codeql/build.sh`, which compiles each Java
+file separately with `javac`, so one failing file does not block the others.
+Model directories without Java files are skipped.
+
+```text
+uv run python -m pipeline.codeql.database_builder \
+  "Generations/date:2026-09-21T20-02" [--overwrite] [--codeql /path/to/codeql]
+```
+
+The `codeql` CLI and `javac` must be on `PATH`. On Apple Silicon, CodeQL's
+build tracer needs Rosetta 2 (`softwareupdate --install-rosetta`). The
+databases are ignored by Git.

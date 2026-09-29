@@ -361,3 +361,7 @@ ENV/
 .coverage
 .coverage.*
 htmlcov/
+give-me-a-guide-on-how-to-install-and-use-infer-an.md
+
+# CodeQL databases
+Generations/**/results/*.codeql-db/

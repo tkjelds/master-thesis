@@ -22,7 +22,13 @@ class JavaVerifierTests(unittest.TestCase):
 
             self.assertFalse(run(root))
 
-            report_path = root / "results" / "copilot" / "gpt-5.6-luna.json"
+            report_path = (
+                root
+                / "copilot"
+                / "gpt-5.6-luna"
+                / "results"
+                / "gpt-5.6-luna.results.json"
+            )
             report = json.loads(report_path.read_text(encoding="utf-8"))
             self.assertEqual(report["model"], "gpt-5.6-luna")
             self.assertRegex(
@@ -54,7 +60,7 @@ class JavaVerifierTests(unittest.TestCase):
             self.assertTrue(run(root))
 
             report = json.loads(
-                (root / "results" / "client" / "model.json").read_text(
+                (root / "client" / "model" / "results" / "model.results.json").read_text(
                     encoding="utf-8"
                 )
             )

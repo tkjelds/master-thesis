@@ -54,8 +54,14 @@ def compile_file(source: Path) -> dict[str, object]:
     }
 
 
+def report_path(model_dir: Path, input_dir: Path, results_root: Path) -> Path:
+    """Return ``<results_root>/<client>/<model>/results/<model>.results.json``."""
+    relative_model = model_dir.relative_to(input_dir)
+    return results_root / relative_model / "results" / f"{model_dir.name}.results.json"
+
+
 def write_report(
-    model_dir: Path, input_dir: Path, results_dir: Path, timestamp: str
+    model_dir: Path, input_dir: Path, results_root: Path, timestamp: str
 ) -> bool:
     """Compile a model directory and write its JSON report."""
     records = [
@@ -67,8 +73,7 @@ def write_report(
         "model": model_dir.name,
         "files": records,
     }
-    relative_client = model_dir.parent.relative_to(input_dir)
-    output = results_dir / relative_client / f"{model_dir.name}.json"
+    output = report_path(model_dir, input_dir, results_root)
     output.parent.mkdir(parents=True, exist_ok=True)
     output.write_text(
         json.dumps(report, indent=2, ensure_ascii=False) + "\n",
@@ -79,13 +84,13 @@ def write_report(
 
 def run(input_dir: Path, results_dir: Path | None = None) -> bool:
     """Compile all model directories and return whether every file succeeded."""
-    selected_results_dir = results_dir or input_dir / "results"
+    results_root = results_dir or input_dir
     timestamp = timestamp_now()
     model_dirs = discover_model_directories(input_dir)
     successful = True
     for model_dir in model_dirs:
         successful = (
-            write_report(model_dir, input_dir, selected_results_dir, timestamp)
+            write_report(model_dir, input_dir, results_root, timestamp)
             and successful
         )
     return successful
@@ -102,7 +107,10 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument(
         "--results-dir",
         type=Path,
-        help="Optional directory for reports (default: <input-dir>/results).",
+        help=(
+            "Optional root that mirrors <client>/<model>/results/ "
+            "(default: <input-dir>)."
+        ),
     )
     args = parser.parse_args(argv)
     return 0 if run(args.input_dir, args.results_dir) else 1
