@@ -1,0 +1,120 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "gpt-6.1-terra",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `MysteriousHashMap$BiConsumer.accept(...)` of un-annotated interface `MysteriousHashMap$BiConsumer`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "MysteriousHashMap.forEach(MysteriousHashMap$BiConsumer):void",
+          "file": "MysteriousHashMap.java",
+          "line": 214,
+          "column": -1,
+          "key": "MysteriousHashMap.java|forEach|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "c42b2bf9ca2c5c99702dc856928a97ca"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `Order.compare(...)` of un-annotated interface `Order`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "TreeSet.containsNode(TreeSet$Node,java.lang.Object,Order):boolean",
+          "file": "TreeSet.java",
+          "line": 188,
+          "column": -1,
+          "key": "TreeSet.java|containsNode|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "69ede433549dd1b403b8792dfcb930dd"
+        }
+      ],
+      "stderr": ""
+    }
+  ]
+}

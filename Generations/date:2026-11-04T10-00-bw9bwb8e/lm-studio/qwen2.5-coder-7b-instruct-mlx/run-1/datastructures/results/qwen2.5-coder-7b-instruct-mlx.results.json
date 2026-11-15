@@ -1,0 +1,132 @@
+{
+  "timestamp": "date:2026-11-06T22-20",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "Bag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/ConcurrentCollection.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/ConcurrentDictionary.java:24: error: cannot find symbol\n            return (V) ((HashMap<K, V>) buckets[index]).get(key);\n                         ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/ConcurrentDictionary.java:34: error: cannot find symbol\n            HashMap<K, V> map = (HashMap<K, V>) buckets[index];\n            ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/ConcurrentDictionary.java:34: error: cannot find symbol\n            HashMap<K, V> map = (HashMap<K, V>) buckets[index];\n                                 ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/ConcurrentDictionary.java:48: error: cannot find symbol\n            HashMap<K, V> map = (HashMap<K, V>) buckets[index];\n            ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/ConcurrentDictionary.java:48: error: cannot find symbol\n            HashMap<K, V> map = (HashMap<K, V>) buckets[index];\n                                 ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\n5 errors\n"
+    },
+    {
+      "file": "ConcurrentList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/ConcurrentList.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/DelayQueue.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "LinkedDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "PriorityBlockingQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/PriorityBlockingQueue.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "SkipListMap.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/SkipListMap.java:16: error: generic array creation\n            this.next = new Node[level];\n                        ^\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/SkipListMap.java:29: error: generic array creation\n        Node[] update = new Node[MAX_LEVEL];\n                        ^\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/SkipListMap.java:40: error: cannot find symbol\n        for (int i = 0; i < newNode.level; i++) {\n                                   ^\n  symbol:   variable level\n  location: variable newNode of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/SkipListMap.java:45: error: cannot find symbol\n        if (newNode.level > currentLevel) {\n                   ^\n  symbol:   variable level\n  location: variable newNode of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/SkipListMap.java:46: error: cannot find symbol\n            for (int i = currentLevel; i < newNode.level; i++) {\n                                                  ^\n  symbol:   variable level\n  location: variable newNode of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/SkipListMap.java:49: error: cannot find symbol\n            currentLevel = newNode.level;\n                                  ^\n  symbol:   variable level\n  location: variable newNode of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/SkipListMap.java:71: error: generic array creation\n        Node[] update = new Node[MAX_LEVEL];\n                        ^\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/SkipListMap.java:83: error: cannot find symbol\n            for (int i = 0; i < nodeToRemove.level; i++) {\n                                            ^\n  symbol:   variable level\n  location: variable nodeToRemove of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\n8 errors\n"
+    },
+    {
+      "file": "deque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "linked_list.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "linked_queue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_set.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/skip_list_set.java:25: error: cannot find symbol\n            for (int i = 0; i < newNode.level; i++) {\n                                       ^\n  symbol:   variable level\n  location: variable newNode of type Node\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/datastructures/skip_list_set.java:48: error: cannot find symbol\n                for (int i = 0; i < nodeToRemove.level; i++) {\n                                                ^\n  symbol:   variable level\n  location: variable nodeToRemove of type Node\n2 errors\n"
+    }
+  ]
+}

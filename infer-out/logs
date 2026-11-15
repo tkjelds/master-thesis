@@ -1,0 +1,211 @@
+[44422][environment] CWD = /Users/tore/master-thesis
+[44422][environment] No .inferconfig file found
+[44422][environment] Project root = /Users/tore/master-thesis
+[44422][environment] INFER_ARGS =   @/var/folders/ty/3ggb372d4nq6jdqxbb0wyzs40000gn/T/args.tmp.200153
+[44422][environment]                --progress-bar-style multiline
+[44422][environment] command line arguments:   infer --starvation -- javac
+[44422][environment]                           Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java
+[44422][environment] Could not retrieve available memory (possibly not on Linux)
+[44422][environment] Active checkers: self-in-block (C/C++/ObjC), parameter-not-null-checked (C/C++/ObjC), static-constructor-stall-checker (C/C++/ObjC), starvation (C/C++/ObjC, Java), racerd (C/C++/ObjC, C#/.Net, Java), pulse (C/C++/ObjC, C#/.Net, Erlang, Hack, Java, Python, Rust, Swift), liveness (C/C++/ObjC), inefficient-keyset-iterator (Java), fragment-retains-view (Java), swift-objc-nullability (Swift)
+[44422][environment] Scheduler: restart
+[44422][environment] Cores used: 10
+[44422][environment] Infer version v1.3.0
+[44422][environment] Copyright 2009 - present Facebook. All Rights Reserved.
+[44422][environment] 
+[44422][   progress] Capturing in javac mode...
+[44422][      debug] Current working directory: '/Users/tore/master-thesis'
+[44422][      debug] Trying to execute: javac '-J-Duser.language=en' '@/Users/tore/master-thesis/infer-out/tmp/javac_args.tmp.cc423f' 2>'/Users/tore/master-thesis/infer-out/tmp/javac.tmp.cac830.out'
+[44422][      debug] *** Success. Logs:
+[44422][      debug] Translating 1 source files (2 classes)
+[44422][      debug] Global tenv size global_tenv_size_mb: 0
+[44422][      debug] done capturing all files
+[44422][      debug] GC stats for capture:
+[44422][      debug]   minor_words: 6.61514e+06
+[44422][      debug]   promoted_words: 799107
+[44422][      debug]   major_words: 873354
+[44422][      debug]   minor_collections: 9
+[44422][      debug]   major_collections: 2
+[44422][      debug]   compactions: 0
+[44422][      debug]   top_heap_words: 1470629
+[44422][      debug]   
+[44422][environment] Parallel jobs: 10
+
+[44422][   progress] Found 1 source file to analyze in /Users/tore/master-thesis/infer-out
+
+
+
+
+
+
+
+
+
+[44439][   progress] Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java starting
+[44439][   progress] Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java DONE
+[44433][   progress] Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java starting
+[44433][   progress] Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java DONE
+[44422][      debug] restart count: 7
+[44422][      debug] Backend stats:
+[44422][      debug]   cache stats: name=attributes; hit rate=98%; total queries=18764
+[44422][      debug]   cache stats: name=int_widths; hit rate=0%; total queries=1151
+[44422][      debug]   cache stats: name=summaries; hit rate=85%; total queries=2187
+[44422][      debug]   summary_file_try_load= 333
+[44422][      debug]   summary_read_from_disk= 90
+[44422][      debug]   summary_specializations= 0
+[44422][      debug]   ondemand_procs_analyzed= 36
+[44422][      debug]   ondemand_double_analysis_prevented= 0
+[44422][      debug]   ondemand_recursion_cycle_restart_limit_hit= 0
+[44422][      debug]   ondemand_callchain_limit_hit= 0
+[44422][      debug]   proc_locker_lock_time_user= 0.00037600
+[44422][      debug]   proc_locker_lock_time_sys= 0.00430100
+[44422][      debug]   proc_locker_lock_time_wall= 0.00499134
+[44422][      debug]   proc_locker_lock_time_oncpu_pct= 94%
+[44422][      debug]   proc_locker_unlock_time_user= 0.00015400
+[44422][      debug]   proc_locker_unlock_time_sys= 0.00211000
+[44422][      debug]   proc_locker_unlock_time_wall= 0.00233159
+[44422][      debug]   proc_locker_unlock_time_oncpu_pct= 97%
+[44422][      debug]   restart_scheduler_useful_time_user= 0.21914100
+[44422][      debug]   restart_scheduler_useful_time_sys= 0.01795500
+[44422][      debug]   restart_scheduler_useful_time_wall= 0.25495687
+[44422][      debug]   restart_scheduler_useful_time_oncpu_pct= 93%
+[44422][      debug]   restart_scheduler_total_time_user= 0.22153700
+[44422][      debug]   restart_scheduler_total_time_sys= 0.01902800
+[44422][      debug]   restart_scheduler_total_time_wall= 0.25962167
+[44422][      debug]   restart_scheduler_total_time_oncpu_pct= 93%
+[44422][      debug]   pulse_aliasing_contradictions= 0
+[44422][      debug]   pulse_args_length_contradictions= 0
+[44422][      debug]   pulse_captured_vars_length_contradictions= 0
+[44422][      debug]   pulse_disjuncts_dropped= 863
+[44422][      debug]   pulse_interrupted_loops= 4
+[44422][      debug]   pulse_unknown_calls= 119
+[44422][      debug]   pulse_unknown_calls_on_hack_resource= 0
+[44422][      debug]   pulse_summaries_contradictions= 0
+[44422][      debug]   pulse_summaries_unsat_for_caller= 8
+[44422][      debug]   pulse_summaries_unsat_for_caller_percent= 22
+[44422][      debug]   pulse_summaries_with_some_unreachable_nodes= 1
+[44422][      debug]   pulse_summaries_with_some_unreachable_nodes_percent= 2
+[44422][      debug]   pulse_summaries_with_some_unreachable_returns= 0
+[44422][      debug]   pulse_summaries_with_some_unreachable_returns_percent= 0.0%
+[44422][      debug]   pulse_summaries_count= [1 -> 4, 2 -> 7, 3 -> 2, 4 -> 3, 5 -> 4, 6 -> 1, 7 -> 2, 9 -> 2, 20 -> 4, 21 -> 7]
+[44422][      debug]   pulse_summaries_total_disjuncts= 321
+[44422][      debug]   pulse_summaries_count_0_continue_program= 0
+[44422][      debug]   pulse_summaries_count_0_percent= 0
+[44422][      debug]   timeouts= 0
+[44422][      debug]   timings= timings for fragment-retains-view:
+[44422][      debug]     p10: 0.000000s p20: 0.000000s p30: 0.000000s p40: 0.000000s
+[44422][      debug]     p50: 0.000000s p60: 0.000000s p70: 0.000000s p80: 0.000001s
+[44422][      debug]     p90: 0.000001s p95: 0.000001s p96: 0.000001s p97: 0.000001s
+[44422][      debug]     p98: 0.000001s p99: 0.000001s p99.9: 0.000001s p99.99: 0.000001s 
+[44422][      debug]   timings for inefficient-keyset-iterator:
+[44422][      debug]     p10: 0.000005s p20: 0.000005s p30: 0.000006s p40: 0.000007s
+[44422][      debug]     p50: 0.000008s p60: 0.000010s p70: 0.000012s p80: 0.000017s
+[44422][      debug]     p90: 0.000023s p95: 0.000048s p96: 0.000050s p97: 0.000056s
+[44422][      debug]     p98: 0.000062s p99: 0.000066s p99.9: 0.000066s p99.99: 0.000066s 
+[44422][      debug]   timings for pulse:
+[44422][      debug]     p10: 0.000173s p20: 0.000307s p30: 0.000578s p40: 0.000720s
+[44422][      debug]     p50: 0.000937s p60: 0.002963s p70: 0.007702s p80: 0.009198s
+[44422][      debug]     p90: 0.014870s p95: 0.034980s p96: 0.042951s p97: 0.062074s
+[44422][      debug]     p98: 0.081198s p99: 0.092885s p99.9: 0.092885s p99.99: 0.092885s 
+[44422][      debug]   timings for racerd:
+[44422][      debug]     p10: 0.000027s p20: 0.000028s p30: 0.000034s p40: 0.000041s
+[44422][      debug]     p50: 0.000048s p60: 0.000060s p70: 0.000069s p80: 0.000083s
+[44422][      debug]     p90: 0.000204s p95: 0.000379s p96: 0.000471s p97: 0.000670s
+[44422][      debug]     p98: 0.000868s p99: 0.000990s p99.9: 0.000990s p99.99: 0.000990s 
+[44422][      debug]   timings for starvation:
+[44422][      debug]     p10: 0.000024s p20: 0.000033s p30: 0.000046s p40: 0.000072s
+[44422][      debug]     p50: 0.000132s p60: 0.000178s p70: 0.000252s p80: 0.000321s
+[44422][      debug]     p90: 0.000413s p95: 0.000742s p96: 0.000954s p97: 0.001433s
+[44422][      debug]     p98: 0.002051s p99: 0.002534s p99.9: 0.002534s p99.99: 0.002534s 
+[44422][      debug]   timings for preanalysis:
+[44422][      debug]     p10: 0.000137s p20: 0.000176s p30: 0.000220s p40: 0.000229s
+[44422][      debug]     p50: 0.000300s p60: 0.000460s p70: 0.000721s p80: 0.000905s
+[44422][      debug]     p90: 0.001327s p95: 0.001534s p96: 0.001633s p97: 0.001807s
+[44422][      debug]     p98: 0.002018s p99: 0.002183s p99.9: 0.002183s p99.99: 0.002183s 
+[44422][      debug]   
+[44422][      debug]   longest_proc_duration_heap= [
+[44422][      debug]   124982us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: Object RedBlackTree.remove(Comparable)
+[44422][      debug]   110365us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: void RedBlackTree.deleteNode(RedBlackTree$Node)
+[44422][      debug]   98031us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: void RedBlackTree.fixAfterDeletion(RedBlackTree$Node,RedBlackTree$Node)
+[44422][      debug]   42755us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: void RedBlackTree.fixAfterInsertion(RedBlackTree$Node)
+[44422][      debug]   34132us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: Object RedBlackTree.putIfAbsent(Comparable,Object)
+[44422][      debug]   25141us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: Object RedBlackTree.put(Comparable,Object)
+[44422][      debug]   17087us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: boolean RedBlackTree.containsValue(Object)
+[44422][      debug]   16687us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: boolean RedBlackTree.remove(Comparable,Object)
+[44422][      debug]   13945us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: Object RedBlackTree.get(Comparable)
+[44422][      debug]   13221us: Generations/date:2026-09-21T20-02/copilot-no-tools/gpt-5.6-luna/RedBlackTree.java: boolean RedBlackTree.containsValue(RedBlackTree$Node,Object)
+[44422][      debug]   ]
+[44422][      debug]   process_times_user= 0.27036500
+[44422][      debug]   process_times_sys= 0.03229200
+[44422][      debug]   process_times_wall= 1.26443396
+[44422][      debug]   process_times_oncpu_pct= 24%
+[44422][      debug]   useful_times_user= 0.26994400
+[44422][      debug]   useful_times_sys= 0.03191200
+[44422][      debug]   useful_times_wall= 0.32309429
+[44422][      debug]   useful_times_oncpu_pct= 93%
+[44422][      debug]   spec_store_times_user= 0.00135700
+[44422][      debug]   spec_store_times_sys= 0.00242500
+[44422][      debug]   spec_store_times_wall= 0.00532804
+[44422][      debug]   spec_store_times_oncpu_pct= 71%
+[44422][      debug]   
+[44422][      debug] GC stats for backend_stats.gc_stats_add.:
+[44422][      debug]   minor_words: 1.3212e+08
+[44422][      debug]   promoted_words: 5.37765e+06
+[44422][      debug]   major_words: 5.64187e+06
+[44422][      debug]   minor_collections: 132
+[44422][      debug]   major_collections: 12
+[44422][      debug]   compactions: 0
+[44422][      debug]   top_heap_words: 12461653
+[44422][      debug]   
+[44422][      debug] GC stats for backend_stats.gc_stats_max.:
+[44422][      debug]   minor_words: 7.23513e+07
+[44422][      debug]   promoted_words: 2.18316e+06
+[44422][      debug]   major_words: 2.32629e+06
+[44422][      debug]   minor_collections: 71
+[44422][      debug]   major_collections: 4
+[44422][      debug]   compactions: 0
+[44422][      debug]   top_heap_words: 2767230
+[44422][      debug]   
+[44422][      debug] Average over 10 processes
+[44422][      debug] GC stats for backend_stats.gc_stats_average.:
+[44422][      debug]   minor_words: 1.3212e+07
+[44422][      debug]   promoted_words: 537765
+[44422][      debug]   major_words: 564187
+[44422][      debug]   minor_collections: 13
+[44422][      debug]   major_collections: 1
+[44422][      debug]   compactions: 0
+[44422][      debug]   top_heap_words: 1246165
+[44422][      debug]   
+[44422][      debug] Analysis phase finished in 263ms
+[44422][      debug] backend_stats.scheduler_process_analysis_time_user= 0.05598800
+[44422][      debug] backend_stats.scheduler_process_analysis_time_sys= 0.01349400
+[44422][      debug] backend_stats.scheduler_process_analysis_time_wall= 0.26244383
+[44422][      debug] backend_stats.scheduler_process_analysis_time_oncpu_pct= 26%
+[44422][      debug] GC stats for analysis_scheduler:
+[44422][      debug]   minor_words: 814293
+[44422][      debug]   promoted_words: 136434
+[44422][      debug]   major_words: 384651
+[44422][      debug]   minor_collections: 6
+[44422][      debug]   major_collections: 3
+[44422][      debug]   compactions: 1
+[44422][      debug]   top_heap_words: 1619258
+[44422][      debug]   
+[44422][      debug] GC stats for report:
+[44422][      debug]   minor_words: 0
+[44422][      debug]   promoted_words: 0
+[44422][      debug]   major_words: 0
+[44422][      debug]   minor_collections: 0
+[44422][      debug]   major_collections: 0
+[44422][      debug]   compactions: 0
+[44422][      debug]   top_heap_words: 1619258
+[44422][      debug]   
+[44422][      debug] GC stats for main_process_full:
+[44422][      debug]   minor_words: 1.05927e+07
+[44422][      debug]   promoted_words: 1.49518e+06
+[44422][      debug]   major_words: 1.8424e+06
+[44422][      debug]   minor_collections: 24
+[44422][      debug]   major_collections: 9
+[44422][      debug]   compactions: 1
+[44422][      debug]   top_heap_words: 1619258
+[44422][      debug]   
+[44422][     result] 
+  No issues found  

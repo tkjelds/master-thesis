@@ -1,0 +1,156 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/InterruptedException.class]\nDelayQueue.java:40: error: cannot find symbol\n    public boolean offer(T element, long timeout, TimeUnit unit) throws InterruptedException {\n                                                  ^\n  symbol:   class TimeUnit\n  location: class DelayQueue<T>\n  where T is a type-variable:\n    T extends Object declared in class DelayQueue\nDelayQueue.java:55: error: cannot find symbol\n    public T poll(long timeout, TimeUnit unit) throws InterruptedException {\n                                ^\n  symbol:   class TimeUnit\n  location: class DelayQueue<T>\n  where T is a type-variable:\n    T extends Object declared in class DelayQueue\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/SuppressWarnings.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking DelayQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/System.class]\nDelayQueue.java:47: error: incompatible types: void cannot be converted to long\n                nanos = lock.wait(nanos);\n                                 ^\nDelayQueue.java:62: error: incompatible types: void cannot be converted to long\n                nanos = lock.wait(nanos);\n                                 ^\n[total 63ms]\n4 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.net/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking LinkedQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\nLinkedQueue.java:42: error: cannot assign a value to final variable head\n            head = node;\n            ^\n[total 54ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "PriorityQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "bag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "linked_deque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

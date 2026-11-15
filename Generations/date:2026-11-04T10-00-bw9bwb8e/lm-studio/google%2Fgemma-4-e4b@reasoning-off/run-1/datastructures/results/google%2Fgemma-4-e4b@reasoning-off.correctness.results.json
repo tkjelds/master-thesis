@@ -1,0 +1,146 @@
+{
+  "timestamp": "date:2026-11-06T21-00",
+  "model": "google%2Fgemma-4-e4b@reasoning-off",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/ConcurrentDeque.java",
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "analyzed": true,
+      "probability": 0.6135,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/CustomConcurrentDictionary.java",
+      "prompt_name": "datastructures/dictionary",
+      "problem": "dictionary",
+      "analyzed": true,
+      "probability": 0.4846,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/DelayQueue.java",
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "analyzed": true,
+      "probability": 0.6969,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/Main.java",
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "analyzed": true,
+      "probability": 0.7215,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/Solution.java",
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "analyzed": true,
+      "probability": 0.7558,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/array_queue.java",
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "analyzed": true,
+      "probability": 0.6335,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/bag.java",
+      "prompt_name": "datastructures/bag",
+      "problem": "bag",
+      "analyzed": true,
+      "probability": 0.5574,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/collection.java",
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "analyzed": true,
+      "probability": 0.6881,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/counter.java",
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "analyzed": true,
+      "probability": 0.6332,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/list.java",
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "analyzed": true,
+      "probability": 0.6877,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/map.java",
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "analyzed": true,
+      "probability": 0.4227,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/priority_queue.java",
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "analyzed": true,
+      "probability": 0.5088,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/queue.java",
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "analyzed": true,
+      "probability": 0.737,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/set.java",
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "analyzed": true,
+      "probability": 0.4289,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/skip_list_map.java",
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "analyzed": true,
+      "probability": 0.4597,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/skip_list_set.java",
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "analyzed": true,
+      "probability": 0.3455,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-1/datastructures/stack.java",
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "analyzed": true,
+      "probability": 0.7192,
+      "error": ""
+    }
+  ]
+}

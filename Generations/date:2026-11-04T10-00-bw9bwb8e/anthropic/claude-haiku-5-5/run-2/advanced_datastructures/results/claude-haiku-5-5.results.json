@@ -1,0 +1,76 @@
+{
+  "timestamp": "date:2026-11-06T22-20",
+  "model": "claude-haiku-5-5",
+  "files": [
+    {
+      "file": "BTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: Generations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-haiku-5-5/run-2/advanced_datastructures/BinarySearchTree.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "HashedArrayList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-haiku-5-5/run-2/advanced_datastructures/HashedLinkedList.java:120: error: cannot find symbol\n            node.setHashUnsafe(h);\n                ^\n  symbol:   method setHashUnsafe(int)\n  location: variable node of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class HashedLinkedList\n1 error\n"
+    },
+    {
+      "file": "IntervalHeap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

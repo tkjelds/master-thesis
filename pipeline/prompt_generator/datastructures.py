@@ -1,0 +1,20 @@
+datastructures = [
+    "map",
+    "skip_list_map",
+    "skip_list_set",
+    "set",
+    "list",
+    "queue",
+    "deque",
+    "linked_queue",
+    "linked_deque",
+    "array_queue",
+    "priority_queue",
+    "delay_queue",
+    "stack",
+    "collection",
+    "dictionary",
+    "bag",
+    "counter",
+    "linked_list"
+]

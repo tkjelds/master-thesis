@@ -1,0 +1,3 @@
+client,model,passed,k,total,pass_rate,observed_attempts,expected_attempts
+copilot-tools,gpt-6-luna,17,1,48,0.3541666666666667,48,48
+copilot-tools,gpt-6-luna,24,3,48,0.5,144,144

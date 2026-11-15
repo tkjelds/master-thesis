@@ -1,0 +1,170 @@
+{
+  "timestamp": "date:2026-11-03T19-20",
+  "model": "gpt-6-luna",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/AdaptiveTrustVault.java",
+      "prompt_name": "novel_problems/AdaptiveTrustVault",
+      "problem": "AdaptiveTrustVault",
+      "analyzed": true,
+      "probability": 0.6651,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/BitmaskedTimelineStage.java",
+      "prompt_name": "novel_problems/BitmaskedTimelineStage",
+      "problem": "BitmaskedTimelineStage",
+      "analyzed": true,
+      "probability": 0.6648,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/ChatSessionStream.java",
+      "prompt_name": "novel_problems/ChatSessionStream",
+      "problem": "ChatSessionStream",
+      "analyzed": true,
+      "probability": 0.6632,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/GomokuVersionState.java",
+      "prompt_name": "novel_problems/GomokuVersionState",
+      "problem": "GomokuVersionState",
+      "analyzed": true,
+      "probability": 0.7292,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/HarmonicBufferedStream.java",
+      "prompt_name": "novel_problems/HarmonicBufferedStream",
+      "problem": "HarmonicBufferedStream",
+      "analyzed": true,
+      "probability": 0.6068,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/HierarchicalScheduler.java",
+      "prompt_name": "novel_problems/HierarchicalScheduler",
+      "problem": "HierarchicalScheduler",
+      "analyzed": true,
+      "probability": 0.6443,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/InventoryTransactionBuffer.java",
+      "prompt_name": "novel_problems/InventoryTransactionBuffer",
+      "problem": "InventoryTransactionBuffer",
+      "analyzed": true,
+      "probability": 0.6797,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/LexicalGraphProvider.java",
+      "prompt_name": "novel_problems/LexicalGraphProvider",
+      "problem": "LexicalGraphProvider",
+      "analyzed": true,
+      "probability": 0.6372,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/PersistedScheduleContext.java",
+      "prompt_name": "novel_problems/PersistedScheduleContext",
+      "problem": "PersistedScheduleContext",
+      "analyzed": true,
+      "probability": 0.6138,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/RPGCharacter.java",
+      "prompt_name": "novel_problems/RPGCharacter",
+      "problem": "RPGCharacter",
+      "analyzed": true,
+      "probability": 0.5864,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/ResolvingVendingMachine.java",
+      "prompt_name": "novel_problems/ResolvingVendingMachine",
+      "problem": "ResolvingVendingMachine",
+      "analyzed": true,
+      "probability": 0.6572,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/SecureMetricAggregator.java",
+      "prompt_name": "novel_problems/SecureMetricAggregator",
+      "problem": "SecureMetricAggregator",
+      "analyzed": true,
+      "probability": 0.676,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/TaggedCapacityBuffer.java",
+      "prompt_name": "novel_problems/TaggedCapacityBuffer",
+      "problem": "TaggedCapacityBuffer",
+      "analyzed": true,
+      "probability": 0.5523,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/TemporalForexCache.java",
+      "prompt_name": "novel_problems/TemporalForexCache",
+      "problem": "TemporalForexCache",
+      "analyzed": true,
+      "probability": 0.6413,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/ThermostaticBuildOrchestrator.java",
+      "prompt_name": "novel_problems/ThermostaticBuildOrchestrator",
+      "problem": "ThermostaticBuildOrchestrator",
+      "analyzed": true,
+      "probability": 0.6759,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/ThermostaticCircuitStream.java",
+      "prompt_name": "novel_problems/ThermostaticCircuitStream",
+      "problem": "ThermostaticCircuitStream",
+      "analyzed": true,
+      "probability": 0.623,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/UserSpaceProvisioner.java",
+      "prompt_name": "novel_problems/UserSpaceProvisioner",
+      "problem": "UserSpaceProvisioner",
+      "analyzed": true,
+      "probability": 0.6949,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/VerifiableMailbox.java",
+      "prompt_name": "novel_problems/VerifiableMailbox",
+      "problem": "VerifiableMailbox",
+      "analyzed": true,
+      "probability": 0.6692,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/VersionedSlotManager.java",
+      "prompt_name": "novel_problems/VersionedSlotManager",
+      "problem": "VersionedSlotManager",
+      "analyzed": true,
+      "probability": 0.6753,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/Warehouse.java",
+      "prompt_name": "novel_problems/Warehouse",
+      "problem": "Warehouse",
+      "analyzed": true,
+      "probability": 0.7151,
+      "error": ""
+    }
+  ]
+}

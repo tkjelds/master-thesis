@@ -1,0 +1,66 @@
+{
+  "copilot-tools": {
+    "gpt-6-luna": {
+      "advanced_datastructures": {
+        "run-1": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/results/gpt-6-luna.correctness.results.json"
+        },
+        "run-2": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/advanced_datastructures/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/advanced_datastructures/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/advanced_datastructures/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/advanced_datastructures/results/gpt-6-luna.correctness.results.json"
+        },
+        "run-3": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/advanced_datastructures/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/advanced_datastructures/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/advanced_datastructures/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/advanced_datastructures/results/gpt-6-luna.correctness.results.json"
+        }
+      },
+      "datastructures": {
+        "run-1": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/datastructures/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/datastructures/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/datastructures/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/datastructures/results/gpt-6-luna.correctness.results.json"
+        },
+        "run-2": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/datastructures/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/datastructures/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/datastructures/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/datastructures/results/gpt-6-luna.correctness.results.json"
+        },
+        "run-3": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/datastructures/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/datastructures/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/datastructures/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/datastructures/results/gpt-6-luna.correctness.results.json"
+        }
+      },
+      "novel_problems": {
+        "run-1": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/novel_problems/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/novel_problems/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/novel_problems/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/novel_problems/results/gpt-6-luna.correctness.results.json"
+        },
+        "run-2": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/novel_problems/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/novel_problems/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/novel_problems/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-2/novel_problems/results/gpt-6-luna.correctness.results.json"
+        },
+        "run-3": {
+          "compilation": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/results/gpt-6-luna.results.json",
+          "codeql": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/results/gpt-6-luna.codeql.results.json",
+          "infer": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/results/gpt-6-luna.infer.results.json",
+          "correctness": "/Users/tore/master-thesis/Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-3/novel_problems/results/gpt-6-luna.correctness.results.json"
+        }
+      }
+    }
+  }
+}

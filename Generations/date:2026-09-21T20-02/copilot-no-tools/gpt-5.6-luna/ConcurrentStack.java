@@ -1,4 +1,7 @@
+@ConcurrentStack.ThreadSafe
 public final class ConcurrentStack<T> {
+    @interface ThreadSafe {}
+
     private final Object[] elements;
     private int size;
 
@@ -23,7 +26,6 @@ public final class ConcurrentStack<T> {
      notifyAll();
  }
 
- @SuppressWarnings("unchecked")
  public synchronized T pop() throws InterruptedException {
      while (size == 0) {
          wait();
@@ -36,7 +38,6 @@ public final class ConcurrentStack<T> {
      return element;
  }
 
- @SuppressWarnings("unchecked")
  public synchronized T peek() throws InterruptedException {
      while (size == 0) {
          wait();

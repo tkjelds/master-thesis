@@ -1,0 +1,274 @@
+{
+  "generations": [
+    {
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentMap.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentMap.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListMap.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListMap.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentSet.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentSet.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentList.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentList.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentQueue.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentQueue.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeDeque.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeDeque.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/LinkedQueue.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/LinkedQueue.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentLinkedDeque.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentLinkedDeque.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ArrayQueue.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ArrayQueue.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/PriorityBlockingQueue.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/PriorityBlockingQueue.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentStack.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentStack.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentCollection.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentCollection.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/dictionarybag",
+      "problem": "dictionarybag",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DictionaryBag.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DictionaryBag.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/Counter.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/Counter.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/BinarySearchTree.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/BinarySearchTree.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/b_tres",
+      "problem": "b_tres",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/b_tres.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/b_tres.prompt.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentLinkedList.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentLinkedList.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/HierarchicalScheduler",
+      "problem": "HierarchicalScheduler",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/ThermostaticBuildOrchestrator",
+      "problem": "ThermostaticBuildOrchestrator",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ThermostaticBuildOrchestrator.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ThermostaticBuildOrchestrator.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/ResolvingVendingMachine",
+      "problem": "ResolvingVendingMachine",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/HarmonicBufferedStream",
+      "problem": "HarmonicBufferedStream",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HarmonicBufferedStream.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HarmonicBufferedStream.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/UserSpaceProvisioner",
+      "problem": "UserSpaceProvisioner",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/UserSpaceProvisioner.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/UserSpaceProvisioner.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/VersionedSlotManager",
+      "problem": "VersionedSlotManager",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/VersionedSlotManager.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/VersionedSlotManager.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/TaggedCapacityBuffer",
+      "problem": "TaggedCapacityBuffer",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TaggedCapacityBuffer.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TaggedCapacityBuffer.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/AdaptiveTrustVault",
+      "problem": "AdaptiveTrustVault",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/AdaptiveTrustVault.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/AdaptiveTrustVault.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/SecureMetricAggregator",
+      "problem": "SecureMetricAggregator",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/SecureMetricAggregator.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/SecureMetricAggregator.prompt.json"
+    },
+    {
+      "prompt_name": "novel_problems/TemporalForexCache",
+      "problem": "TemporalForexCache",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.java",
+      "metadata_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.prompt.json"
+    }
+  ]
+}

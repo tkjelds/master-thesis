@@ -1,0 +1,204 @@
+{
+  "timestamp": "date:2026-11-06T19-06",
+  "model": "google%2Fgemma-4-e4b@reasoning-off",
+  "tool": "codeql",
+  "codeql_version": "2.27.1",
+  "database": "/Users/tore/master-thesis/Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-3/advanced_datastructures/results/google%2Fgemma-4-e4b@reasoning-off.codeql-db",
+  "queries": "/Users/tore/master-thesis/pipeline/analysis/codeql/queries/concurrency.qls",
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 3,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BinarySearchTree.java",
+          "line": 242,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BinarySearchTree.java",
+          "line": 258,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BinarySearchTree.java",
+          "line": 277,
+          "column": 16,
+          "end_line": null,
+          "end_column": 20
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedLinkedList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedLinkedList.java",
+          "line": 34,
+          "column": 30,
+          "end_line": null,
+          "end_column": 39
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 6,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "IntervalHeap.java",
+          "line": 150,
+          "column": 48,
+          "end_line": null,
+          "end_column": 58
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "IntervalHeap.java",
+          "line": 167,
+          "column": 45,
+          "end_line": null,
+          "end_column": 59
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "IntervalHeap.java",
+          "line": 167,
+          "column": 74,
+          "end_line": null,
+          "end_column": 84
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "IntervalHeap.java",
+          "line": 169,
+          "column": 13,
+          "end_line": null,
+          "end_column": 27
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [IntervalHeap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "IntervalHeap.java",
+          "line": 79,
+          "column": 18,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/escaping",
+          "rule_name": "Escaping",
+          "severity": "warning",
+          "message": "The class [Handle](1) is marked as thread-safe, but this field is potentially escaping.",
+          "file": "IntervalHeap.java",
+          "line": 24,
+          "column": 22,
+          "end_line": null,
+          "end_column": 29
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ],
+  "unmapped_issues": []
+}

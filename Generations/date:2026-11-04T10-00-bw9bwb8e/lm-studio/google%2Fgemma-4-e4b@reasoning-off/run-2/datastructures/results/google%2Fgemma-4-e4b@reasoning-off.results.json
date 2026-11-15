@@ -1,0 +1,132 @@
+{
+  "timestamp": "date:2026-11-06T22-20",
+  "model": "google%2Fgemma-4-e4b@reasoning-off",
+  "files": [
+    {
+      "file": "ConcurrentDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "MyConcurrentMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "MyPriorityQueue.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-2/datastructures/MyPriorityQueue.java:55: error: 'catch' without 'try'\n        } catch (InterruptedException e) {\n          ^\n1 error\n"
+    },
+    {
+      "file": "array_queue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "bag.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-2/datastructures/bag.java:84: error: 'catch' without 'try'\n        } catch (InterruptedException e) {\n          ^\n1 error\n"
+    },
+    {
+      "file": "collection.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "counter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "delay_queue.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-2/datastructures/delay_queue.java:35: error: cannot find symbol\n            while (isFull()) {\n                   ^\n  symbol:   method isFull()\n  location: class DelayQueue\n1 error\n"
+    },
+    {
+      "file": "linked_deque.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-2/datastructures/linked_deque.java:8: error: illegal start of type\n    Node(null) {}\n         ^\n1 error\n"
+    },
+    {
+      "file": "linked_list.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "linked_queue.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-2/datastructures/linked_queue.java:82: error: missing return statement\n    }\n    ^\n1 error\n"
+    },
+    {
+      "file": "list.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_map.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-2/datastructures/skip_list_map.java:25: error: constructor Node(int,Object,int) is already defined in class Node\n        Node(int key, Object value, int level) {\n        ^\n1 error\n"
+    },
+    {
+      "file": "skip_list_set.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

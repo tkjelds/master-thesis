@@ -1,0 +1,172 @@
+{
+  "timestamp": "date:2026-10-19T22-55",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ConcurrentDeque]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/System.class]\nConcurrentDeque.java:52: error: cannot assign a value to final variable elements\n            elements = newElements;\n            ^\n[total 61ms]\nNote: ConcurrentDeque.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.dynalink/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ConcurrentPriorityQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/Thread.class]\n[loading /modules/java.base/jdk/internal/vm/annotation/Contended.class]\n[loading /modules/java.base/java/lang/Runnable.class]\nConcurrentPriorityQueue.java:94: error: cannot find symbol\n            if (compare(currentElement, childElement) <= 0) {\n                        ^\n  symbol:   variable currentElement\n  location: class ConcurrentPriorityQueue\n[loading /modules/java.base/java/lang/Comparable.class]\n[total 62ms]\nNote: ConcurrentPriorityQueue.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DictionaryBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking LinkedDeque]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Exception.class]\nLinkedDeque.java:58: error: cannot find symbol\n                lock.unlink(p, f);\n                ^\n  symbol:   variable lock\n  location: class LinkedDeque<E>\n  where E is a type-variable:\n    E extends Object declared in class LinkedDeque\nLinkedDeque.java:81: error: cannot find symbol\n                lock.unlink(p, l);\n                ^\n  symbol:   variable lock\n  location: class LinkedDeque<E>\n  where E is a type-variable:\n    E extends Object declared in class LinkedDeque\nLinkedDeque.java:90: error: cannot find symbol\n            throw new NoSuchElementException();\n                      ^\n  symbol:   class NoSuchElementException\n  location: class LinkedDeque<E>\n  where E is a type-variable:\n    E extends Object declared in class LinkedDeque\nLinkedDeque.java:97: error: cannot find symbol\n            throw new NoSuchElementException();\n                      ^\n  symbol:   class NoSuchElementException\n  location: class LinkedDeque<E>\n  where E is a type-variable:\n    E extends Object declared in class LinkedDeque\n[total 62ms]\n4 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  symbol:   variable x\n  location: class SkipListSet<E>\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:26: error: package x does not exist\n        if (x != null && x.data.compareTo(e) == 0)\n                          ^\nSkipListSet.java:57: error: cannot find symbol\n        if (x == null || x.data.compareTo(e) != 0)\n            ^\n  symbol:   variable x\n  location: class SkipListSet<E>\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:57: error: package x does not exist\n        if (x == null || x.data.compareTo(e) != 0)\n                          ^\nSkipListSet.java:61: error: cannot find symbol\n            if (update[i].forward[i] != x)\n                                        ^\n  symbol:   variable x\n  location: class SkipListSet<E>\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:63: error: cannot find symbol\n            update[i].forward[i] = x.forward[i];\n                                   ^\n  symbol:   variable x\n  location: class SkipListSet<E>\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\n[loading /modules/java.base/java/lang/Math.class]\n[total 77ms]\nNote: SkipListSet.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n7 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ThreadSafeQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeSet.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ThreadSafeSet]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/System.class]\nThreadSafeSet.java:63: error: cannot assign a value to final variable elements\n        elements = newElements;\n        ^\n[total 58ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "b_tres.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "linked_queue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  found:    RedBlackTree.Node,RedBlackTree.Node,RedBlackTree.Node\n  reason: actual and formal argument lists differ in length\nred_black_tree.java:245: error: method transplant in class RedBlackTree cannot be applied to given types;\n            transplant(root, z, y);\n            ^\n  required: RedBlackTree.Node,RedBlackTree.Node\n  found:    RedBlackTree.Node,RedBlackTree.Node,RedBlackTree.Node\n  reason: actual and formal argument lists differ in length\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/io/PrintStream.class]\n[loading /modules/java.base/java/lang/Appendable.class]\n[loading /modules/java.base/java/io/Closeable.class]\n[loading /modules/java.base/java/io/FilterOutputStream.class]\n[loading /modules/java.base/java/io/OutputStream.class]\n[loading /modules/java.base/java/io/Flushable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\nred_black_tree.java:346: error: cannot find symbol\n            System.out.println(node.data + \"(\" + sColor + \")\");\n                                   ^\n  symbol:   variable data\n  location: variable node of type RedBlackTree.Node\n[loading /modules/java.base/java/lang/Cloneable.class]\n[total 79ms]\n12 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    }
+  ]
+}

@@ -1,0 +1,146 @@
+{
+  "timestamp": "date:2026-10-19T22-53",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBinarySearchTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentDeque.java:52: error: cannot assign a value to final variable elements\n            elements = newElements;\n            ^\nNote: /Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentDeque.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\n"
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentPriorityQueue.java:94: error: cannot find symbol\n            if (compare(currentElement, childElement) <= 0) {\n                        ^\n  symbol:   variable currentElement\n  location: class ConcurrentPriorityQueue\nNote: /Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentPriorityQueue.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n1 error\n"
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentQueue.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "DictionaryBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/LinkedDeque.java:58: error: cannot find symbol\n                lock.unlink(p, f);\n                ^\n  symbol:   variable lock\n  location: class LinkedDeque<E>\n  where E is a type-variable:\n    E extends Object declared in class LinkedDeque\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/LinkedDeque.java:81: error: cannot find symbol\n                lock.unlink(p, l);\n                ^\n  symbol:   variable lock\n  location: class LinkedDeque<E>\n  where E is a type-variable:\n    E extends Object declared in class LinkedDeque\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/LinkedDeque.java:90: error: cannot find symbol\n            throw new NoSuchElementException();\n                      ^\n  symbol:   class NoSuchElementException\n  location: class LinkedDeque<E>\n  where E is a type-variable:\n    E extends Object declared in class LinkedDeque\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/LinkedDeque.java:97: error: cannot find symbol\n            throw new NoSuchElementException();\n                      ^\n  symbol:   class NoSuchElementException\n  location: class LinkedDeque<E>\n  where E is a type-variable:\n    E extends Object declared in class LinkedDeque\n4 errors\n"
+    },
+    {
+      "file": "SkipListMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListMap.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "SkipListSet.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java:10: error: incompatible types: cannot infer type arguments for Node<>\n        head = new Node<>(Integer.MIN_VALUE, MAX_LEVEL);\n                       ^\n    reason: inference variable E#1 has incompatible bounds\n      equality constraints: E#2,Integer\n      lower bounds: Integer\n  where E#1,E#2 are type-variables:\n    E#1 extends Comparable<E#1> declared in class Node\n    E#2 extends Comparable<E#2> declared in class SkipListSet\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java:26: error: cannot find symbol\n        if (x != null && x.data.compareTo(e) == 0)\n            ^\n  symbol:   variable x\n  location: class SkipListSet<E>\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java:26: error: package x does not exist\n        if (x != null && x.data.compareTo(e) == 0)\n                          ^\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java:57: error: cannot find symbol\n        if (x == null || x.data.compareTo(e) != 0)\n            ^\n  symbol:   variable x\n  location: class SkipListSet<E>\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java:57: error: package x does not exist\n        if (x == null || x.data.compareTo(e) != 0)\n                          ^\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java:61: error: cannot find symbol\n            if (update[i].forward[i] != x)\n                                        ^\n  symbol:   variable x\n  location: class SkipListSet<E>\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java:63: error: cannot find symbol\n            update[i].forward[i] = x.forward[i];\n                                   ^\n  symbol:   variable x\n  location: class SkipListSet<E>\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nNote: /Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n7 errors\n"
+    },
+    {
+      "file": "ThreadSafeQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeSet.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeSet.java:63: error: cannot assign a value to final variable elements\n        elements = newElements;\n        ^\n1 error\n"
+    },
+    {
+      "file": "b_tres.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "linked_queue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:87: error: cannot find symbol\n        node.data = key;\n            ^\n  symbol:   variable data\n  location: variable node of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:97: error: cannot find symbol\n            if (node.data < x.data) {\n                    ^\n  symbol:   variable data\n  location: variable node of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:97: error: cannot find symbol\n            if (node.data < x.data) {\n                             ^\n  symbol:   variable data\n  location: variable x of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:107: error: cannot find symbol\n        } else if (node.data < y.data) {\n                       ^\n  symbol:   variable data\n  location: variable node of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:107: error: cannot find symbol\n        } else if (node.data < y.data) {\n                                ^\n  symbol:   variable data\n  location: variable y of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:213: error: cannot find symbol\n            if (root.data == key) {\n                    ^\n  symbol:   variable data\n  location: variable root of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:217: error: cannot find symbol\n            if (root.data <= key) {\n                    ^\n  symbol:   variable data\n  location: variable root of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:230: error: method transplant in class RedBlackTree cannot be applied to given types;\n            transplant(root, z, z.right);\n            ^\n  required: RedBlackTree.Node,RedBlackTree.Node\n  found:    RedBlackTree.Node,RedBlackTree.Node,RedBlackTree.Node\n  reason: actual and formal argument lists differ in length\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:233: error: method transplant in class RedBlackTree cannot be applied to given types;\n            transplant(root, z, z.left);\n            ^\n  required: RedBlackTree.Node,RedBlackTree.Node\n  found:    RedBlackTree.Node,RedBlackTree.Node,RedBlackTree.Node\n  reason: actual and formal argument lists differ in length\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:241: error: method transplant in class RedBlackTree cannot be applied to given types;\n                transplant(root, y, y.right);\n                ^\n  required: RedBlackTree.Node,RedBlackTree.Node\n  found:    RedBlackTree.Node,RedBlackTree.Node,RedBlackTree.Node\n  reason: actual and formal argument lists differ in length\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:245: error: method transplant in class RedBlackTree cannot be applied to given types;\n            transplant(root, z, y);\n            ^\n  required: RedBlackTree.Node,RedBlackTree.Node\n  found:    RedBlackTree.Node,RedBlackTree.Node,RedBlackTree.Node\n  reason: actual and formal argument lists differ in length\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:346: error: cannot find symbol\n            System.out.println(node.data + \"(\" + sColor + \")\");\n                                   ^\n  symbol:   variable data\n  location: variable node of type RedBlackTree.Node\n12 errors\n"
+    }
+  ]
+}

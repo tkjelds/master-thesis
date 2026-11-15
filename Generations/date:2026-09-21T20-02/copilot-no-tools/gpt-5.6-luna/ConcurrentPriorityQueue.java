@@ -1,4 +1,7 @@
+@ConcurrentPriorityQueue.ThreadSafe
 public final class ConcurrentPriorityQueue<E extends Comparable<? super E>> {
+    @interface ThreadSafe {}
+
     private final Object[] elements;
     private int size;
 

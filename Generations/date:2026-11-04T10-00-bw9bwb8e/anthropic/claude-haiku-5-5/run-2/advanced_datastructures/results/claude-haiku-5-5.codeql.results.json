@@ -1,0 +1,160 @@
+{
+  "timestamp": "date:2026-11-06T19-06",
+  "model": "claude-haiku-5-5",
+  "tool": "codeql",
+  "codeql_version": "2.27.1",
+  "database": "/Users/tore/master-thesis/Generations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-haiku-5-5/run-2/advanced_datastructures/results/claude-haiku-5-5.codeql-db",
+  "queries": "/Users/tore/master-thesis/pipeline/analysis/codeql/queries/concurrency.qls",
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 4,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedArrayList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedArrayList.java",
+          "line": 24,
+          "column": 19,
+          "end_line": null,
+          "end_column": 26
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedArrayList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedArrayList.java",
+          "line": 22,
+          "column": 19,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedArrayList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedArrayList.java",
+          "line": 20,
+          "column": 19,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedArrayList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedArrayList.java",
+          "line": 18,
+          "column": 22,
+          "end_line": null,
+          "end_column": 30
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedLinkedList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedLinkedList.java",
+          "line": 29,
+          "column": 23,
+          "end_line": null,
+          "end_column": 30
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [IntervalHeap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "IntervalHeap.java",
+          "line": 57,
+          "column": 23,
+          "end_line": null,
+          "end_column": 27
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ],
+  "unmapped_issues": []
+}

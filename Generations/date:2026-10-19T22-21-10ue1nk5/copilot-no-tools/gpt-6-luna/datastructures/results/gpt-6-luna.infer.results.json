@@ -1,0 +1,172 @@
+{
+  "timestamp": "date:2026-10-19T22-55",
+  "model": "gpt-6-luna",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "B_Tres.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.net/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[total 29ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBoundedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DictionaryBag.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.jdeps/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/SuppressWarnings.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking DictionaryBag]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\nDictionaryBag.java:38: error: incompatible types: ValueNode<V> cannot be converted to long\n                    keyNode.values = new ValueNode<>(value, keyNode.values);\n                                                                   ^\n  where V is a type-variable:\n    V extends Object declared in class DictionaryBag\n[total 98ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

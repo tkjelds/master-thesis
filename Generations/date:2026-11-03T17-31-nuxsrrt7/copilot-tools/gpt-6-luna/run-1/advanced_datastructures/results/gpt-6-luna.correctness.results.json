@@ -1,0 +1,90 @@
+{
+  "timestamp": "date:2026-11-03T19-20",
+  "model": "gpt-6-luna",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/BTree.java",
+      "prompt_name": "advanced_datastructures/b_tree",
+      "problem": "b_tree",
+      "analyzed": true,
+      "probability": 0.5299,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/BinarySearchTree.java",
+      "prompt_name": "advanced_datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "analyzed": true,
+      "probability": 0.7075,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/HashedArrayList.java",
+      "prompt_name": "advanced_datastructures/HashedArrayList",
+      "problem": "HashedArrayList",
+      "analyzed": true,
+      "probability": 0.6114,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/HashedLinkedList.java",
+      "prompt_name": "advanced_datastructures/HashedLinkedList",
+      "problem": "HashedLinkedList",
+      "analyzed": true,
+      "probability": 0.6592,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/IntervalHeap.java",
+      "prompt_name": "advanced_datastructures/IntervalHeap",
+      "problem": "IntervalHeap",
+      "analyzed": true,
+      "probability": 0.5079,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/MysteriousHashMap.java",
+      "prompt_name": "advanced_datastructures/MysteriousHashMap",
+      "problem": "MysteriousHashMap",
+      "analyzed": true,
+      "probability": 0.6126,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/RedBlackTree.java",
+      "prompt_name": "advanced_datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "analyzed": true,
+      "probability": 0.6509,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/TreeBag.java",
+      "prompt_name": "advanced_datastructures/TreeBag",
+      "problem": "TreeBag",
+      "analyzed": true,
+      "probability": 0.546,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/TreeDictionary.java",
+      "prompt_name": "advanced_datastructures/TreeDictionary",
+      "problem": "TreeDictionary",
+      "analyzed": true,
+      "probability": 0.5566,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-03T17-31-nuxsrrt7/copilot-tools/gpt-6-luna/run-1/advanced_datastructures/TreeSet.java",
+      "prompt_name": "advanced_datastructures/TreeSet",
+      "problem": "TreeSet",
+      "analyzed": true,
+      "probability": 0.5512,
+      "error": ""
+    }
+  ]
+}

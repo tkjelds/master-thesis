@@ -1,0 +1,5 @@
+client,model,passed,k,total,pass_rate,observed_attempts,expected_attempts
+copilot-no-tools,gpt-6-luna,15,1,48,0.3125,48,48
+lm-studio,qwen2.5-coder-7b-instruct-mlx,8,1,48,0.16666666666666666,48,48
+copilot-no-tools,gpt-6-luna,15,3,48,0.3125,48,144
+lm-studio,qwen2.5-coder-7b-instruct-mlx,8,3,48,0.16666666666666666,48,144

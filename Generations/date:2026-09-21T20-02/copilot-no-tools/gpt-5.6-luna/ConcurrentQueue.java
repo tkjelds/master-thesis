@@ -1,4 +1,7 @@
+@ConcurrentQueue.ThreadSafe
 public final class ConcurrentQueue<E> {
+    @interface ThreadSafe {}
+
     private final Object[] elements;
     private int head;
     private int tail;

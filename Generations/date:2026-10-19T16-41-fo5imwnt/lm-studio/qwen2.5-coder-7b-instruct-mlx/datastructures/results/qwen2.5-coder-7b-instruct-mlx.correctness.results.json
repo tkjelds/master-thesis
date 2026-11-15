@@ -1,0 +1,190 @@
+{
+  "timestamp": "date:2026-10-19T19-12",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ArrayQueue.java",
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "analyzed": true,
+      "probability": 0.7244,
+      "error": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/BinarySearchTree.java",
+      "prompt_name": "datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "analyzed": true,
+      "probability": 0.6881,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentCollection.java",
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "analyzed": true,
+      "probability": 0.5957,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentLinkedDeque.java",
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "analyzed": true,
+      "probability": 0.7376,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentLinkedList.java",
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "analyzed": true,
+      "probability": 0.7027,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentList.java",
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "analyzed": true,
+      "probability": 0.6534,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentMap.java",
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "analyzed": true,
+      "probability": 0.7001,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentQueue.java",
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "analyzed": true,
+      "probability": 0.7273,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentSet.java",
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "analyzed": true,
+      "probability": 0.6951,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentStack.java",
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "analyzed": true,
+      "probability": 0.7566,
+      "error": ""
+    },
+    {
+      "file": "Counter.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/Counter.java",
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "analyzed": true,
+      "probability": 0.8873,
+      "error": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java",
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "analyzed": true,
+      "probability": 0.4434,
+      "error": ""
+    },
+    {
+      "file": "DictionaryBag.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DictionaryBag.java",
+      "prompt_name": "datastructures/dictionarybag",
+      "problem": "dictionarybag",
+      "analyzed": true,
+      "probability": 0.6333,
+      "error": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/LinkedQueue.java",
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "analyzed": true,
+      "probability": 0.7056,
+      "error": ""
+    },
+    {
+      "file": "PriorityBlockingQueue.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/PriorityBlockingQueue.java",
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "analyzed": true,
+      "probability": 0.363,
+      "error": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java",
+      "prompt_name": "datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "analyzed": true,
+      "probability": 0.6306,
+      "error": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListMap.java",
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "analyzed": true,
+      "probability": 0.6612,
+      "error": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java",
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "analyzed": true,
+      "probability": 0.5512,
+      "error": ""
+    },
+    {
+      "file": "ThreadSafeDeque.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeDeque.java",
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "analyzed": true,
+      "probability": 0.6881,
+      "error": ""
+    },
+    {
+      "file": "b_tres.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/b_tres.java",
+      "prompt_name": "datastructures/b_tres",
+      "problem": "b_tres",
+      "analyzed": true,
+      "probability": 0.7148,
+      "error": ""
+    }
+  ]
+}

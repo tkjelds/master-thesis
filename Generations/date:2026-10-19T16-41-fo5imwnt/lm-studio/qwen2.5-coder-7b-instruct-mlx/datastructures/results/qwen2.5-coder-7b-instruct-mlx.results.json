@@ -1,0 +1,146 @@
+{
+  "timestamp": "date:2026-10-19T17-02",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentCollection.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentList.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentMap.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentQueue.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "Counter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:59: error: cannot find symbol\n        public static final Comparator<Entry<?>> COMPARATOR = new Comparator<Entry<?>>() {\n                            ^\n  symbol:   class Comparator\n  location: class Entry<T>\n  where T is a type-variable:\n    T extends Object declared in class Entry\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:59: error: cannot find symbol\n        public static final Comparator<Entry<?>> COMPARATOR = new Comparator<Entry<?>>() {\n                                                                  ^\n  symbol:   class Comparator\n  location: class Entry<T>\n  where T is a type-variable:\n    T extends Object declared in class Entry\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:60: error: method does not override or implement a method from a supertype\n            @Override\n            ^\n3 errors\n"
+    },
+    {
+      "file": "DictionaryBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "PriorityBlockingQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:53: error: cannot find symbol\n            node.color = Color.BLACK;\n                         ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:64: error: cannot find symbol\n        while (z.parent.color == Color.RED) {\n                                 ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:67: error: cannot find symbol\n                if (y != null && y.color == Color.RED) {\n                                            ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:68: error: cannot find symbol\n                    y.color = Color.BLACK;\n                              ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:69: error: cannot find symbol\n                    z.parent.color = Color.BLACK;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:70: error: cannot find symbol\n                    z.parent.parent.color = Color.RED;\n                                            ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:77: error: cannot find symbol\n                    z.parent.color = Color.BLACK;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:78: error: cannot find symbol\n                    z.parent.parent.color = Color.RED;\n                                            ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:83: error: cannot find symbol\n                if (y != null && y.color == Color.RED) {\n                                            ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:84: error: cannot find symbol\n                    y.color = Color.BLACK;\n                              ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:85: error: cannot find symbol\n                    z.parent.color = Color.BLACK;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:86: error: cannot find symbol\n                    z.parent.parent.color = Color.RED;\n                                            ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:93: error: cannot find symbol\n                    z.parent.color = Color.BLACK;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:94: error: cannot find symbol\n                    z.parent.parent.color = Color.RED;\n                                            ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:99: error: cannot find symbol\n        root.color = Color.BLACK;\n                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:160: error: cannot find symbol\n        Color yOriginalColor = y.color;\n        ^\n  symbol:   class Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:183: error: cannot find symbol\n        if (yOriginalColor == Color.BLACK)\n                              ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:200: error: cannot find symbol\n        while (x != root && x.color == Color.BLACK) {\n                                       ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:203: error: cannot find symbol\n                if (s.color == Color.RED) {\n                               ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:204: error: cannot find symbol\n                    s.color = Color.BLACK;\n                              ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:205: error: cannot find symbol\n                    x.parent.color = Color.RED;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:209: error: cannot find symbol\n                if (s.left.color == Color.BLACK && s.right.color == Color.BLACK) {\n                                    ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:209: error: cannot find symbol\n                if (s.left.color == Color.BLACK && s.right.color == Color.BLACK) {\n                                                                    ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:210: error: cannot find symbol\n                    s.color = Color.RED;\n                              ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:213: error: cannot find symbol\n                    if (s.right.color == Color.BLACK) {\n                                         ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:214: error: cannot find symbol\n                        s.left.color = Color.BLACK;\n                                       ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:215: error: cannot find symbol\n                        s.color = Color.RED;\n                                  ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:220: error: cannot find symbol\n                    x.parent.color = Color.BLACK;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:221: error: cannot find symbol\n                    s.right.color = Color.BLACK;\n                                    ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:227: error: cannot find symbol\n                if (s.color == Color.RED) {\n                               ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:228: error: cannot find symbol\n                    s.color = Color.BLACK;\n                              ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:229: error: cannot find symbol\n                    x.parent.color = Color.RED;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:233: error: cannot find symbol\n                if (s.right.color == Color.BLACK && s.left.color == Color.BLACK) {\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:233: error: cannot find symbol\n                if (s.right.color == Color.BLACK && s.left.color == Color.BLACK) {\n                                                                    ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:234: error: cannot find symbol\n                    s.color = Color.RED;\n                              ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:237: error: cannot find symbol\n                    if (s.left.color == Color.BLACK) {\n                                        ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:238: error: cannot find symbol\n                        s.right.color = Color.BLACK;\n                                        ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:239: error: cannot find symbol\n                        s.color = Color.RED;\n                                  ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:244: error: cannot find symbol\n                    x.parent.color = Color.BLACK;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:245: error: cannot find symbol\n                    s.left.color = Color.BLACK;\n                                   ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/RedBlackTree.java:251: error: cannot find symbol\n        x.color = Color.BLACK;\n                  ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n41 errors\n"
+    },
+    {
+      "file": "SkipListMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java:15: error: incompatible types: Node[] cannot be converted to Node\n            Node curr = head.right;\n                            ^\n1 error\n"
+    },
+    {
+      "file": "ThreadSafeDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-19T16-41-fo5imwnt/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeDeque.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "b_tres.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

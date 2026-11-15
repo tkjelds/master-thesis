@@ -1,4 +1,7 @@
+@ConcurrentSet.ThreadSafe
 public class ConcurrentSet<E> {
+    @interface ThreadSafe {}
+
     private static final int DEFAULT_CAPACITY = 16;
     private static final float LOAD_FACTOR = 0.75f;
 

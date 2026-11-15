@@ -1,0 +1,154 @@
+{
+  "timestamp": "date:2026-11-06T21-00",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ArrayQueue.java",
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "analyzed": true,
+      "probability": 0.6752,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ConcurrentCollection.java",
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "analyzed": true,
+      "probability": 0.6294,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ConcurrentDeque.java",
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "analyzed": true,
+      "probability": 0.4272,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ConcurrentDictionary.java",
+      "prompt_name": "datastructures/dictionary",
+      "problem": "dictionary",
+      "analyzed": true,
+      "probability": 0.669,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ConcurrentLinkedList.java",
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "analyzed": true,
+      "probability": 0.6375,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ConcurrentList.java",
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "analyzed": true,
+      "probability": 0.6877,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ConcurrentMap.java",
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "analyzed": true,
+      "probability": 0.4964,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ConcurrentQueue.java",
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "analyzed": true,
+      "probability": 0.6675,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ConcurrentSet.java",
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "analyzed": true,
+      "probability": 0.5983,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/DelayQueue.java",
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "analyzed": true,
+      "probability": 0.5783,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/LinkedQueue.java",
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "analyzed": true,
+      "probability": 0.6027,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/PriorityQueue.java",
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "analyzed": true,
+      "probability": 0.6555,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/SkipListMap.java",
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "analyzed": true,
+      "probability": 0.6115,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/SkipListSet.java",
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "analyzed": true,
+      "probability": 0.6523,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ThreadSafeCounter.java",
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "analyzed": true,
+      "probability": 0.8638,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/ThreadSafeStack.java",
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "analyzed": true,
+      "probability": 0.7522,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/bag.java",
+      "prompt_name": "datastructures/bag",
+      "problem": "bag",
+      "analyzed": true,
+      "probability": 0.6563,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-3/datastructures/linked_deque.java",
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "analyzed": true,
+      "probability": 0.7187,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "timestamp": "date:2026-11-06T22-20",
+  "model": "claude-sonnet-5-5",
+  "files": [
+    {
+      "file": "BTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-sonnet-5-5/run-1/advanced_datastructures/BinarySearchTree.java:1: error: class, interface, enum, or record expected\nimport java.lang.*; is not needed, so this file has no imports. It uses a single tree-wide monitor, and all iteration is iterative so deep (unbalanced) trees cannot overflow the stack.\n                    ^\n1 error\n"
+    },
+    {
+      "file": "HashedArrayList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

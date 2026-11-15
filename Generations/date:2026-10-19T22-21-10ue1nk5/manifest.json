@@ -1,0 +1,544 @@
+{
+  "generations": [
+    {
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentMap.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/SkipListMap.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/SkipListSet.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentSet.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentList.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentDeque.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/LinkedQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentLinkedDeque.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ArrayQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentPriorityQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/DelayQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentStack.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentBoundedQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/dictionarybag",
+      "problem": "dictionarybag",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/DictionaryBag.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentCounter.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/BinarySearchTree.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/red_black_tree.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/b_tres",
+      "problem": "b_tres",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/B_Tres.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentLinkedList.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/HierarchicalScheduler",
+      "problem": "HierarchicalScheduler",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/HierarchicalScheduler.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/ThermostaticBuildOrchestrator",
+      "problem": "ThermostaticBuildOrchestrator",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/ThermostaticBuildOrchestrator.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/ResolvingVendingMachine",
+      "problem": "ResolvingVendingMachine",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/ResolvingVendingMachine.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/HarmonicBufferedStream",
+      "problem": "HarmonicBufferedStream",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/HarmonicBufferedStream.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/UserSpaceProvisioner",
+      "problem": "UserSpaceProvisioner",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/UserSpaceProvisioner.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/VersionedSlotManager",
+      "problem": "VersionedSlotManager",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/VersionedSlotManager.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/TaggedCapacityBuffer",
+      "problem": "TaggedCapacityBuffer",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/TaggedCapacityBuffer.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/AdaptiveTrustVault",
+      "problem": "AdaptiveTrustVault",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/AdaptiveTrustVault.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/SecureMetricAggregator",
+      "problem": "SecureMetricAggregator",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/SecureMetricAggregator.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/TemporalForexCache",
+      "problem": "TemporalForexCache",
+      "category": "novel_problems",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "copilot-no-tools/gpt-6-luna/novel_problems/TemporalForexCache.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentMap.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListMap.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeSet.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentList.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentDeque.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/linked_queue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/LinkedDeque.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ArrayQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentPriorityQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentStack.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentQueue.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/dictionarybag",
+      "problem": "dictionarybag",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DictionaryBag.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentCounter.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentBinarySearchTree.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/b_tres",
+      "problem": "b_tres",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/b_tres.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentLinkedList.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/HierarchicalScheduler",
+      "problem": "HierarchicalScheduler",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/ThermostaticBuildOrchestrator",
+      "problem": "ThermostaticBuildOrchestrator",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ThermostaticBuildOrchestrator.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/ResolvingVendingMachine",
+      "problem": "ResolvingVendingMachine",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/HarmonicBufferedStream",
+      "problem": "HarmonicBufferedStream",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HarmonicBufferedStream.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/UserSpaceProvisioner",
+      "problem": "UserSpaceProvisioner",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/UserSpaceProvisioner.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/VersionedSlotManager",
+      "problem": "VersionedSlotManager",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/VersionedSlotManager.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/TaggedCapacityBuffer",
+      "problem": "TaggedCapacityBuffer",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TaggedCapacityBuffer.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/AdaptiveTrustVault",
+      "problem": "AdaptiveTrustVault",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/AdaptiveTrustVault.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/SecureMetricAggregator",
+      "problem": "SecureMetricAggregator",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/SecureMetricAggregator.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    },
+    {
+      "prompt_name": "novel_problems/TemporalForexCache",
+      "problem": "TemporalForexCache",
+      "category": "novel_problems",
+      "client": "lm-studio",
+      "model": "qwen2.5-coder-7b-instruct-mlx",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.java",
+      "prompt_file": "../../prompts/date:2026-10-19T22-21.json"
+    }
+  ]
+}

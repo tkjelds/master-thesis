@@ -1,0 +1,170 @@
+{
+  "timestamp": "date:2026-10-25T00-04",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/AdaptiveTrustVault.java",
+      "prompt_name": "novel_problems/AdaptiveTrustVault",
+      "problem": "AdaptiveTrustVault",
+      "analyzed": true,
+      "probability": 0.4699,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/BitmaskedTimelineStage.java",
+      "prompt_name": "novel_problems/BitmaskedTimelineStage",
+      "problem": "BitmaskedTimelineStage",
+      "analyzed": true,
+      "probability": 0.3253,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ChatSessionStream.java",
+      "prompt_name": "novel_problems/ChatSessionStream",
+      "problem": "ChatSessionStream",
+      "analyzed": true,
+      "probability": 0.5633,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/GomokuVersionState.java",
+      "prompt_name": "novel_problems/GomokuVersionState",
+      "problem": "GomokuVersionState",
+      "analyzed": true,
+      "probability": 0.5094,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HarmonicBufferedStream.java",
+      "prompt_name": "novel_problems/HarmonicBufferedStream",
+      "problem": "HarmonicBufferedStream",
+      "analyzed": true,
+      "probability": 0.4462,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java",
+      "prompt_name": "novel_problems/HierarchicalScheduler",
+      "problem": "HierarchicalScheduler",
+      "analyzed": true,
+      "probability": 0.4797,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/InventoryTransactionBuffer.java",
+      "prompt_name": "novel_problems/InventoryTransactionBuffer",
+      "problem": "InventoryTransactionBuffer",
+      "analyzed": true,
+      "probability": 0.5781,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/Job.java",
+      "prompt_name": "novel_problems/ThermostaticBuildOrchestrator",
+      "problem": "ThermostaticBuildOrchestrator",
+      "analyzed": true,
+      "probability": 0.4378,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/LexicalGraphProvider.java",
+      "prompt_name": "novel_problems/LexicalGraphProvider",
+      "problem": "LexicalGraphProvider",
+      "analyzed": true,
+      "probability": 0.5592,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/MutationStatus.java",
+      "prompt_name": "novel_problems/VersionedSlotManager",
+      "problem": "VersionedSlotManager",
+      "analyzed": true,
+      "probability": 0.546,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/PersistedScheduleContext.java",
+      "prompt_name": "novel_problems/PersistedScheduleContext",
+      "problem": "PersistedScheduleContext",
+      "analyzed": true,
+      "probability": 0.4713,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/RPGCharacter.java",
+      "prompt_name": "novel_problems/RPGCharacter",
+      "problem": "RPGCharacter",
+      "analyzed": true,
+      "probability": 0.501,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java",
+      "prompt_name": "novel_problems/ResolvingVendingMachine",
+      "problem": "ResolvingVendingMachine",
+      "analyzed": true,
+      "probability": 0.3509,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/SecureMetricAggregator.java",
+      "prompt_name": "novel_problems/SecureMetricAggregator",
+      "problem": "SecureMetricAggregator",
+      "analyzed": true,
+      "probability": 0.4363,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TaggedCapacityBuffer.java",
+      "prompt_name": "novel_problems/TaggedCapacityBuffer",
+      "problem": "TaggedCapacityBuffer",
+      "analyzed": true,
+      "probability": 0.3996,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.java",
+      "prompt_name": "novel_problems/TemporalForexCache",
+      "problem": "TemporalForexCache",
+      "analyzed": true,
+      "probability": 0.3245,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ThermostaticCircuitStream.java",
+      "prompt_name": "novel_problems/ThermostaticCircuitStream",
+      "problem": "ThermostaticCircuitStream",
+      "analyzed": true,
+      "probability": 0.5057,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/UserSpaceProvisioner.java",
+      "prompt_name": "novel_problems/UserSpaceProvisioner",
+      "problem": "UserSpaceProvisioner",
+      "analyzed": true,
+      "probability": 0.3846,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/VerifiableMailbox.java",
+      "prompt_name": "novel_problems/VerifiableMailbox",
+      "problem": "VerifiableMailbox",
+      "analyzed": true,
+      "probability": 0.4543,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/Warehouse.java",
+      "prompt_name": "novel_problems/Warehouse",
+      "problem": "Warehouse",
+      "analyzed": true,
+      "probability": 0.6314,
+      "error": ""
+    }
+  ]
+}

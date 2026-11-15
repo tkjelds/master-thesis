@@ -1,0 +1,100 @@
+{
+  "timestamp": "date:2026-10-22T11-37",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "AdaptiveTrustVault.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/AdaptiveTrustVault.java",
+      "prompt_name": "novel_problems/AdaptiveTrustVault",
+      "problem": "AdaptiveTrustVault",
+      "analyzed": true,
+      "probability": 0.452,
+      "error": ""
+    },
+    {
+      "file": "HarmonicBufferedStream.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HarmonicBufferedStream.java",
+      "prompt_name": "novel_problems/HarmonicBufferedStream",
+      "problem": "HarmonicBufferedStream",
+      "analyzed": true,
+      "probability": 0.5364,
+      "error": ""
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java",
+      "prompt_name": "novel_problems/HierarchicalScheduler",
+      "problem": "HierarchicalScheduler",
+      "analyzed": true,
+      "probability": 0.6075,
+      "error": ""
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java",
+      "prompt_name": "novel_problems/ResolvingVendingMachine",
+      "problem": "ResolvingVendingMachine",
+      "analyzed": true,
+      "probability": 0.3789,
+      "error": ""
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/SecureMetricAggregator.java",
+      "prompt_name": "novel_problems/SecureMetricAggregator",
+      "problem": "SecureMetricAggregator",
+      "analyzed": true,
+      "probability": 0.4302,
+      "error": ""
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TaggedCapacityBuffer.java",
+      "prompt_name": "novel_problems/TaggedCapacityBuffer",
+      "problem": "TaggedCapacityBuffer",
+      "analyzed": true,
+      "probability": 0.1851,
+      "error": ""
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.java",
+      "prompt_name": "novel_problems/TemporalForexCache",
+      "problem": "TemporalForexCache",
+      "analyzed": true,
+      "probability": 0.4201,
+      "error": ""
+    },
+    {
+      "file": "ThermostaticBuildOrchestrator.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ThermostaticBuildOrchestrator.java",
+      "prompt_name": "novel_problems/ThermostaticBuildOrchestrator",
+      "problem": "ThermostaticBuildOrchestrator",
+      "analyzed": true,
+      "probability": 0.4656,
+      "error": ""
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/UserSpaceProvisioner.java",
+      "prompt_name": "novel_problems/UserSpaceProvisioner",
+      "problem": "UserSpaceProvisioner",
+      "analyzed": true,
+      "probability": 0.4896,
+      "error": ""
+    },
+    {
+      "file": "VersionedSlotManager.java",
+      "java_file": "lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/VersionedSlotManager.java",
+      "prompt_name": "novel_problems/VersionedSlotManager",
+      "problem": "VersionedSlotManager",
+      "analyzed": true,
+      "probability": 0.4848,
+      "error": ""
+    }
+  ]
+}

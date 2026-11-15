@@ -1,0 +1,146 @@
+{
+  "timestamp": "date:2026-10-16T02-26",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "BTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "BinaryTreeSearch.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentDeque.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentMap.java:6: error: cannot find symbol\n    private final ReentrantLock[] locks;\n                  ^\n  symbol:   class ReentrantLock\n  location: class ConcurrentMap<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentMap\n    V extends Object declared in class ConcurrentMap\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentMap.java:11: error: cannot find symbol\n        locks = new ReentrantLock[size];\n                    ^\n  symbol:   class ReentrantLock\n  location: class ConcurrentMap<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentMap\n    V extends Object declared in class ConcurrentMap\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentMap.java:13: error: cannot find symbol\n            locks[i] = new ReentrantLock();\n                           ^\n  symbol:   class ReentrantLock\n  location: class ConcurrentMap<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentMap\n    V extends Object declared in class ConcurrentMap\n3 errors\n"
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentStack.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "DelayQueue.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:93: error: cannot find symbol\n    public boolean removeAll(Collection<?> c) {\n                             ^\n  symbol:   class Collection\n  location: class DelayQueue<T>\n  where T is a type-variable:\n    T extends Object declared in class DelayQueue\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:103: error: cannot find symbol\n    public boolean retainAll(Collection<?> c) {\n                             ^\n  symbol:   class Collection\n  location: class DelayQueue<T>\n  where T is a type-variable:\n    T extends Object declared in class DelayQueue\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:119: error: cannot find symbol\n    public T element() throws NoSuchElementException {\n                              ^\n  symbol:   class NoSuchElementException\n  location: class DelayQueue<T>\n  where T is a type-variable:\n    T extends Object declared in class DelayQueue\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:129: error: cannot find symbol\n    public T remove() throws NoSuchElementException {\n                             ^\n  symbol:   class NoSuchElementException\n  location: class DelayQueue<T>\n  where T is a type-variable:\n    T extends Object declared in class DelayQueue\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:122: error: cannot find symbol\n                throw new NoSuchElementException();\n                          ^\n  symbol:   class NoSuchElementException\n  location: class DelayQueue<T>\n  where T is a type-variable:\n    T extends Object declared in class DelayQueue\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/DelayQueue.java:132: error: cannot find symbol\n                throw new NoSuchElementException();\n                          ^\n  symbol:   class NoSuchElementException\n  location: class DelayQueue<T>\n  where T is a type-variable:\n    T extends Object declared in class DelayQueue\n6 errors\n"
+    },
+    {
+      "file": "DictionaryBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListMap.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "SkipListSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListSet.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ThreadSafeCollection.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeCollection.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ThreadSafeCounter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ThreadSafeList.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ThreadSafePriorityQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "linked_queue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:148: error: cannot find symbol\n        node.data = key;\n            ^\n  symbol:   variable data\n  location: variable node of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:158: error: cannot find symbol\n            if (node.data < x.data)\n                    ^\n  symbol:   variable data\n  location: variable node of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:158: error: cannot find symbol\n            if (node.data < x.data)\n                             ^\n  symbol:   variable data\n  location: variable x of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:167: error: cannot find symbol\n        else if (node.data < y.data)\n                     ^\n  symbol:   variable data\n  location: variable node of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:167: error: cannot find symbol\n        else if (node.data < y.data)\n                              ^\n  symbol:   variable data\n  location: variable y of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:243: error: cannot find symbol\n            if (root.data == key) {\n                    ^\n  symbol:   variable data\n  location: variable root of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:247: error: cannot find symbol\n            if (root.data <= key) {\n                    ^\n  symbol:   variable data\n  location: variable root of type RedBlackTree.Node\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:260: error: incompatible types: boolean cannot be converted to int\n        int y_original_color = y.color;\n                                ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:269: error: incompatible types: boolean cannot be converted to int\n            y_original_color = y.color;\n                                ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:285: error: incomparable types: int and boolean\n        if (y_original_color == BLACK) {\n                             ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/red_black_tree.java:317: error: cannot find symbol\n            System.out.println(currPtr.data + \"(\" + s_color + \")\");\n                                      ^\n  symbol:   variable data\n  location: variable currPtr of type RedBlackTree.Node\n11 errors\n"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "timestamp": "date:2026-11-06T21-00",
+  "model": "gpt-6.1-terra",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/AdaptiveTrustVault.java",
+      "prompt_name": "novel_problems/AdaptiveTrustVault",
+      "problem": "AdaptiveTrustVault",
+      "analyzed": true,
+      "probability": 0.6631,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/BitmaskedTimelineStage.java",
+      "prompt_name": "novel_problems/BitmaskedTimelineStage",
+      "problem": "BitmaskedTimelineStage",
+      "analyzed": true,
+      "probability": 0.677,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/ChatSessionStream.java",
+      "prompt_name": "novel_problems/ChatSessionStream",
+      "problem": "ChatSessionStream",
+      "analyzed": true,
+      "probability": 0.6741,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/GomokuVersionState.java",
+      "prompt_name": "novel_problems/GomokuVersionState",
+      "problem": "GomokuVersionState",
+      "analyzed": true,
+      "probability": 0.7017,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/HarmonicBufferedStream.java",
+      "prompt_name": "novel_problems/HarmonicBufferedStream",
+      "problem": "HarmonicBufferedStream",
+      "analyzed": true,
+      "probability": 0.6156,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/HierarchicalScheduler.java",
+      "prompt_name": "novel_problems/HierarchicalScheduler",
+      "problem": "HierarchicalScheduler",
+      "analyzed": true,
+      "probability": 0.6712,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/InventoryTransactionBuffer.java",
+      "prompt_name": "novel_problems/InventoryTransactionBuffer",
+      "problem": "InventoryTransactionBuffer",
+      "analyzed": true,
+      "probability": 0.6816,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/LexicalGraphProvider.java",
+      "prompt_name": "novel_problems/LexicalGraphProvider",
+      "problem": "LexicalGraphProvider",
+      "analyzed": true,
+      "probability": 0.6754,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/PersistedScheduleContext.java",
+      "prompt_name": "novel_problems/PersistedScheduleContext",
+      "problem": "PersistedScheduleContext",
+      "analyzed": true,
+      "probability": 0.6094,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/RPGCharacter.java",
+      "prompt_name": "novel_problems/RPGCharacter",
+      "problem": "RPGCharacter",
+      "analyzed": true,
+      "probability": 0.6271,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/ResolvingVendingMachine.java",
+      "prompt_name": "novel_problems/ResolvingVendingMachine",
+      "problem": "ResolvingVendingMachine",
+      "analyzed": true,
+      "probability": 0.6553,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/SecureMetricAggregator.java",
+      "prompt_name": "novel_problems/SecureMetricAggregator",
+      "problem": "SecureMetricAggregator",
+      "analyzed": true,
+      "probability": 0.665,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/TaggedCapacityBuffer.java",
+      "prompt_name": "novel_problems/TaggedCapacityBuffer",
+      "problem": "TaggedCapacityBuffer",
+      "analyzed": true,
+      "probability": 0.5728,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/TemporalForexCache.java",
+      "prompt_name": "novel_problems/TemporalForexCache",
+      "problem": "TemporalForexCache",
+      "analyzed": true,
+      "probability": 0.6229,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/ThermostaticBuildOrchestrator.java",
+      "prompt_name": "novel_problems/ThermostaticBuildOrchestrator",
+      "problem": "ThermostaticBuildOrchestrator",
+      "analyzed": true,
+      "probability": 0.6576,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/ThermostaticCircuitStream.java",
+      "prompt_name": "novel_problems/ThermostaticCircuitStream",
+      "problem": "ThermostaticCircuitStream",
+      "analyzed": true,
+      "probability": 0.6276,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/UserSpaceProvisioner.java",
+      "prompt_name": "novel_problems/UserSpaceProvisioner",
+      "problem": "UserSpaceProvisioner",
+      "analyzed": true,
+      "probability": 0.6657,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/VerifiableMailbox.java",
+      "prompt_name": "novel_problems/VerifiableMailbox",
+      "problem": "VerifiableMailbox",
+      "analyzed": true,
+      "probability": 0.6218,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/VersionedSlotManager.java",
+      "prompt_name": "novel_problems/VersionedSlotManager",
+      "problem": "VersionedSlotManager",
+      "analyzed": true,
+      "probability": 0.6714,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-3/novel_problems/Warehouse.java",
+      "prompt_name": "novel_problems/Warehouse",
+      "problem": "Warehouse",
+      "analyzed": true,
+      "probability": 0.7025,
+      "error": ""
+    }
+  ]
+}

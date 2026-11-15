@@ -1,0 +1,226 @@
+{
+  "timestamp": "date:2026-10-16T02-28",
+  "model": "ministral-3-8b-instruct-2512",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BoundedTres.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBoundedCollection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.jconsole/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[total 29ms]\n25 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DictionaryBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.addFirst(...)` reads without synchronization from `this.head.prev`, which races with the write in method `LinkedDeque.addFirst(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.addFirst(java.lang.Object):void",
+          "file": "LinkedDeque.java",
+          "line": 28,
+          "column": -1,
+          "key": "LinkedDeque.java|addFirst|THREAD_SAFETY_VIOLATION",
+          "hash": "921a072aecedf3a410317f2c99f58895"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.addLast(...)` reads without synchronization from `this.tail.prev`, which races with the write in method `LinkedDeque.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.addLast(java.lang.Object):void",
+          "file": "LinkedDeque.java",
+          "line": 37,
+          "column": -1,
+          "key": "LinkedDeque.java|addLast|THREAD_SAFETY_VIOLATION",
+          "hash": "0a6f051c87433bbf57aa754578f9ee90"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking SkipListMap]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Integer.class]\nSkipListMap.java:27: error: cannot find symbol\n            update[i] = current.index;\n                               ^\n  symbol:   variable index\n  location: variable current of type Node<K,V>\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\nSkipListMap.java:72: error: cannot find symbol\n            update[i] = current.index;\n                               ^\n  symbol:   variable index\n  location: variable current of type Node<K,V>\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\n[loading /modules/java.base/java/lang/Math.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[total 68ms]\nNote: SkipListMap.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking SkipListSet]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\nSkipListSet.java:12: error: incompatible types: <null> cannot be converted to int\n        this.head = new Node(MAX_LEVEL, null);\n                                        ^\nSkipListSet.java:102: error: incompatible types: <null> cannot be converted to int\n            head = new Node(MAX_LEVEL, null);\n                                       ^\n[loading /modules/java.base/java/lang/Math.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/Thread.class]\n[loading /modules/java.base/jdk/internal/vm/annotation/Contended.class]\n[loading /modules/java.base/java/lang/Runnable.class]\n[total 65ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "binary_search_tree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "linked_list.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentLinkedList.remove(...)` reads without synchronization from `this.head`, which races with the write in method `ConcurrentLinkedList.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentLinkedList.remove(int):boolean",
+          "file": "linked_list.java",
+          "line": 66,
+          "column": -1,
+          "key": "linked_list.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "29d01b891f03eeae9310f64eb1d92d10"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentLinkedList.get(...)` reads without synchronization from `this.head`, which races with the write in method `ConcurrentLinkedList.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentLinkedList.get(int):int",
+          "file": "linked_list.java",
+          "line": 109,
+          "column": -1,
+          "key": "linked_list.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "9a956d02b40a971de0ee86289181ccbe"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.net/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.unsupported/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[total 26ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    }
+  ]
+}

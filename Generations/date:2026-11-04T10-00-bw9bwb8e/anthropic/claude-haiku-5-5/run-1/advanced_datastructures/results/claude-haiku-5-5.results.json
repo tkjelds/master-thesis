@@ -1,0 +1,76 @@
+{
+  "timestamp": "date:2026-11-06T22-20",
+  "model": "claude-haiku-5-5",
+  "files": [
+    {
+      "file": "BTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-haiku-5-5/run-1/advanced_datastructures/HashedLinkedList.java:297: error: as of release 8, 'this' is allowed as the parameter name for the receiver type only\n        return (Node[]) new HashedLinkedList.this.new Node[capacity];\n                                             ^\n  which has to be the first parameter, and cannot be a lambda parameter\nGenerations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-haiku-5-5/run-1/advanced_datastructures/HashedLinkedList.java:297: error: <identifier> expected\n        return (Node[]) new HashedLinkedList.this.new Node[capacity];\n                                                  ^\n2 errors\n"
+    },
+    {
+      "file": "IntervalHeap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

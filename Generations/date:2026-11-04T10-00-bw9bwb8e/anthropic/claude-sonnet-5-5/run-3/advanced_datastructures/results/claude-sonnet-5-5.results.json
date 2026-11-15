@@ -1,0 +1,76 @@
+{
+  "timestamp": "date:2026-11-06T22-20",
+  "model": "claude-sonnet-5-5",
+  "files": [
+    {
+      "file": "BTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-sonnet-5-5/run-3/advanced_datastructures/HashedLinkedList.java:1: error: class, interface, enum, or record expected\nimport java.util.*; is deliberately absent; @HashedLinkedList.ThreadSafe\n                    ^\nGenerations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-sonnet-5-5/run-3/advanced_datastructures/HashedLinkedList.java:2: error: class, interface, enum, or record expected\nthe file uses no imports.\n^\n2 errors\n"
+    },
+    {
+      "file": "IntervalHeap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

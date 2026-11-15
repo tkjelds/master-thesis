@@ -1,0 +1,451 @@
+{
+  "timestamp": "date:2026-11-06T19-06",
+  "model": "claude-sonnet-5-5",
+  "tool": "codeql",
+  "codeql_version": "2.27.1",
+  "database": "/Users/tore/master-thesis/Generations/date:2026-11-04T10-00-bw9bwb8e/anthropic/claude-sonnet-5-5/run-3/datastructures/results/claude-sonnet-5-5.codeql-db",
+  "queries": "/Users/tore/master-thesis/pipeline/analysis/codeql/queries/concurrency.qls",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ArrayQueue.java",
+          "line": 105,
+          "column": 16,
+          "end_line": null,
+          "end_column": 21
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "BoundedConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BoundedConcurrentDeque.java",
+          "line": 42,
+          "column": 16,
+          "end_line": null,
+          "end_column": 21
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentBag](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentBag.java",
+          "line": 24,
+          "column": 20,
+          "end_line": null,
+          "end_column": 25
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBoundedCollection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentCounter](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentCounter.java",
+          "line": 7,
+          "column": 18,
+          "end_line": null,
+          "end_column": 23
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentList.java",
+          "line": 19,
+          "column": 22,
+          "end_line": null,
+          "end_column": 30
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentPriorityQueue](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentPriorityQueue.java",
+          "line": 33,
+          "column": 22,
+          "end_line": null,
+          "end_column": 26
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSkipListSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 17,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 94,
+          "column": 18,
+          "end_line": null,
+          "end_column": 26
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 98,
+          "column": 9,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.\nThis field access (publicly accessible via [this expression](2)) is not protected by any monitor, but the class is annotated as @ThreadSafe.\nThis field access (publicly accessible via [this expression](3)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 110,
+          "column": 24,
+          "end_line": null,
+          "end_column": 36
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 139,
+          "column": 25,
+          "end_line": null,
+          "end_column": 37
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 140,
+          "column": 30,
+          "end_line": null,
+          "end_column": 42
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 143,
+          "column": 17,
+          "end_line": null,
+          "end_column": 29
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 150,
+          "column": 13,
+          "end_line": null,
+          "end_column": 18
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 170,
+          "column": 33,
+          "end_line": null,
+          "end_column": 45
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 175,
+          "column": 20,
+          "end_line": null,
+          "end_column": 32
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 175,
+          "column": 50,
+          "end_line": null,
+          "end_column": 62
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 176,
+          "column": 17,
+          "end_line": null,
+          "end_column": 29
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 178,
+          "column": 13,
+          "end_line": null,
+          "end_column": 18
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 202,
+          "column": 20,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 218,
+          "column": 13,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 219,
+          "column": 13,
+          "end_line": null,
+          "end_column": 18
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentSkipListSet](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 31,
+          "column": 18,
+          "end_line": null,
+          "end_column": 26
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentSkipListSet](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 29,
+          "column": 17,
+          "end_line": null,
+          "end_column": 29
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentStack.java",
+          "line": 115,
+          "column": 16,
+          "end_line": null,
+          "end_column": 24
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [DelayQueue](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "DelayQueue.java",
+          "line": 21,
+          "column": 20,
+          "end_line": null,
+          "end_column": 24
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [SkipListMap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "SkipListMap.java",
+          "line": 36,
+          "column": 18,
+          "end_line": null,
+          "end_column": 22
+        }
+      ],
+      "stderr": ""
+    }
+  ],
+  "unmapped_issues": []
+}

@@ -1,0 +1,190 @@
+{
+  "timestamp": "date:2026-10-22T11-37",
+  "model": "gpt-6-luna",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ArrayQueue.java",
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "analyzed": true,
+      "probability": 0.6977,
+      "error": ""
+    },
+    {
+      "file": "B_Tres.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/B_Tres.java",
+      "prompt_name": "datastructures/b_tres",
+      "problem": "b_tres",
+      "analyzed": true,
+      "probability": 0.6222,
+      "error": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/BinarySearchTree.java",
+      "prompt_name": "datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "analyzed": true,
+      "probability": 0.7791,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentBoundedQueue.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentBoundedQueue.java",
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "analyzed": true,
+      "probability": 0.6973,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentCounter.java",
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "analyzed": true,
+      "probability": 0.8735,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentDeque.java",
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "analyzed": true,
+      "probability": 0.6894,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentLinkedDeque.java",
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "analyzed": true,
+      "probability": 0.7669,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentLinkedList.java",
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "analyzed": true,
+      "probability": 0.7453,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentList.java",
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "analyzed": true,
+      "probability": 0.7529,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentMap.java",
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "analyzed": true,
+      "probability": 0.6833,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentPriorityQueue.java",
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "analyzed": true,
+      "probability": 0.675,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentQueue.java",
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "analyzed": true,
+      "probability": 0.6554,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentSet.java",
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "analyzed": true,
+      "probability": 0.8068,
+      "error": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/ConcurrentStack.java",
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "analyzed": true,
+      "probability": 0.6813,
+      "error": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/DelayQueue.java",
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "analyzed": true,
+      "probability": 0.6898,
+      "error": ""
+    },
+    {
+      "file": "DictionaryBag.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/DictionaryBag.java",
+      "prompt_name": "datastructures/dictionarybag",
+      "problem": "dictionarybag",
+      "analyzed": true,
+      "probability": 0.6455,
+      "error": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/LinkedQueue.java",
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "analyzed": true,
+      "probability": 0.6274,
+      "error": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/SkipListMap.java",
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "analyzed": true,
+      "probability": 0.676,
+      "error": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/SkipListSet.java",
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "analyzed": true,
+      "probability": 0.7038,
+      "error": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "java_file": "copilot-no-tools/gpt-6-luna/datastructures/red_black_tree.java",
+      "prompt_name": "datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "analyzed": true,
+      "probability": 0.6228,
+      "error": ""
+    }
+  ]
+}

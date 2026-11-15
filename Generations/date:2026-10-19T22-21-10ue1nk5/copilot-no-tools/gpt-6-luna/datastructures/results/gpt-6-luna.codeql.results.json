@@ -1,0 +1,347 @@
+{
+  "timestamp": "date:2026-10-19T22-54",
+  "model": "gpt-6-luna",
+  "tool": "codeql",
+  "codeql_version": "2.27.1",
+  "database": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/copilot-no-tools/gpt-6-luna/datastructures/results/gpt-6-luna.codeql-db",
+  "queries": "/Users/tore/master-thesis/pipeline/analysis/codeql/queries/concurrency.qls",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "B_Tres.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBoundedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ConcurrentBoundedQueue.java",
+          "line": 95,
+          "column": 16,
+          "end_line": null,
+          "end_column": 24
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentCounter](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentCounter.java",
+          "line": 6,
+          "column": 18,
+          "end_line": null,
+          "end_column": 23
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentList.java",
+          "line": 6,
+          "column": 22,
+          "end_line": null,
+          "end_column": 30
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentMap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentMap.java",
+          "line": 25,
+          "column": 17,
+          "end_line": null,
+          "end_column": 26
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentMap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentMap.java",
+          "line": 23,
+          "column": 22,
+          "end_line": null,
+          "end_column": 27
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentPriorityQueue](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentPriorityQueue.java",
+          "line": 8,
+          "column": 22,
+          "end_line": null,
+          "end_column": 26
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ConcurrentSet](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ConcurrentSet.java",
+          "line": 6,
+          "column": 22,
+          "end_line": null,
+          "end_column": 30
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [DelayQueue](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "DelayQueue.java",
+          "line": 18,
+          "column": 21,
+          "end_line": null,
+          "end_column": 25
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "DictionaryBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [DictionaryBag](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "DictionaryBag.java",
+          "line": 10,
+          "column": 17,
+          "end_line": null,
+          "end_column": 32
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [DictionaryBag](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "DictionaryBag.java",
+          "line": 9,
+          "column": 29,
+          "end_line": null,
+          "end_column": 36
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [SkipListMap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "SkipListMap.java",
+          "line": 23,
+          "column": 18,
+          "end_line": null,
+          "end_column": 29
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [SkipListMap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "SkipListMap.java",
+          "line": 21,
+          "column": 17,
+          "end_line": null,
+          "end_column": 29
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [SkipListSet](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "SkipListSet.java",
+          "line": 22,
+          "column": 18,
+          "end_line": null,
+          "end_column": 29
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [SkipListSet](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "SkipListSet.java",
+          "line": 20,
+          "column": 17,
+          "end_line": null,
+          "end_column": 29
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [red_black_tree](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "red_black_tree.java",
+          "line": 20,
+          "column": 18,
+          "end_line": null,
+          "end_column": 22
+        }
+      ],
+      "stderr": ""
+    }
+  ],
+  "unmapped_issues": []
+}

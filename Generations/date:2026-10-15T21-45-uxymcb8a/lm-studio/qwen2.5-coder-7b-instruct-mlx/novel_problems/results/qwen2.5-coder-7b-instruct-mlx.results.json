@@ -1,0 +1,76 @@
+{
+  "timestamp": "date:2026-10-16T02-26",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "files": [
+    {
+      "file": "AdaptiveTrustVault.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/AdaptiveTrustVault.java:74: error: cannot assign a value to final variable entries\n            entries = Arrays.copyOf(entries, ttlCount.get());\n            ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/AdaptiveTrustVault.java:74: error: cannot find symbol\n            entries = Arrays.copyOf(entries, ttlCount.get());\n                      ^\n  symbol:   variable Arrays\n  location: class AdaptiveTrustVault\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/AdaptiveTrustVault.java:131: error: non-static variable baseTTL cannot be referenced from a static context\n            this.effectiveTTL = Math.max(1, (long) ((tpValue * baseTTL) / (tpValue + fnValue)));\n                                                               ^\n3 errors\n"
+    },
+    {
+      "file": "HarmonicBufferedStream.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HarmonicBufferedStream.java:88: error: incompatible types: try-with-resources not applicable to variable type\n        try (ChunkSource localSource = source) {\n                         ^\n    (ChunkSource cannot be converted to AutoCloseable)\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HarmonicBufferedStream.java:118: error: cannot assign a value to final variable source\n            source = null;\n            ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HarmonicBufferedStream.java:184: error: Unexpected @FunctionalInterface annotation\n    @FunctionalInterface\n    ^\n  ChunkSource is not a functional interface\n    multiple non-overriding abstract methods found in interface ChunkSource\n3 errors\n"
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java:20: error: incompatible types: Node cannot be converted to HierarchicalScheduler\n        return root.child(name);\n                         ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java:64: error: cannot assign a value to final variable children\n                this.children = newChildren;\n                    ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java:74: error: incompatible types: Entry cannot be converted to Node\n                for (Node child : children) {\n                                  ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java:91: error: incompatible types: Entry cannot be converted to Node\n                for (Node child : children) {\n                                  ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/HierarchicalScheduler.java:104: error: incompatible types: Entry cannot be converted to Node\n                    result[i] = new Entry(children[i].name, children[i]);\n                                                                    ^\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n5 errors\n"
+    },
+    {
+      "file": "Job.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/Job.java:9: error: class, interface, enum, or record expected\nimport java.util.*;\n^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/Job.java:10: error: class, interface, enum, or record expected\nimport java.util.concurrent.atomic.AtomicInteger;\n^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/Job.java:11: error: class, interface, enum, or record expected\nimport java.util.concurrent.atomic.AtomicLong;\n^\n3 errors\n"
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:8: error: cannot find symbol\n    private final Dispenser dispenser;\n                  ^\n  symbol:   class Dispenser\n  location: class ResolvingVendingMachine\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:12: error: cannot find symbol\n    public ResolvingVendingMachine(int[] prices, Dispenser dispenser) {\n                                                 ^\n  symbol:   class Dispenser\n  location: class ResolvingVendingMachine\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:31: error: cannot assign a value to final variable funds\n        funds += amount;\n        ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:84: error: Snapshot is abstract; cannot be instantiated\n        return new Snapshot(availableStock, funds, getTransactionStatuses());\n               ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:110: error: incompatible types: possible lossy conversion from long to int\n        return reservations[transactionId % transactionIdCount][0];\n                                          ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:117: error: cannot assign a value to final variable funds\n                funds -= prices[i] * quantities[i];\n                ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:124: error: incompatible types: possible lossy conversion from long to int\n            reservations[transactionId % transactionIdCount][i] = true;\n                                       ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:131: error: incompatible types: possible lossy conversion from long to int\n                stock[i] -= reservations[transactionId % transactionIdCount][i];\n                                                       ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:131: error: bad operand types for binary operator '-'\n                stock[i] -= reservations[transactionId % transactionIdCount][i];\n                         ^\n  first type:  long\n  second type: boolean\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:132: error: cannot assign a value to final variable funds\n                funds -= prices[i] * reservations[transactionId % transactionIdCount][i];\n                ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:132: error: incompatible types: possible lossy conversion from long to int\n                funds -= prices[i] * reservations[transactionId % transactionIdCount][i];\n                                                                ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:132: error: bad operand types for binary operator '*'\n                funds -= prices[i] * reservations[transactionId % transactionIdCount][i];\n                                   ^\n  first type:  int\n  second type: boolean\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:142: error: incompatible types: possible lossy conversion from long to int\n            stock[i] += reservations[transactionId % transactionIdCount][i];\n                                                   ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:142: error: bad operand types for binary operator '+'\n            stock[i] += reservations[transactionId % transactionIdCount][i];\n                     ^\n  first type:  long\n  second type: boolean\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:143: error: cannot assign a value to final variable funds\n            funds += prices[i] * reservations[transactionId % transactionIdCount][i];\n            ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:143: error: incompatible types: possible lossy conversion from long to int\n            funds += prices[i] * reservations[transactionId % transactionIdCount][i];\n                                                            ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:143: error: bad operand types for binary operator '*'\n            funds += prices[i] * reservations[transactionId % transactionIdCount][i];\n                               ^\n  first type:  int\n  second type: boolean\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/ResolvingVendingMachine.java:146: error: incompatible types: possible lossy conversion from long to int\n            reservations[transactionId % transactionIdCount][i] = false;\n                                       ^\n18 errors\n"
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TaggedCapacityBuffer.java:106: error: cannot find symbol\n        return new Snapshot(snapshotBuffer, occupancy, isClosed());\n                                                       ^\n  symbol:   method isClosed()\n  location: class TaggedCapacityBuffer\n1 error\n"
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.java:34: error: incompatible types: Rate cannot be converted to double\n            rates[index] = new Rate(rates[i], expiration);\n                           ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.java:114: error: non-static variable observationTime cannot be referenced from a static context\n        if (ttl <= 0 || Long.compareUnsigned(ttl, observationTime - clock.now()) < 1) {\n                                                  ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.java:114: error: non-static variable clock cannot be referenced from a static context\n        if (ttl <= 0 || Long.compareUnsigned(ttl, observationTime - clock.now()) < 1) {\n                                                                    ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/TemporalForexCache.java:126: error: cannot find symbol\n        if (rates == null || rates.length != currencies.length) {\n                                             ^\n  symbol:   variable currencies\n  location: class TemporalForexCache\n4 errors\n"
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/UserSpaceProvisioner.java:65: error: incompatible types: String[] cannot be converted to String\n                u.manifest = manifest;\n                             ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/UserSpaceProvisioner.java:84: error: cannot assign a value to final variable configuration\n            u.configuration = Arrays.copyOf(configuration, configuration.length);\n             ^\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/UserSpaceProvisioner.java:100: error: incompatible types: String[] cannot be converted to String\n                u.manifest = manifest;\n                             ^\n3 errors\n"
+    },
+    {
+      "file": "VersionedSlotManager.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

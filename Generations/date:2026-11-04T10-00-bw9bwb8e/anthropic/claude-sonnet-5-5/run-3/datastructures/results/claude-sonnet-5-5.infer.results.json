@@ -1,0 +1,339 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "claude-sonnet-5-5",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BoundedConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBoundedCollection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSkipListSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 14,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentSkipListSet.add(...)` indirectly reads without synchronization from `this.currentLevel`, which races with the write in method `ConcurrentSkipListSet.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.add(java.lang.Comparable):boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 134,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|add|THREAD_SAFETY_VIOLATION",
+          "hash": "0b6d29e663fe2e23896c0f489e823687"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentSkipListSet.add(...)` indirectly writes to field `this.rngState` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.add(java.lang.Comparable):boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 138,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|add|THREAD_SAFETY_VIOLATION",
+          "hash": "1da3d3e09dc984f98f06daf4bf2cf245"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentSkipListSet.add(...)` writes to field `this.count` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.add(java.lang.Comparable):boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 150,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|add|THREAD_SAFETY_VIOLATION",
+          "hash": "56d0e1c31a22b67c7ee3c8eca95c2477"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentSkipListSet.remove(...)` indirectly reads without synchronization from `this.currentLevel`, which races with the write in method `ConcurrentSkipListSet.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.remove(java.lang.Comparable):boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 166,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "2f6634bab5e768851f52a9881ccb3114"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentSkipListSet.remove(...)` reads without synchronization from `this.head.next.[_]`, which races with the write in method `ConcurrentSkipListSet.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.remove(java.lang.Comparable):boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 175,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "8f52d361863bc68bed61ae13f90edcec"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentSkipListSet.remove(...)` writes to field `this.currentLevel` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.remove(java.lang.Comparable):boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 176,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "f0170e38d2a0a5d67ff96d3b30f57f0f"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentSkipListSet.remove(...)` writes to field `this.count` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.remove(java.lang.Comparable):boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 178,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "55e87d963f6ac8db97715f18002a4029"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentSkipListSet.contains(...)` indirectly reads without synchronization from `this.currentLevel`, which races with the write in method `ConcurrentSkipListSet.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.contains(java.lang.Comparable):boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 192,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|contains|THREAD_SAFETY_VIOLATION",
+          "hash": "0a71c326ff4e9003e27d5a3b5909f780"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentSkipListSet.size()` reads without synchronization from `this.count`, which races with the write in method `ConcurrentSkipListSet.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.size():int",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 202,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|size|THREAD_SAFETY_VIOLATION",
+          "hash": "7bb3aa3ea6c0b69c7eeba3db0a169d3b"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentSkipListSet.isEmpty()` indirectly reads without synchronization from `this.count`, which races with the write in method `ConcurrentSkipListSet.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.isEmpty():boolean",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 209,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|isEmpty|THREAD_SAFETY_VIOLATION",
+          "hash": "fcd2901e16c96bbdbff98b4583afd62b"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentSkipListSet.clear()` writes to field `this.head.next.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.clear():void",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 216,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|clear|THREAD_SAFETY_VIOLATION",
+          "hash": "750664ebf57239df0c50a928dcc652a7"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentSkipListSet.clear()` writes to field `this.currentLevel` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.clear():void",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 218,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|clear|THREAD_SAFETY_VIOLATION",
+          "hash": "2c161ca9aeb28de26f440c07a6943d95"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentSkipListSet.clear()` writes to field `this.count` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.clear():void",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 219,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|clear|THREAD_SAFETY_VIOLATION",
+          "hash": "ba1109c6f6af4b9daa5ac28512631ede"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentSkipListSet.first()` reads without synchronization from `this.head.next.[_]`, which races with the write in method `ConcurrentSkipListSet.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentSkipListSet.first():java.lang.Comparable",
+          "file": "ConcurrentSkipListSet.java",
+          "line": 229,
+          "column": -1,
+          "key": "ConcurrentSkipListSet.java|first|THREAD_SAFETY_VIOLATION",
+          "hash": "4b46566db4b4b42993225ad6dc46a8d1"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

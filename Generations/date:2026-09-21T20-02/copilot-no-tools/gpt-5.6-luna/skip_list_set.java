@@ -1,4 +1,7 @@
+@skip_list_set.ThreadSafe
 public final class skip_list_set<E extends Comparable<? super E>> {
+    @interface ThreadSafe {}
+
     private static final int DEFAULT_MAX_LEVEL = 32;
 
  private final int maxLevel;

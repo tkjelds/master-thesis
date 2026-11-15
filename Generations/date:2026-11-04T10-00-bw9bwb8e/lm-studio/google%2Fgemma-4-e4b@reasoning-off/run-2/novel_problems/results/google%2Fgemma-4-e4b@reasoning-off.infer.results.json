@@ -1,0 +1,212 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "google%2Fgemma-4-e4b@reasoning-off",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "BitmaskedTimelineStage.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.jconsole/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[total 25ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ChatSessionStream.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ChatSessionStream]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\n[loading /modules/java.base/java/lang/AbstractStringBuilder.class]\n[loading /modules/java.base/java/lang/Appendable.class]\n[loading /modules/java.base/java/lang/StringBuffer.class]\nChatSessionStream.java:203: error: bad operand types for binary operator '=='\n        if (maxChars <= 0 || maxChars == null) { // Although primitive int, check for logical zero case\n                                      ^\n  first type:  int\n  second type: <null>\n[loading /modules/java.base/java/lang/Math.class]\n[total 73ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "Clock.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "GomokuVersionState.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking GomokuVersionState]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/util/Optional.class]\n[loading /modules/java.base/java/lang/Enum$EnumDesc.class]\n[loading /modules/java.base/java/lang/constant/DynamicConstantDesc.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/CloneNotSupportedException.class]\n[loading /modules/java.base/java/lang/Class.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\n[loading /modules/java.base/java/util/Arrays.class]\nGomokuVersionState.java:68: error: incompatible types: char cannot be converted to MoveStatus\n            this.currentTurn = currentPlayer; // Player whose turn it is next\n                               ^\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\nGomokuVersionState.java:163: error: cannot find symbol\n            if (checkGameEnd()) {\n                ^\n  symbol:   method checkGameEnd()\n  location: class GomokuVersionState\n[total 85ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HarmonicBufferedStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 3,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `HarmonicBufferedStream.readChunk()` reads with synchronization from `this.buffer`, which races with the unsynchronized write in method `HarmonicBufferedStream.readChunk()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "HarmonicBufferedStream.readChunk():byte[]",
+          "file": "HarmonicBufferedStream.java",
+          "line": 100,
+          "column": -1,
+          "key": "HarmonicBufferedStream.java|readChunk|THREAD_SAFETY_VIOLATION",
+          "hash": "7f39dd44ae2ae6e0697898abe2944e4c"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `HarmonicBufferedStream.readChunk()` writes to field `this.buffer` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "HarmonicBufferedStream.readChunk():byte[]",
+          "file": "HarmonicBufferedStream.java",
+          "line": 128,
+          "column": -1,
+          "key": "HarmonicBufferedStream.java|readChunk|THREAD_SAFETY_VIOLATION",
+          "hash": "8327b33e7254f920f9fae6c2324c6968"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `HarmonicBufferedStream.close()` indirectly reads with synchronization from `this.buffer`, which races with the unsynchronized write in method `HarmonicBufferedStream.readChunk()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "HarmonicBufferedStream.close():void",
+          "file": "HarmonicBufferedStream.java",
+          "line": 151,
+          "column": -1,
+          "key": "HarmonicBufferedStream.java|close|THREAD_SAFETY_VIOLATION",
+          "hash": "b4afe320b66035d3a4203726a3a06f4a"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[total 32ms]\n3 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "InventoryTransactionBuffer.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\nInventoryTransactionBuffer.java:170: error: bad operand types for binary operator '<'\n                for (int i = 0; i < required != null ? required.length : 0; i++) {\n                                  ^\n  first type:  int\n  second type: String[]\nInventoryTransactionBuffer.java:170: error: incompatible types: int cannot be converted to boolean\n                for (int i = 0; i < required != null ? required.length : 0; i++) {\n                                                     ^\nInventoryTransactionBuffer.java:174: error: bad operand types for binary operator '<'\n            for (int i = 0; i < forbidden != null ? forbidden.length : 0; i++) {\n                              ^\n  first type:  int\n  second type: String[]\nInventoryTransactionBuffer.java:174: error: incompatible types: int cannot be converted to boolean\n            for (int i = 0; i < forbidden != null ? forbidden.length : 0; i++) {\n                                                  ^\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[total 73ms]\n6 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "LexicalGraphProvider.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.management/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.unsupported/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/java.smartcardio/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[total 26ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "PersistedScheduleContext.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/jdk.management/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/jdk.jconsole/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[total 27ms]\n4 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "RPGCharacter.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.dynalink/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/java.smartcardio/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.net/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[total 32ms]\n73 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[total 27ms]\n4 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[total 27ms]\n4 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "Status.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "Status.java:132: error: class VersionedSlotManager is public, should be declared in a file named VersionedSlotManager.java\npublic class VersionedSlotManager {\n       ^\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Enum.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/Override.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking SlotInterval]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Math.class]\n[checking Slot]\n[checking ReservationResult]\n[loading /modules/java.base/java/util/Optional.class]\n[loading /modules/java.base/java/lang/Enum$EnumDesc.class]\n[loading /modules/java.base/java/lang/constant/DynamicConstantDesc.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/CloneNotSupportedException.class]\n[loading /modules/java.base/java/lang/Class.class]\n[checking CancellationResult]\n[checking Snapshot]\n[checking VersionedSlotManager]\n[total 82ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.dynalink/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/jdk.unsupported/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.net/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[total 30ms]\n68 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/Number.class]\n[loading /modules/java.base/java/lang/Math.class]\nTemporalForexCache.java:112: error: cannot find symbol\n        if (rate <= 0 || Double.isNaN(rate) || Math.isInfinite(rate)) {\n                                                   ^\n  symbol:   method isInfinite(double)\n  location: class Math\nTemporalForexCache.java:121: error: cannot find symbol\n        if (currencies == null || curvatures.length == 0) {\n                                  ^\n  symbol:   variable curvatures\n  location: class TemporalForexCache\n[loading /modules/java.base/java/util/HashSet.class]\n[loading /modules/java.base/java/util/AbstractSet.class]\n[loading /modules/java.base/java/util/AbstractCollection.class]\nTemporalForexCache.java:146: error: cannot find symbol\n            if (rates[i] <= 0 || Double.isNaN(rates[i]) || Math.isInfinite(rates[i])) {\n                                                               ^\n  symbol:   method isInfinite(double)\n  location: class Math\nTemporalForexCache.java:238: error: cannot find symbol\n        if (amount <= 0 || Double.isNaN(amount) || Math.isInfinite(amount)) {\n                                                       ^\n  symbol:   method isInfinite(double)\n  location: class Math\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\n[total 96ms]\n5 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ThermostaticBuildOrchestrator.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.management/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.unsupported/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/java.smartcardio/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[total 28ms]\n3 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ThermostaticCircuitStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "                               ^\n  symbol:   variable uc\n  location: class UserSpaceProvisioner\nUserSpaceProvisioner.java:173: error: cannot find symbol\n            if (uc.currentState == ProvisioningState.INSTALLING) {\n                ^\n  symbol:   variable uc\n  location: class UserSpaceProvisioner\nUserSpaceProvisioner.java:175: error: cannot find symbol\n                uc.currentState = ProvisioningState.FAILED;\n                ^\n  symbol:   variable uc\n  location: class UserSpaceProvisioner\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\nUserSpaceProvisioner.java:181: error: cannot find symbol\n            uc.currentState = ProvisioningState.FAILED;\n            ^\n  symbol:   variable uc\n  location: class UserSpaceProvisioner\nUserSpaceProvisioner.java:184: error: cannot find symbol\n            uc.currentState = ProvisioningState.FAILED;\n            ^\n  symbol:   variable uc\n  location: class UserSpaceProvisioner\nUserSpaceProvisioner.java:187: error: cannot find symbol\n             uc.installationThread = null;\n             ^\n  symbol:   variable uc\n  location: class UserSpaceProvisioner\n[loading /modules/java.base/java/util/Collection.class]\n[loading /modules/java.base/java/lang/Iterable.class]\n[loading /modules/java.base/java/util/Iterator.class]\n[total 98ms]\n14 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "VerifiableMailbox.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "Warehouse.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Enum.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking Warehouse]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/util/Optional.class]\n[loading /modules/java.base/java/lang/Enum$EnumDesc.class]\n[loading /modules/java.base/java/lang/constant/DynamicConstantDesc.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/CloneNotSupportedException.class]\n[loading /modules/java.base/java/lang/Class.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/ArithmeticException.class]\nWarehouse.java:293: error: incompatible types: Warehouse.OrderStatus cannot be converted to Warehouse.SnapshotRecord.OrderStatus\n            return new Object[]{availableCopy, reservedCopy, new SnapshotRecord(this.orderId, bundleCopy, statusCopy)};\n                                                                                                          ^\n[total 83ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    }
+  ]
+}

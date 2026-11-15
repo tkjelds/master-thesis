@@ -1,0 +1,24 @@
+{
+  "generations": [
+    {
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen/qwen3.5-9b",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentMap.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-03T19-43.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "category": "datastructures",
+      "client": "lm-studio",
+      "model": "qwen/qwen3.5-9b",
+      "run": "run-1",
+      "java_file": "../datastructures/SkipListMap.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-03T19-43.json"
+    }
+  ]
+}

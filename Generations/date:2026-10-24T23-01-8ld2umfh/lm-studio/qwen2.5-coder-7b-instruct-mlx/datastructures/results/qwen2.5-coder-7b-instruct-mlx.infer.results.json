@@ -1,0 +1,262 @@
+{
+  "timestamp": "date:2026-10-25T00-00",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 4,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.put(...)` reads without synchronization from `this.level`, which races with the write in method `SkipListMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.put(java.lang.Comparable,java.lang.Object):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 24,
+          "column": -1,
+          "key": "SkipListMap.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "778b738b1c9f69e91008b7c021d3b824"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.get(...)` reads without synchronization from `this.level`, which races with the write in method `SkipListMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.get(java.lang.Comparable):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 56,
+          "column": -1,
+          "key": "SkipListMap.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "ddfc307455f19c52dc11a44340ffb4b2"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.remove(...)` reads without synchronization from `this.level`, which races with the write in method `SkipListMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.remove(java.lang.Comparable):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 69,
+          "column": -1,
+          "key": "SkipListMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "cbcb3904008413cc666ccfef4aa47ff4"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.remove(...)` writes to field `this.level` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.remove(java.lang.Comparable):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 86,
+          "column": -1,
+          "key": "SkipListMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "abe29ee026f58fc7b14214954807293c"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 4,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ThreadSafeConcurrentMap.put(...)` indirectly reads without synchronization from `this.table.[_]`, which races with the write in method `ThreadSafeConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ThreadSafeConcurrentMap.put(java.lang.Object,java.lang.Object):java.lang.Object",
+          "file": "ThreadSafeConcurrentMap.java",
+          "line": 17,
+          "column": -1,
+          "key": "ThreadSafeConcurrentMap.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "1963cf01205fb0e10b534e672e6fc689"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ThreadSafeConcurrentMap.get(...)` indirectly reads without synchronization from `this.table.[_]`, which races with the write in method `ThreadSafeConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ThreadSafeConcurrentMap.get(java.lang.Object):java.lang.Object",
+          "file": "ThreadSafeConcurrentMap.java",
+          "line": 42,
+          "column": -1,
+          "key": "ThreadSafeConcurrentMap.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "8801bd470dd577b59e9f3928e5a4010c"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ThreadSafeConcurrentMap.remove(...)` indirectly reads without synchronization from `this.table.[_]`, which races with the write in method `ThreadSafeConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ThreadSafeConcurrentMap.remove(java.lang.Object):java.lang.Object",
+          "file": "ThreadSafeConcurrentMap.java",
+          "line": 56,
+          "column": -1,
+          "key": "ThreadSafeConcurrentMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "9d08443d433d94dd4bb69bf2e363cc02"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ThreadSafeConcurrentMap.size()` reads without synchronization from `this.size`, which races with the write in method `ThreadSafeConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ThreadSafeConcurrentMap.size():int",
+          "file": "ThreadSafeConcurrentMap.java",
+          "line": 82,
+          "column": -1,
+          "key": "ThreadSafeConcurrentMap.java|size|THREAD_SAFETY_VIOLATION",
+          "hash": "792357e5c0003b60c4490b8ab98f51d1"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "priority_queue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking PriorityQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\npriority_queue.java:37: error: cannot find symbol\n            if (elements[index].compareTo(elements[parent]) <= 0) {\n                               ^\n  symbol:   method compareTo(Object)\n  location: class Object\npriority_queue.java:51: error: cannot find symbol\n            if (right < size && elements[right].compareTo(elements[largest]) > 0) {\n                                               ^\n  symbol:   method compareTo(Object)\n  location: class Object\npriority_queue.java:55: error: cannot find symbol\n            if (elements[index].compareTo(elements[largest]) >= 0) {\n                               ^\n  symbol:   method compareTo(Object)\n  location: class Object\n[total 54ms]\n3 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    }
+  ]
+}

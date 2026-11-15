@@ -1,0 +1,308 @@
+{
+  "timestamp": "date:2026-11-06T20-36",
+  "model": "gpt-6.1-terra",
+  "tool": "sokrates",
+  "analysis_mode": "isolated-source-file",
+  "files": [
+    {
+      "file": "AdaptiveTrustVault.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 249,
+        "unit_count": 8,
+        "unit_size_total_loc": 114,
+        "unit_size_max_loc": 38,
+        "unit_size_mean_loc": 14.25,
+        "conditional_complexity_total": 28,
+        "conditional_complexity_max": 12,
+        "conditional_complexity_mean": 3.5
+      },
+      "error": ""
+    },
+    {
+      "file": "BitmaskedTimelineStage.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 154,
+        "unit_count": 12,
+        "unit_size_total_loc": 113,
+        "unit_size_max_loc": 23,
+        "unit_size_mean_loc": 9.416666666666666,
+        "conditional_complexity_total": 22,
+        "conditional_complexity_max": 4,
+        "conditional_complexity_mean": 1.8333333333333333
+      },
+      "error": ""
+    },
+    {
+      "file": "ChatSessionStream.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 231,
+        "unit_count": 16,
+        "unit_size_total_loc": 191,
+        "unit_size_max_loc": 37,
+        "unit_size_mean_loc": 11.9375,
+        "conditional_complexity_total": 48,
+        "conditional_complexity_max": 7,
+        "conditional_complexity_mean": 3.0
+      },
+      "error": ""
+    },
+    {
+      "file": "GomokuVersionState.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 202,
+        "unit_count": 10,
+        "unit_size_total_loc": 153,
+        "unit_size_max_loc": 39,
+        "unit_size_mean_loc": 15.3,
+        "conditional_complexity_total": 47,
+        "conditional_complexity_max": 15,
+        "conditional_complexity_mean": 4.7
+      },
+      "error": ""
+    },
+    {
+      "file": "HarmonicBufferedStream.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 224,
+        "unit_count": 14,
+        "unit_size_total_loc": 136,
+        "unit_size_max_loc": 40,
+        "unit_size_mean_loc": 9.714285714285714,
+        "conditional_complexity_total": 34,
+        "conditional_complexity_max": 9,
+        "conditional_complexity_mean": 2.4285714285714284
+      },
+      "error": ""
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 224,
+        "unit_count": 13,
+        "unit_size_total_loc": 172,
+        "unit_size_max_loc": 30,
+        "unit_size_mean_loc": 13.23076923076923,
+        "conditional_complexity_total": 42,
+        "conditional_complexity_max": 8,
+        "conditional_complexity_mean": 3.230769230769231
+      },
+      "error": ""
+    },
+    {
+      "file": "InventoryTransactionBuffer.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 190,
+        "unit_count": 11,
+        "unit_size_total_loc": 142,
+        "unit_size_max_loc": 27,
+        "unit_size_mean_loc": 12.909090909090908,
+        "conditional_complexity_total": 38,
+        "conditional_complexity_max": 7,
+        "conditional_complexity_mean": 3.4545454545454546
+      },
+      "error": ""
+    },
+    {
+      "file": "LexicalGraphProvider.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 344,
+        "unit_count": 19,
+        "unit_size_total_loc": 243,
+        "unit_size_max_loc": 61,
+        "unit_size_mean_loc": 12.789473684210526,
+        "conditional_complexity_total": 71,
+        "conditional_complexity_max": 19,
+        "conditional_complexity_mean": 3.736842105263158
+      },
+      "error": ""
+    },
+    {
+      "file": "PersistedScheduleContext.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 187,
+        "unit_count": 9,
+        "unit_size_total_loc": 152,
+        "unit_size_max_loc": 44,
+        "unit_size_mean_loc": 16.88888888888889,
+        "conditional_complexity_total": 33,
+        "conditional_complexity_max": 11,
+        "conditional_complexity_mean": 3.6666666666666665
+      },
+      "error": ""
+    },
+    {
+      "file": "RPGCharacter.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 154,
+        "unit_count": 10,
+        "unit_size_total_loc": 123,
+        "unit_size_max_loc": 27,
+        "unit_size_mean_loc": 12.3,
+        "conditional_complexity_total": 33,
+        "conditional_complexity_max": 10,
+        "conditional_complexity_mean": 3.3
+      },
+      "error": ""
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 226,
+        "unit_count": 10,
+        "unit_size_total_loc": 183,
+        "unit_size_max_loc": 66,
+        "unit_size_mean_loc": 18.3,
+        "conditional_complexity_total": 49,
+        "conditional_complexity_max": 18,
+        "conditional_complexity_mean": 4.9
+      },
+      "error": ""
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 264,
+        "unit_count": 10,
+        "unit_size_total_loc": 235,
+        "unit_size_max_loc": 117,
+        "unit_size_mean_loc": 23.5,
+        "conditional_complexity_total": 55,
+        "conditional_complexity_max": 23,
+        "conditional_complexity_mean": 5.5
+      },
+      "error": ""
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 287,
+        "unit_count": 22,
+        "unit_size_total_loc": 209,
+        "unit_size_max_loc": 32,
+        "unit_size_mean_loc": 9.5,
+        "conditional_complexity_total": 54,
+        "conditional_complexity_max": 9,
+        "conditional_complexity_mean": 2.4545454545454546
+      },
+      "error": ""
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 188,
+        "unit_count": 11,
+        "unit_size_total_loc": 159,
+        "unit_size_max_loc": 56,
+        "unit_size_mean_loc": 14.454545454545455,
+        "conditional_complexity_total": 47,
+        "conditional_complexity_max": 19,
+        "conditional_complexity_mean": 4.2727272727272725
+      },
+      "error": ""
+    },
+    {
+      "file": "ThermostaticBuildOrchestrator.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 226,
+        "unit_count": 19,
+        "unit_size_total_loc": 186,
+        "unit_size_max_loc": 30,
+        "unit_size_mean_loc": 9.789473684210526,
+        "conditional_complexity_total": 46,
+        "conditional_complexity_max": 7,
+        "conditional_complexity_mean": 2.4210526315789473
+      },
+      "error": ""
+    },
+    {
+      "file": "ThermostaticCircuitStream.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 174,
+        "unit_count": 13,
+        "unit_size_total_loc": 120,
+        "unit_size_max_loc": 49,
+        "unit_size_mean_loc": 9.23076923076923,
+        "conditional_complexity_total": 34,
+        "conditional_complexity_max": 15,
+        "conditional_complexity_mean": 2.6153846153846154
+      },
+      "error": ""
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 288,
+        "unit_count": 13,
+        "unit_size_total_loc": 112,
+        "unit_size_max_loc": 19,
+        "unit_size_mean_loc": 8.615384615384615,
+        "conditional_complexity_total": 31,
+        "conditional_complexity_max": 6,
+        "conditional_complexity_mean": 2.3846153846153846
+      },
+      "error": ""
+    },
+    {
+      "file": "VerifiableMailbox.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 253,
+        "unit_count": 15,
+        "unit_size_total_loc": 182,
+        "unit_size_max_loc": 54,
+        "unit_size_mean_loc": 12.133333333333333,
+        "conditional_complexity_total": 48,
+        "conditional_complexity_max": 13,
+        "conditional_complexity_mean": 3.2
+      },
+      "error": ""
+    },
+    {
+      "file": "VersionedSlotManager.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 136,
+        "unit_count": 7,
+        "unit_size_total_loc": 94,
+        "unit_size_max_loc": 33,
+        "unit_size_mean_loc": 13.428571428571429,
+        "conditional_complexity_total": 24,
+        "conditional_complexity_max": 10,
+        "conditional_complexity_mean": 3.4285714285714284
+      },
+      "error": ""
+    },
+    {
+      "file": "Warehouse.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 208,
+        "unit_count": 14,
+        "unit_size_total_loc": 158,
+        "unit_size_max_loc": 43,
+        "unit_size_mean_loc": 11.285714285714286,
+        "conditional_complexity_total": 47,
+        "conditional_complexity_max": 13,
+        "conditional_complexity_mean": 3.357142857142857
+      },
+      "error": ""
+    }
+  ]
+}

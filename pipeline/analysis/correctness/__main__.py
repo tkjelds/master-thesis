@@ -1,0 +1,4 @@
+from pipeline.analysis.correctness.analyzer import main
+
+if __name__ == "__main__":
+    raise SystemExit(main())

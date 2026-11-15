@@ -1,0 +1,241 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "gpt-6.1-terra",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "AdaptiveTrustVault.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BitmaskedTimelineStage.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `BitmaskedTimelineStage$Timeline.report(...)` of un-annotated interface `BitmaskedTimelineStage$Timeline`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "BitmaskedTimelineStage.dispatchNext():boolean",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 155,
+          "column": -1,
+          "key": "BitmaskedTimelineStage.java|dispatchNext|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "958be5dee02958e9d5f17a6486e83cbe"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ChatSessionStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "GomokuVersionState.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HarmonicBufferedStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "InventoryTransactionBuffer.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LexicalGraphProvider.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "PersistedScheduleContext.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `PersistedScheduleContext$ScheduleSink.persist(...)` of un-annotated interface `PersistedScheduleContext$ScheduleSink`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "PersistedScheduleContext.flush():void",
+          "file": "PersistedScheduleContext.java",
+          "line": 173,
+          "column": -1,
+          "key": "PersistedScheduleContext.java|flush|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "dafb9d6da47500027c3c351f4fca46a4"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "RPGCharacter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `ResolvingVendingMachine$Dispenser.dispense(...)` of un-annotated interface `ResolvingVendingMachine$Dispenser`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "ResolvingVendingMachine.purchaseBundle(long,int[]):boolean",
+          "file": "ResolvingVendingMachine.java",
+          "line": 175,
+          "column": -1,
+          "key": "ResolvingVendingMachine.java|purchaseBundle|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "288a18cacf02177685ca4f6b28e1d51b"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThermostaticBuildOrchestrator.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThermostaticCircuitStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `UserSpaceProvisioner$Installer.install(...)` of un-annotated interface `UserSpaceProvisioner$Installer`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "UserSpaceProvisioner.activate(java.lang.String):java.lang.String[]",
+          "file": "UserSpaceProvisioner.java",
+          "line": 127,
+          "column": -1,
+          "key": "UserSpaceProvisioner.java|activate|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "deba5202379767d16ba0e48514ac9d8e"
+        },
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `UserSpaceProvisioner$Installer.install(...)` of un-annotated interface `UserSpaceProvisioner$Installer`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "UserSpaceProvisioner.reinstall(java.lang.String,java.lang.String[]):java.lang.String[]",
+          "file": "UserSpaceProvisioner.java",
+          "line": 151,
+          "column": -1,
+          "key": "UserSpaceProvisioner.java|reinstall|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "569797f62cb186ee42ab2aa7a708351d"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "VerifiableMailbox.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "VersionedSlotManager.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "Warehouse.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

@@ -9,6 +9,18 @@ through `uv`.
 uv sync
 ```
 
+## Run the entire pipeline
+
+Generate prompts and Java programs, preprocess, compile, analyze with CodeQL,
+Infer, and the configured correctness judge, then export visualisation results:
+
+```bash
+uv run python -m pipeline
+```
+
+This runs all clients configured in `pipeline/runner/runner.py`, with the local
+models first.
+
 ## Generate prompts
 
 Generate a timestamped prompt file under `prompts/`:

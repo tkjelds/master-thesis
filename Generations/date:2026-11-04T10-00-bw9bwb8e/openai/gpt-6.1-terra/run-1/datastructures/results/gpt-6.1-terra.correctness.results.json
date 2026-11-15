@@ -1,0 +1,154 @@
+{
+  "timestamp": "date:2026-11-06T21-00",
+  "model": "gpt-6.1-terra",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ArrayQueue.java",
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "analyzed": true,
+      "probability": 0.749,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentBag.java",
+      "prompt_name": "datastructures/bag",
+      "problem": "bag",
+      "analyzed": true,
+      "probability": 0.7669,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentCollection.java",
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "analyzed": true,
+      "probability": 0.7471,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentDeque.java",
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "analyzed": true,
+      "probability": 0.7294,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentDictionary.java",
+      "prompt_name": "datastructures/dictionary",
+      "problem": "dictionary",
+      "analyzed": true,
+      "probability": 0.767,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentLinkedList.java",
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "analyzed": true,
+      "probability": 0.7611,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentList.java",
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "analyzed": true,
+      "probability": 0.8214,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentMap.java",
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "analyzed": true,
+      "probability": 0.7588,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentPriorityQueue.java",
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "analyzed": true,
+      "probability": 0.6811,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentQueue.java",
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "analyzed": true,
+      "probability": 0.7384,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentSet.java",
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "analyzed": true,
+      "probability": 0.7879,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentSkipListSet.java",
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "analyzed": true,
+      "probability": 0.7242,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/ConcurrentStack.java",
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "analyzed": true,
+      "probability": 0.7901,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/Counter.java",
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "analyzed": true,
+      "probability": 0.8879,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/DelayQueue.java",
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "analyzed": true,
+      "probability": 0.7196,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/LinkedDeque.java",
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "analyzed": true,
+      "probability": 0.8009,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/LinkedQueue.java",
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "analyzed": true,
+      "probability": 0.7158,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-1/datastructures/SkipListMap.java",
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "analyzed": true,
+      "probability": 0.7181,
+      "error": ""
+    }
+  ]
+}

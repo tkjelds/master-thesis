@@ -1,4 +1,7 @@
+@LinkedDeque.ThreadSafe
 public final class LinkedDeque<E> {
+    @interface ThreadSafe {}
+
     private static final class Node<E> {
         private E item;
         private Node<E> prev;

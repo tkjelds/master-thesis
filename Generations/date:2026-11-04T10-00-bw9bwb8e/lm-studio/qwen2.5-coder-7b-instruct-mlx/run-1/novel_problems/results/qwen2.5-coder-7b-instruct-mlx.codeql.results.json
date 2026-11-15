@@ -1,0 +1,491 @@
+{
+  "timestamp": "date:2026-11-06T19-06",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "codeql",
+  "codeql_version": "2.27.1",
+  "database": "/Users/tore/master-thesis/Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-1/novel_problems/results/qwen2.5-coder-7b-instruct-mlx.codeql-db",
+  "queries": "/Users/tore/master-thesis/pipeline/analysis/codeql/queries/concurrency.qls",
+  "files": [
+    {
+      "file": "AdaptiveTrustVault.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BitmaskedTimelineStage.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 9,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 83,
+          "column": 27,
+          "end_line": null,
+          "end_column": 32
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 83,
+          "column": 33,
+          "end_line": null,
+          "end_column": 37
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 84,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 84,
+          "column": 21,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 84,
+          "column": 33,
+          "end_line": null,
+          "end_column": 38
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [BitmaskedTimelineStage](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 16,
+          "column": 21,
+          "end_line": null,
+          "end_column": 26
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [BitmaskedTimelineStage](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 14,
+          "column": 20,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [BitmaskedTimelineStage](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 13,
+          "column": 20,
+          "end_line": null,
+          "end_column": 27
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [BitmaskedTimelineStage](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "BitmaskedTimelineStage.java",
+          "line": 12,
+          "column": 17,
+          "end_line": null,
+          "end_column": 21
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ChatSessionStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "ChatSessionStream.java",
+          "line": 90,
+          "column": 40,
+          "end_line": null,
+          "end_column": 47
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "GomokuVersionState.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 3,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [GomokuVersionState](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "GomokuVersionState.java",
+          "line": 13,
+          "column": 18,
+          "end_line": null,
+          "end_column": 24
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [GomokuVersionState](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "GomokuVersionState.java",
+          "line": 11,
+          "column": 18,
+          "end_line": null,
+          "end_column": 31
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [GomokuVersionState](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "GomokuVersionState.java",
+          "line": 10,
+          "column": 22,
+          "end_line": null,
+          "end_column": 27
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "HarmonicBufferedStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HarmonicBufferedStream](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HarmonicBufferedStream.java",
+          "line": 11,
+          "column": 24,
+          "end_line": null,
+          "end_column": 30
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 3,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "HierarchicalScheduler.java",
+          "line": 20,
+          "column": 44,
+          "end_line": null,
+          "end_column": 52
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HierarchicalScheduler](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HierarchicalScheduler.java",
+          "line": 11,
+          "column": 27,
+          "end_line": null,
+          "end_column": 39
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HierarchicalScheduler](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HierarchicalScheduler.java",
+          "line": 10,
+          "column": 37,
+          "end_line": null,
+          "end_column": 45
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "InventoryTransactionBuffer.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [InventoryTransactionBuffer](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "InventoryTransactionBuffer.java",
+          "line": 9,
+          "column": 18,
+          "end_line": null,
+          "end_column": 28
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "LexicalGraphProvider.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "PersistedScheduleContext.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [PersistedScheduleContext](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "PersistedScheduleContext.java",
+          "line": 131,
+          "column": 26,
+          "end_line": null,
+          "end_column": 38
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "RPGCharacter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [ResolvingVendingMachine](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "ResolvingVendingMachine.java",
+          "line": 10,
+          "column": 19,
+          "end_line": null,
+          "end_column": 24
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [SecureMetricAggregator](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "SecureMetricAggregator.java",
+          "line": 12,
+          "column": 21,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [SecureMetricAggregator](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "SecureMetricAggregator.java",
+          "line": 11,
+          "column": 19,
+          "end_line": null,
+          "end_column": 24
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TaggedCapacityBuffer.java",
+          "line": 32,
+          "column": 30,
+          "end_line": null,
+          "end_column": 36
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.\nThis field access (publicly accessible via [this expression](2)) is not protected by any monitor, but the class is annotated as @ThreadSafe.\nThis field access (publicly accessible via [this expression](3)) is not protected by any monitor, but the class is annotated as @ThreadSafe.\nThis field access (publicly accessible via [this expression](4)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TaggedCapacityBuffer.java",
+          "line": 209,
+          "column": 16,
+          "end_line": null,
+          "end_column": 22
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [TemporalForexCache](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "TemporalForexCache.java",
+          "line": 8,
+          "column": 18,
+          "end_line": null,
+          "end_column": 33
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ThermostaticBuildOrchestrator.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThermostaticCircuitStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "VerifiableMailbox.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 3,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [VerifiableMailbox](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "VerifiableMailbox.java",
+          "line": 9,
+          "column": 22,
+          "end_line": null,
+          "end_column": 36
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [VerifiableMailbox](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "VerifiableMailbox.java",
+          "line": 8,
+          "column": 22,
+          "end_line": null,
+          "end_column": 38
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [VerifiableMailbox](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "VerifiableMailbox.java",
+          "line": 6,
+          "column": 20,
+          "end_line": null,
+          "end_column": 27
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "VersionedSlotManager.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "Warehouse.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ],
+  "unmapped_issues": []
+}

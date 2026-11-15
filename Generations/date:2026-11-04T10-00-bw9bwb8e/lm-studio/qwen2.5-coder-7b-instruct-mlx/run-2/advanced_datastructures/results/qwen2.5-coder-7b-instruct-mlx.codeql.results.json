@@ -1,0 +1,550 @@
+{
+  "timestamp": "date:2026-11-06T19-06",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "codeql",
+  "codeql_version": "2.27.1",
+  "database": "/Users/tore/master-thesis/Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/advanced_datastructures/results/qwen2.5-coder-7b-instruct-mlx.codeql-db",
+  "queries": "/Users/tore/master-thesis/pipeline/analysis/codeql/queries/concurrency.qls",
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 3,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [BTree](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "BTree.java",
+          "line": 8,
+          "column": 17,
+          "end_line": null,
+          "end_column": 30
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [BTree](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "BTree.java",
+          "line": 7,
+          "column": 22,
+          "end_line": null,
+          "end_column": 27
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [BTree](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "BTree.java",
+          "line": 6,
+          "column": 21,
+          "end_line": null,
+          "end_column": 25
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [BinarySearchTree](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "BinarySearchTree.java",
+          "line": 13,
+          "column": 22,
+          "end_line": null,
+          "end_column": 27
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedArrayList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedArrayList.java",
+          "line": 7,
+          "column": 22,
+          "end_line": null,
+          "end_column": 31
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedArrayList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedArrayList.java",
+          "line": 6,
+          "column": 22,
+          "end_line": null,
+          "end_column": 27
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [HashedLinkedList](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "HashedLinkedList.java",
+          "line": 6,
+          "column": 23,
+          "end_line": null,
+          "end_column": 30
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 4,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [IntervalHeap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "IntervalHeap.java",
+          "line": 16,
+          "column": 22,
+          "end_line": null,
+          "end_column": 27
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [IntervalHeap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "IntervalHeap.java",
+          "line": 14,
+          "column": 25,
+          "end_line": null,
+          "end_column": 32
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [IntervalHeap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "IntervalHeap.java",
+          "line": 13,
+          "column": 22,
+          "end_line": null,
+          "end_column": 30
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [IntervalHeap](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "IntervalHeap.java",
+          "line": 12,
+          "column": 22,
+          "end_line": null,
+          "end_column": 29
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [TreeBag](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "TreeBag.java",
+          "line": 49,
+          "column": 22,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [TreeBag](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "TreeBag.java",
+          "line": 50,
+          "column": 22,
+          "end_line": null,
+          "end_column": 30
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 15,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.\nThis field access (publicly accessible via [this expression](2)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 99,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.\nThis field access (publicly accessible via [this expression](2)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 117,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 163,
+          "column": 9,
+          "end_line": null,
+          "end_column": 13
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 170,
+          "column": 24,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 188,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 206,
+          "column": 24,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 221,
+          "column": 24,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 244,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 265,
+          "column": 21,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 290,
+          "column": 25,
+          "end_line": null,
+          "end_column": 29
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 316,
+          "column": 25,
+          "end_line": null,
+          "end_column": 29
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 344,
+          "column": 24,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 364,
+          "column": 30,
+          "end_line": null,
+          "end_column": 34
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 384,
+          "column": 24,
+          "end_line": null,
+          "end_column": 28
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "TreeDictionary.java",
+          "line": 405,
+          "column": 25,
+          "end_line": null,
+          "end_column": 29
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 13,
+      "issues": [
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 125,
+          "column": 9,
+          "end_line": null,
+          "end_column": 13
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 125,
+          "column": 20,
+          "end_line": null,
+          "end_column": 24
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 126,
+          "column": 9,
+          "end_line": null,
+          "end_column": 13
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 132,
+          "column": 9,
+          "end_line": null,
+          "end_column": 13
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 132,
+          "column": 23,
+          "end_line": null,
+          "end_column": 27
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 138,
+          "column": 21,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 149,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 150,
+          "column": 20,
+          "end_line": null,
+          "end_column": 24
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 155,
+          "column": 21,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 154,
+          "column": 13,
+          "end_line": null,
+          "end_column": 17
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 161,
+          "column": 21,
+          "end_line": null,
+          "end_column": 25
+        },
+        {
+          "rule_id": "java/not-threadsafe",
+          "rule_name": "Not thread-safe",
+          "severity": "warning",
+          "message": "This field access (publicly accessible via [this expression](1)) is not protected by any monitor, but the class is annotated as @ThreadSafe.",
+          "file": "red_black_tree.java",
+          "line": 170,
+          "column": 25,
+          "end_line": null,
+          "end_column": 29
+        },
+        {
+          "rule_id": "java/safe-publication",
+          "rule_name": "Safe publication",
+          "severity": "warning",
+          "message": "The class [RedBlackTree](1) is marked as thread-safe, but this field is not safely published.",
+          "file": "red_black_tree.java",
+          "line": 15,
+          "column": 22,
+          "end_line": null,
+          "end_column": 27
+        }
+      ],
+      "stderr": ""
+    }
+  ],
+  "unmapped_issues": []
+}

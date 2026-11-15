@@ -1,0 +1,170 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "Bag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "    V extends Object declared in class ConcurrentDictionary\nConcurrentDictionary.java:34: error: cannot find symbol\n            HashMap<K, V> map = (HashMap<K, V>) buckets[index];\n            ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\nConcurrentDictionary.java:34: error: cannot find symbol\n            HashMap<K, V> map = (HashMap<K, V>) buckets[index];\n                                 ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\nConcurrentDictionary.java:48: error: cannot find symbol\n            HashMap<K, V> map = (HashMap<K, V>) buckets[index];\n            ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\nConcurrentDictionary.java:48: error: cannot find symbol\n            HashMap<K, V> map = (HashMap<K, V>) buckets[index];\n                                 ^\n  symbol:   class HashMap\n  location: class ConcurrentDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class ConcurrentDictionary\n    V extends Object declared in class ConcurrentDictionary\n[loading /modules/java.base/java/lang/Math.class]\n[total 61ms]\n5 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.isEmpty()` reads without synchronization from `this.size`, which races with the write in method `LinkedDeque.removeFirst()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.isEmpty():boolean",
+          "file": "LinkedDeque.java",
+          "line": 72,
+          "column": -1,
+          "key": "LinkedDeque.java|isEmpty|THREAD_SAFETY_VIOLATION",
+          "hash": "2e888547acdc6c8ce5bdb8d1e4805cbf"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "PriorityBlockingQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "                   ^\n  symbol:   variable level\n  location: variable newNode of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\nSkipListMap.java:46: error: cannot find symbol\n            for (int i = currentLevel; i < newNode.level; i++) {\n                                                  ^\n  symbol:   variable level\n  location: variable newNode of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\nSkipListMap.java:49: error: cannot find symbol\n            currentLevel = newNode.level;\n                                  ^\n  symbol:   variable level\n  location: variable newNode of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\nSkipListMap.java:71: error: generic array creation\n        Node[] update = new Node[MAX_LEVEL];\n                        ^\nSkipListMap.java:83: error: cannot find symbol\n            for (int i = 0; i < nodeToRemove.level; i++) {\n                                            ^\n  symbol:   variable level\n  location: variable nodeToRemove of type SkipListMap<K,V>.Node\n  where K,V are type-variables:\n    K extends Comparable<K> declared in class SkipListMap\n    V extends Object declared in class SkipListMap\n[loading /modules/java.base/java/lang/Math.class]\n[total 62ms]\n8 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "deque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "linked_list.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "linked_queue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_set.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking SkipListSet]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Integer.class]\nskip_list_set.java:25: error: cannot find symbol\n            for (int i = 0; i < newNode.level; i++) {\n                                       ^\n  symbol:   variable level\n  location: variable newNode of type Node\nskip_list_set.java:48: error: cannot find symbol\n                for (int i = 0; i < nodeToRemove.level; i++) {\n                                                ^\n  symbol:   variable level\n  location: variable nodeToRemove of type Node\n[loading /modules/java.base/java/lang/Math.class]\n[total 60ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    }
+  ]
+}

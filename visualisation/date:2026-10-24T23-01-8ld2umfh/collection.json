@@ -1,0 +1,46 @@
+{
+  "copilot-no-tools": {
+    "gpt-6-luna": {
+      "advanced_datastructures": {
+        "compilation": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/advanced_datastructures/results/gpt-6-luna.results.json",
+        "codeql": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/advanced_datastructures/results/gpt-6-luna.codeql.results.json",
+        "infer": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/advanced_datastructures/results/gpt-6-luna.infer.results.json",
+        "correctness": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/advanced_datastructures/results/gpt-6-luna.correctness.results.json"
+      },
+      "datastructures": {
+        "compilation": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/results/gpt-6-luna.results.json",
+        "codeql": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/results/gpt-6-luna.codeql.results.json",
+        "infer": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/results/gpt-6-luna.infer.results.json",
+        "correctness": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/results/gpt-6-luna.correctness.results.json"
+      },
+      "novel_problems": {
+        "compilation": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/novel_problems/results/gpt-6-luna.results.json",
+        "codeql": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/novel_problems/results/gpt-6-luna.codeql.results.json",
+        "infer": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/novel_problems/results/gpt-6-luna.infer.results.json",
+        "correctness": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/novel_problems/results/gpt-6-luna.correctness.results.json"
+      }
+    }
+  },
+  "lm-studio": {
+    "qwen2.5-coder-7b-instruct-mlx": {
+      "advanced_datastructures": {
+        "compilation": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/results/qwen2.5-coder-7b-instruct-mlx.results.json",
+        "codeql": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/results/qwen2.5-coder-7b-instruct-mlx.codeql.results.json",
+        "infer": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/results/qwen2.5-coder-7b-instruct-mlx.infer.results.json",
+        "correctness": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/results/qwen2.5-coder-7b-instruct-mlx.correctness.results.json"
+      },
+      "datastructures": {
+        "compilation": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/results/qwen2.5-coder-7b-instruct-mlx.results.json",
+        "codeql": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/results/qwen2.5-coder-7b-instruct-mlx.codeql.results.json",
+        "infer": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/results/qwen2.5-coder-7b-instruct-mlx.infer.results.json",
+        "correctness": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/results/qwen2.5-coder-7b-instruct-mlx.correctness.results.json"
+      },
+      "novel_problems": {
+        "compilation": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/results/qwen2.5-coder-7b-instruct-mlx.results.json",
+        "codeql": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/results/qwen2.5-coder-7b-instruct-mlx.codeql.results.json",
+        "infer": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/results/qwen2.5-coder-7b-instruct-mlx.infer.results.json",
+        "correctness": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/novel_problems/results/qwen2.5-coder-7b-instruct-mlx.correctness.results.json"
+      }
+    }
+  }
+}

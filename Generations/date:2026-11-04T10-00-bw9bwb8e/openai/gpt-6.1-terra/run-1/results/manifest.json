@@ -1,0 +1,484 @@
+{
+  "generations": [
+    {
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentMap.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/SkipListMap.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentSkipListSet.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentSet.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentList.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentQueue.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentDeque.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/LinkedQueue.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/LinkedDeque.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ArrayQueue.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentPriorityQueue.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/DelayQueue.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentStack.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentCollection.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/dictionary",
+      "problem": "dictionary",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentDictionary.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/bag",
+      "problem": "bag",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentBag.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/Counter.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "category": "datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../datastructures/ConcurrentLinkedList.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/HierarchicalScheduler",
+      "problem": "HierarchicalScheduler",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/HierarchicalScheduler.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/ThermostaticBuildOrchestrator",
+      "problem": "ThermostaticBuildOrchestrator",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/ThermostaticBuildOrchestrator.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/ResolvingVendingMachine",
+      "problem": "ResolvingVendingMachine",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/ResolvingVendingMachine.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/HarmonicBufferedStream",
+      "problem": "HarmonicBufferedStream",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/HarmonicBufferedStream.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/UserSpaceProvisioner",
+      "problem": "UserSpaceProvisioner",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/UserSpaceProvisioner.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/VersionedSlotManager",
+      "problem": "VersionedSlotManager",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/VersionedSlotManager.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/TaggedCapacityBuffer",
+      "problem": "TaggedCapacityBuffer",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/TaggedCapacityBuffer.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/AdaptiveTrustVault",
+      "problem": "AdaptiveTrustVault",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/AdaptiveTrustVault.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/SecureMetricAggregator",
+      "problem": "SecureMetricAggregator",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/SecureMetricAggregator.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/TemporalForexCache",
+      "problem": "TemporalForexCache",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/TemporalForexCache.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/BitmaskedTimelineStage",
+      "problem": "BitmaskedTimelineStage",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/BitmaskedTimelineStage.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/InventoryTransactionBuffer",
+      "problem": "InventoryTransactionBuffer",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/InventoryTransactionBuffer.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/ChatSessionStream",
+      "problem": "ChatSessionStream",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/ChatSessionStream.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/GomokuVersionState",
+      "problem": "GomokuVersionState",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/GomokuVersionState.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/ThermostaticCircuitStream",
+      "problem": "ThermostaticCircuitStream",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/ThermostaticCircuitStream.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/VerifiableMailbox",
+      "problem": "VerifiableMailbox",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/VerifiableMailbox.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/PersistedScheduleContext",
+      "problem": "PersistedScheduleContext",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/PersistedScheduleContext.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/LexicalGraphProvider",
+      "problem": "LexicalGraphProvider",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/LexicalGraphProvider.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/Warehouse",
+      "problem": "Warehouse",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/Warehouse.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "novel_problems/RPGCharacter",
+      "problem": "RPGCharacter",
+      "category": "novel_problems",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../novel_problems/RPGCharacter.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/MysteriousHashMap",
+      "problem": "MysteriousHashMap",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/MysteriousHashMap.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/TreeSet",
+      "problem": "TreeSet",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/TreeSet.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/TreeBag",
+      "problem": "TreeBag",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/TreeBag.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/TreeDictionary",
+      "problem": "TreeDictionary",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/TreeDictionary.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/IntervalHeap",
+      "problem": "IntervalHeap",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/IntervalHeap.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/HashedArrayList",
+      "problem": "HashedArrayList",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/HashedArrayList.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/BinarySearchTree.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/RedBlackTree.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/b_tree",
+      "problem": "b_tree",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/BTree.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    },
+    {
+      "prompt_name": "advanced_datastructures/HashedLinkedList",
+      "problem": "HashedLinkedList",
+      "category": "advanced_datastructures",
+      "client": "openai",
+      "model": "gpt-6.1-terra",
+      "run": "run-1",
+      "java_file": "../advanced_datastructures/HashedLinkedList.java",
+      "prompt_file": "../../../../../../prompts/date:2026-11-04T10-00.json"
+    }
+  ]
+}

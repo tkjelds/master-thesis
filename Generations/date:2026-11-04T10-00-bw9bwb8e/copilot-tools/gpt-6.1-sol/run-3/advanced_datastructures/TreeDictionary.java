@@ -1,0 +1,353 @@
+@TreeDictionary.ThreadSafe
+public final class TreeDictionary<K, V> {
+    @interface ThreadSafe {}
+
+    public interface Order<K> {
+        int compare(K left, K right);
+    }
+
+    public static final class Entry<K, V> {
+        private final K key;
+        private final V value;
+
+        private Entry(K key, V value) {
+            this.key = key;
+            this.value = value;
+        }
+
+        public K key() {
+            return key;
+        }
+
+        public V value() {
+            return value;
+        }
+    }
+
+    public static final class Snapshot<K, V> {
+        private final Node<K, V> root;
+        private final Order<K> order;
+        private final Object monitor;
+
+        private Snapshot(Node<K, V> root, Order<K> order, Object monitor) {
+            this.root = root;
+            this.order = order;
+            this.monitor = monitor;
+        }
+
+        public int size() {
+            return count(root);
+        }
+
+        public V get(K key) {
+            requireNonNull(key);
+            // Serialize calls to the supplied order, including snapshot searches.
+            synchronized (monitor) {
+                Node<K, V> node = find(root, key, order);
+                return node == null ? null : node.value;
+            }
+        }
+
+        public Entry<K, V> entryAt(int index) {
+            return select(root, index);
+        }
+    }
+
+    private static final class Node<K, V> {
+        final K key;
+        final V value;
+        final Node<K, V> left;
+        final Node<K, V> right;
+        final boolean red;
+        final int count;
+
+        Node(K key, V value, Node<K, V> left, Node<K, V> right,
+             boolean red) {
+            this.key = key;
+            this.value = value;
+            this.left = left;
+            this.right = right;
+            this.red = red;
+            this.count = 1 + count(left) + count(right);
+        }
+    }
+
+    private final Object monitor = new Object();
+    private final Order<K> order;
+    private Node<K, V> root;
+
+    public TreeDictionary(Order<K> order) {
+        requireNonNull(order);
+        this.order = order;
+    }
+
+    // Operations never wait for contents or capacity; only monitor acquisition
+    // may block. Immutable nodes let every snapshot retain its historical root.
+    public V put(K key, V value) {
+        requireNonNull(key);
+        requireNonNull(value);
+        synchronized (monitor) {
+            Node<K, V> previous = find(root, key, order);
+            if (previous == null && count(root) == 0x7fffffff) {
+                throw new IllegalStateException("Maximum mapping count reached");
+            }
+            Node<K, V> updated = insert(root, key, value);
+            root = recolor(updated, false);
+            return previous == null ? null : previous.value;
+        }
+    }
+
+    public V get(K key) {
+        requireNonNull(key);
+        synchronized (monitor) {
+            Node<K, V> node = find(root, key, order);
+            return node == null ? null : node.value;
+        }
+    }
+
+    public V remove(K key) {
+        requireNonNull(key);
+        synchronized (monitor) {
+            Node<K, V> previous = find(root, key, order);
+            if (previous == null) {
+                return null;
+            }
+            Node<K, V> updated = root;
+            if (!isRed(updated.left) && !isRed(updated.right)) {
+                updated = recolor(updated, true);
+            }
+            updated = delete(updated, key);
+            root = updated == null ? null : recolor(updated, false);
+            return previous.value;
+        }
+    }
+
+    public boolean containsKey(K key) {
+        requireNonNull(key);
+        synchronized (monitor) {
+            return find(root, key, order) != null;
+        }
+    }
+
+    public int size() {
+        synchronized (monitor) {
+            return count(root);
+        }
+    }
+
+    public Entry<K, V> entryAt(int index) {
+        synchronized (monitor) {
+            return select(root, index);
+        }
+    }
+
+    public int rank(K key) {
+        requireNonNull(key);
+        synchronized (monitor) {
+            int result = 0;
+            Node<K, V> node = root;
+            while (node != null) {
+                int comparison = order.compare(key, node.key);
+                if (comparison < 0) {
+                    node = node.left;
+                } else if (comparison > 0) {
+                    result += count(node.left) + 1;
+                    node = node.right;
+                } else {
+                    return result + count(node.left);
+                }
+            }
+            return result;
+        }
+    }
+
+    public Snapshot<K, V> snapshot() {
+        synchronized (monitor) {
+            return new Snapshot<K, V>(root, order, monitor);
+        }
+    }
+
+    private static void requireNonNull(Object value) {
+        if (value == null) {
+            throw new NullPointerException();
+        }
+    }
+
+    private static <K, V> int count(Node<K, V> node) {
+        return node == null ? 0 : node.count;
+    }
+
+    private static <K, V> boolean isRed(Node<K, V> node) {
+        return node != null && node.red;
+    }
+
+    private static <K, V> Node<K, V> find(
+            Node<K, V> node, K key, Order<K> order) {
+        while (node != null) {
+            int comparison = order.compare(key, node.key);
+            if (comparison < 0) {
+                node = node.left;
+            } else if (comparison > 0) {
+                node = node.right;
+            } else {
+                return node;
+            }
+        }
+        return null;
+    }
+
+    private static <K, V> Entry<K, V> select(Node<K, V> node, int index) {
+        if (index < 0 || index >= count(node)) {
+            throw new IndexOutOfBoundsException("Index: " + index);
+        }
+        while (node != null) {
+            int leftCount = count(node.left);
+            if (index < leftCount) {
+                node = node.left;
+            } else if (index > leftCount) {
+                index -= leftCount + 1;
+                node = node.right;
+            } else {
+                return new Entry<K, V>(node.key, node.value);
+            }
+        }
+        throw new AssertionError("Inconsistent subtree counts");
+    }
+
+    private static <K, V> Node<K, V> recolor(Node<K, V> node, boolean red) {
+        if (node.red == red) {
+            return node;
+        }
+        return new Node<K, V>(node.key, node.value, node.left, node.right, red);
+    }
+
+    private static <K, V> Node<K, V> withLeft(
+            Node<K, V> node, Node<K, V> left) {
+        return new Node<K, V>(node.key, node.value, left, node.right, node.red);
+    }
+
+    private static <K, V> Node<K, V> withRight(
+            Node<K, V> node, Node<K, V> right) {
+        return new Node<K, V>(node.key, node.value, node.left, right, node.red);
+    }
+
+    private static <K, V> Node<K, V> rotateLeft(Node<K, V> node) {
+        Node<K, V> pivot = node.right;
+        Node<K, V> left = new Node<K, V>(
+                node.key, node.value, node.left, pivot.left, true);
+        return new Node<K, V>(
+                pivot.key, pivot.value, left, pivot.right, node.red);
+    }
+
+    private static <K, V> Node<K, V> rotateRight(Node<K, V> node) {
+        Node<K, V> pivot = node.left;
+        Node<K, V> right = new Node<K, V>(
+                node.key, node.value, pivot.right, node.right, true);
+        return new Node<K, V>(
+                pivot.key, pivot.value, pivot.left, right, node.red);
+    }
+
+    private static <K, V> Node<K, V> flipColors(Node<K, V> node) {
+        return new Node<K, V>(node.key, node.value,
+                recolor(node.left, !node.left.red),
+                recolor(node.right, !node.right.red), !node.red);
+    }
+
+    private Node<K, V> insert(Node<K, V> node, K key, V value) {
+        if (node == null) {
+            return new Node<K, V>(key, value, null, null, true);
+        }
+        int comparison = order.compare(key, node.key);
+        if (comparison < 0) {
+            node = withLeft(node, insert(node.left, key, value));
+        } else if (comparison > 0) {
+            node = withRight(node, insert(node.right, key, value));
+        } else {
+            node = new Node<K, V>(
+                    node.key, value, node.left, node.right, node.red);
+        }
+        if (isRed(node.right) && !isRed(node.left)) {
+            node = rotateLeft(node);
+        }
+        if (isRed(node.left) && isRed(node.left.left)) {
+            node = rotateRight(node);
+        }
+        if (isRed(node.left) && isRed(node.right)) {
+            node = flipColors(node);
+        }
+        return node;
+    }
+
+    private static <K, V> Node<K, V> moveRedLeft(Node<K, V> node) {
+        node = flipColors(node);
+        if (isRed(node.right.left)) {
+            node = withRight(node, rotateRight(node.right));
+            node = rotateLeft(node);
+            node = flipColors(node);
+        }
+        return node;
+    }
+
+    private static <K, V> Node<K, V> moveRedRight(Node<K, V> node) {
+        node = flipColors(node);
+        if (isRed(node.left.left)) {
+            node = rotateRight(node);
+            node = flipColors(node);
+        }
+        return node;
+    }
+
+    private static <K, V> Node<K, V> balance(Node<K, V> node) {
+        if (isRed(node.right)) {
+            node = rotateLeft(node);
+        }
+        if (isRed(node.left) && isRed(node.left.left)) {
+            node = rotateRight(node);
+        }
+        if (isRed(node.left) && isRed(node.right)) {
+            node = flipColors(node);
+        }
+        return node;
+    }
+
+    private Node<K, V> delete(Node<K, V> node, K key) {
+        if (order.compare(key, node.key) < 0) {
+            if (!isRed(node.left) && !isRed(node.left.left)) {
+                node = moveRedLeft(node);
+            }
+            node = withLeft(node, delete(node.left, key));
+        } else {
+            if (isRed(node.left)) {
+                node = rotateRight(node);
+            }
+            if (order.compare(key, node.key) == 0 && node.right == null) {
+                return null;
+            }
+            if (!isRed(node.right) && !isRed(node.right.left)) {
+                node = moveRedRight(node);
+            }
+            if (order.compare(key, node.key) == 0) {
+                Node<K, V> successor = node.right;
+                while (successor.left != null) {
+                    successor = successor.left;
+                }
+                node = new Node<K, V>(
+                        successor.key, successor.value, node.left,
+                        deleteMin(node.right), node.red);
+            } else {
+                node = withRight(node, delete(node.right, key));
+            }
+        }
+        return balance(node);
+    }
+
+    private static <K, V> Node<K, V> deleteMin(Node<K, V> node) {
+        if (node.left == null) {
+            return null;
+        }
+        if (!isRed(node.left) && !isRed(node.left.left)) {
+            node = moveRedLeft(node);
+        }
+        return balance(withLeft(node, deleteMin(node.left)));
+    }
+}

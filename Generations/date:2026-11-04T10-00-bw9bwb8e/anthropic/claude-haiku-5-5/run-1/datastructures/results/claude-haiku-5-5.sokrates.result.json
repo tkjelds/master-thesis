@@ -1,0 +1,278 @@
+{
+  "timestamp": "date:2026-11-06T20-36",
+  "model": "claude-haiku-5-5",
+  "tool": "sokrates",
+  "analysis_mode": "isolated-source-file",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 116,
+        "unit_count": 14,
+        "unit_size_total_loc": 106,
+        "unit_size_max_loc": 13,
+        "unit_size_mean_loc": 7.571428571428571,
+        "conditional_complexity_total": 23,
+        "conditional_complexity_max": 3,
+        "conditional_complexity_mean": 1.6428571428571428
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentBag.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 120,
+        "unit_count": 12,
+        "unit_size_total_loc": 112,
+        "unit_size_max_loc": 14,
+        "unit_size_mean_loc": 9.333333333333334,
+        "conditional_complexity_total": 26,
+        "conditional_complexity_max": 4,
+        "conditional_complexity_mean": 2.1666666666666665
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentBoundedCollection.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 178,
+        "unit_count": 16,
+        "unit_size_total_loc": 154,
+        "unit_size_max_loc": 21,
+        "unit_size_mean_loc": 9.625,
+        "conditional_complexity_total": 35,
+        "conditional_complexity_max": 5,
+        "conditional_complexity_mean": 2.1875
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentBoundedCounter.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 68,
+        "unit_count": 8,
+        "unit_size_total_loc": 60,
+        "unit_size_max_loc": 11,
+        "unit_size_mean_loc": 7.5,
+        "conditional_complexity_total": 14,
+        "conditional_complexity_max": 3,
+        "conditional_complexity_mean": 1.75
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentBoundedDeque.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 167,
+        "unit_count": 18,
+        "unit_size_total_loc": 153,
+        "unit_size_max_loc": 13,
+        "unit_size_mean_loc": 8.5,
+        "conditional_complexity_total": 33,
+        "conditional_complexity_max": 3,
+        "conditional_complexity_mean": 1.8333333333333333
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentBoundedMap.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 180,
+        "unit_count": 16,
+        "unit_size_total_loc": 158,
+        "unit_size_max_loc": 23,
+        "unit_size_mean_loc": 9.875,
+        "conditional_complexity_total": 37,
+        "conditional_complexity_max": 4,
+        "conditional_complexity_mean": 2.3125
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentBoundedQueue.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 108,
+        "unit_count": 12,
+        "unit_size_total_loc": 96,
+        "unit_size_max_loc": 15,
+        "unit_size_mean_loc": 8.0,
+        "conditional_complexity_total": 25,
+        "conditional_complexity_max": 5,
+        "conditional_complexity_mean": 2.0833333333333335
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentBoundedStack.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 94,
+        "unit_count": 10,
+        "unit_size_total_loc": 84,
+        "unit_size_max_loc": 14,
+        "unit_size_mean_loc": 8.4,
+        "conditional_complexity_total": 18,
+        "conditional_complexity_max": 3,
+        "conditional_complexity_mean": 1.8
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentDelayQueue.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 152,
+        "unit_count": 14,
+        "unit_size_total_loc": 138,
+        "unit_size_max_loc": 25,
+        "unit_size_mean_loc": 9.857142857142858,
+        "conditional_complexity_total": 34,
+        "conditional_complexity_max": 6,
+        "conditional_complexity_mean": 2.4285714285714284
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 166,
+        "unit_count": 14,
+        "unit_size_total_loc": 145,
+        "unit_size_max_loc": 26,
+        "unit_size_mean_loc": 10.357142857142858,
+        "conditional_complexity_total": 37,
+        "conditional_complexity_max": 6,
+        "conditional_complexity_mean": 2.642857142857143
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 227,
+        "unit_count": 22,
+        "unit_size_total_loc": 211,
+        "unit_size_max_loc": 26,
+        "unit_size_mean_loc": 9.590909090909092,
+        "conditional_complexity_total": 45,
+        "conditional_complexity_max": 5,
+        "conditional_complexity_mean": 2.0454545454545454
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 139,
+        "unit_count": 16,
+        "unit_size_total_loc": 131,
+        "unit_size_max_loc": 13,
+        "unit_size_mean_loc": 8.1875,
+        "conditional_complexity_total": 30,
+        "conditional_complexity_max": 4,
+        "conditional_complexity_mean": 1.875
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 173,
+        "unit_count": 20,
+        "unit_size_total_loc": 159,
+        "unit_size_max_loc": 17,
+        "unit_size_mean_loc": 7.95,
+        "conditional_complexity_total": 39,
+        "conditional_complexity_max": 5,
+        "conditional_complexity_mean": 1.95
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 160,
+        "unit_count": 14,
+        "unit_size_total_loc": 127,
+        "unit_size_max_loc": 23,
+        "unit_size_mean_loc": 9.071428571428571,
+        "conditional_complexity_total": 30,
+        "conditional_complexity_max": 4,
+        "conditional_complexity_mean": 2.142857142857143
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentSkipListMap.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 205,
+        "unit_count": 19,
+        "unit_size_total_loc": 171,
+        "unit_size_max_loc": 22,
+        "unit_size_mean_loc": 9.0,
+        "conditional_complexity_total": 46,
+        "conditional_complexity_max": 7,
+        "conditional_complexity_mean": 2.4210526315789473
+      },
+      "error": ""
+    },
+    {
+      "file": "ConcurrentSkipListSet.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 156,
+        "unit_count": 10,
+        "unit_size_total_loc": 128,
+        "unit_size_max_loc": 32,
+        "unit_size_mean_loc": 12.8,
+        "conditional_complexity_total": 36,
+        "conditional_complexity_max": 8,
+        "conditional_complexity_mean": 3.6
+      },
+      "error": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 116,
+        "unit_count": 14,
+        "unit_size_total_loc": 103,
+        "unit_size_max_loc": 13,
+        "unit_size_mean_loc": 7.357142857142857,
+        "conditional_complexity_total": 22,
+        "conditional_complexity_max": 3,
+        "conditional_complexity_mean": 1.5714285714285714
+      },
+      "error": ""
+    },
+    {
+      "file": "ThreadSafeLinkedDeque.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 192,
+        "unit_count": 22,
+        "unit_size_total_loc": 175,
+        "unit_size_max_loc": 15,
+        "unit_size_mean_loc": 7.954545454545454,
+        "conditional_complexity_total": 39,
+        "conditional_complexity_max": 2,
+        "conditional_complexity_mean": 1.7727272727272727
+      },
+      "error": ""
+    }
+  ]
+}

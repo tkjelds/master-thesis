@@ -1,4 +1,7 @@
+@RedBlackTree.ThreadSafe
 public final class RedBlackTree<K extends Comparable<? super K>, V> {
+    @interface ThreadSafe {}
+
     private static final boolean RED = true;
     private static final boolean BLACK = false;
 

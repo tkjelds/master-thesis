@@ -1,0 +1,7 @@
+client,model,count,tool,error_type,run,observed_attempts,expected_attempts
+copilot-tools,gpt-6-luna,0,compilation,errors,1,48,48
+copilot-tools,gpt-6-luna,0,codeql,escaping,1,48,48
+copilot-tools,gpt-6-luna,7,codeql,not_threadsafe,1,48,48
+copilot-tools,gpt-6-luna,54,codeql,safe_publication,1,48,48
+copilot-tools,gpt-6-luna,6,infer,interface_not_thread_safe,1,48,48
+copilot-tools,gpt-6-luna,1,infer,thread_safety_violation,1,48,48

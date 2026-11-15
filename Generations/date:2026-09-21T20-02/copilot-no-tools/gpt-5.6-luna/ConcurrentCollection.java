@@ -1,4 +1,7 @@
+@ConcurrentCollection.ThreadSafe
 public final class ConcurrentCollection<E> {
+    @interface ThreadSafe {}
+
     private final int capacity;
     private Node<E> head;
     private Node<E> tail;

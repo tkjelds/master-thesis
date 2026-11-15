@@ -1,0 +1,146 @@
+{
+  "timestamp": "date:2026-10-19T22-53",
+  "model": "gpt-6-luna",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "B_Tres.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/copilot-no-tools/gpt-6-luna/datastructures/B_Tres.java:2: error: class, interface, enum, or record expected\n<final_answer>\n^\n/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/copilot-no-tools/gpt-6-luna/datastructures/B_Tres.java:4: error: class, interface, enum, or record expected\n/Users/tore/master-thesis/Generations/date:2026-10-15T21-45-uxymcb8a/lm-studio/qwen%2Fqwen3.5-9b@reasoning-off/datastructures/B_Tres.java:1-260\n                                                                                                          ^\n2 errors\n"
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBoundedQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentMap.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "DictionaryBag.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-19T22-21-10ue1nk5/copilot-no-tools/gpt-6-luna/datastructures/DictionaryBag.java:38: error: incompatible types: ValueNode<V> cannot be converted to long\n                    keyNode.values = new ValueNode<>(value, keyNode.values);\n                                                                   ^\n  where V is a type-variable:\n    V extends Object declared in class DictionaryBag\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n1 error\n"
+    },
+    {
+      "file": "LinkedQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

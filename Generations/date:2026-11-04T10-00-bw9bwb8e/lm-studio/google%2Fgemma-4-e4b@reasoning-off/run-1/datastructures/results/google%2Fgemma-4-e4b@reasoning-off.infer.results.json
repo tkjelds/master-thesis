@@ -1,0 +1,242 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "google%2Fgemma-4-e4b@reasoning-off",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 4,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDeque.insertTail(...)` reads without synchronization from `this.size`, which races with the write in method `ConcurrentDeque.insertTail(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDeque.insertTail(java.lang.Object):void",
+          "file": "ConcurrentDeque.java",
+          "line": 46,
+          "column": -1,
+          "key": "ConcurrentDeque.java|insertTail|THREAD_SAFETY_VIOLATION",
+          "hash": "79e967bcec37dc0a7d7971227771b9ac"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDeque.removeHead()` reads without synchronization from `this.size`, which races with the write in method `ConcurrentDeque.insertTail(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDeque.removeHead():java.lang.Object",
+          "file": "ConcurrentDeque.java",
+          "line": 86,
+          "column": -1,
+          "key": "ConcurrentDeque.java|removeHead|THREAD_SAFETY_VIOLATION",
+          "hash": "6c9de097c83bce210ce8a8c71d9cbc3d"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDeque.peekHead()` reads without synchronization from `this.size`, which races with the write in method `ConcurrentDeque.insertTail(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDeque.peekHead():java.lang.Object",
+          "file": "ConcurrentDeque.java",
+          "line": 117,
+          "column": -1,
+          "key": "ConcurrentDeque.java|peekHead|THREAD_SAFETY_VIOLATION",
+          "hash": "1cec9315e33e3b5660d5b2092839867b"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDeque.peekTail()` reads without synchronization from `this.size`, which races with the write in method `ConcurrentDeque.insertTail(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDeque.peekTail():java.lang.Object",
+          "file": "ConcurrentDeque.java",
+          "line": 147,
+          "column": -1,
+          "key": "ConcurrentDeque.java|peekTail|THREAD_SAFETY_VIOLATION",
+          "hash": "aa6f0bc47cbcb54c57dc5b2326c99628"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "CustomConcurrentDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `DelayQueue.insert(...)` reads without synchronization from `this.size`, which races with the write in method `DelayQueue.take()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "DelayQueue.insert(java.lang.Object):void",
+          "file": "DelayQueue.java",
+          "line": 35,
+          "column": -1,
+          "key": "DelayQueue.java|insert|THREAD_SAFETY_VIOLATION",
+          "hash": "9fb03bf211af9407d039215930d04a76"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `DelayQueue.take()` reads without synchronization from `this.size`, which races with the write in method `DelayQueue.take()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "DelayQueue.take():java.lang.Object",
+          "file": "DelayQueue.java",
+          "line": 58,
+          "column": -1,
+          "key": "DelayQueue.java|take|THREAD_SAFETY_VIOLATION",
+          "hash": "2ab54712facf75dc542032617224fac4"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "Main.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "Solution.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\nSolution.java:158: error: method insert(Object) is already defined in class MyLinkedListQueue\n    public void insert(Object item) throws InterruptedException {\n                ^\nSolution.java:162: error: method remove() is already defined in class MyLinkedListQueue\n    public Object remove() throws InterruptedException {\n                  ^\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking MyLinkedListQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\nSolution.java:94: error: cannot find symbol\n        return item;\n               ^\n  symbol:   variable item\n  location: class MyLinkedListQueue\n[checking Solution]\n[total 62ms]\n3 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "array_queue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "bag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "collection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "counter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "list.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.management.rmi/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.jconsole/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[total 24ms]\n4 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "map.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SimpleConcurrentMap.get(...)` reads without synchronization from `this.keys.[_]`, which races with the write in method `SimpleConcurrentMap.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SimpleConcurrentMap.get(java.lang.Object):java.lang.Object",
+          "file": "map.java",
+          "line": 59,
+          "column": -1,
+          "key": "map.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "c3a99287c123301e2cda91eeae201a1d"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "priority_queue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking PriorityQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\npriority_queue.java:107: error: cannot find symbol\n        return minValue;\n               ^\n  symbol:   variable minValue\n  location: class PriorityQueue\n[total 58ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "queue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "set.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_map.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_set.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "stack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

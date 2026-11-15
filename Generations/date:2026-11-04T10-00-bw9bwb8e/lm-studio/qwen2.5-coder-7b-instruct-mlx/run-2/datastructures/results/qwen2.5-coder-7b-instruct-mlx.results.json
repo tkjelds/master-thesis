@@ -1,0 +1,132 @@
+{
+  "timestamp": "date:2026-11-06T22-20",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "Bag.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/Bag.java:44: error: unreported exception InterruptedException; must be caught or declared to be thrown\n            remove();\n                  ^\n1 error\n"
+    },
+    {
+      "file": "ConcurrentArray.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/ConcurrentDeque.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentHashMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/ConcurrentList.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "PriorityQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/PriorityQueue.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "SkipListSet.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:17: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n            Node<E> curr = pred.next[0];\n                                    ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:22: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n                    curr = pred.next[level];\n                                    ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:42: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n            Node<E> curr = pred.next[level];\n                                    ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:45: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n                curr = pred.next[level];\n                                ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:86: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n                Node<E> curr = pred.next[level];\n                                        ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:94: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n        Node<E> curr = pred.next[0];\n                                ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:101: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n            Node<E> curr = pred.next[0];\n                                    ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:106: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n                    curr = pred.next[level];\n                                    ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/qwen2.5-coder-7b-instruct-mlx/run-2/datastructures/SkipListSet.java:146: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n        Node<E> curr = head.next[0];\n                                ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\n9 errors\n"
+    },
+    {
+      "file": "ThreadSafeCounter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeDictionary.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeStack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "linked_list.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_map.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

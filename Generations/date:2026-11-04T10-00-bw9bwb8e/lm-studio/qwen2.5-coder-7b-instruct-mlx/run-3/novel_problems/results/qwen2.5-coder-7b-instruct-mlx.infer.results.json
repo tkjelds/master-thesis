@@ -1,0 +1,382 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "AdaptiveTrustVault.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/io/ByteArrayOutputStream.class]\n[loading /modules/java.base/java/io/IOException.class]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking AdaptiveTrustVault]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Math.class]\n[loading /modules/java.base/java/io/OutputStream.class]\n[loading /modules/java.base/java/io/Closeable.class]\n[loading /modules/java.base/java/io/Flushable.class]\n[loading /modules/java.base/java/lang/Error.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\nAdaptiveTrustVault.java:113: error: cannot find symbol\n        return Math.max(baseTTL, (long) (baseTTL * F1));\n                                                   ^\n  symbol:   variable F1\n  location: class AdaptiveTrustVault\n[total 68ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "BitmaskedTimelineStage.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[checking BitmaskedTimelineStage]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\nBitmaskedTimelineStage.java:25: error: cannot find symbol\n        this.message = event.getMessage();\n                            ^\n  symbol:   method getMessage()\n  location: variable event of type Event\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\n[loading /modules/java.base/java/io/PrintStream.class]\n[loading /modules/java.base/java/lang/Appendable.class]\n[loading /modules/java.base/java/io/Closeable.class]\n[loading /modules/java.base/java/io/FilterOutputStream.class]\n[loading /modules/java.base/java/io/OutputStream.class]\n[loading /modules/java.base/java/io/Flushable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Cloneable.class]\n[total 69ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ChatSessionStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "GomokuVersionState.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "            return new Result(Status.FINISHED, revision, generation, winner);\n                              ^\n  symbol:   variable Status\n  location: class GomokuVersionState\nGomokuVersionState.java:35: error: cannot find symbol\n            return new Result(Status.OCCUPIED, revision, generation, winner);\n                              ^\n  symbol:   variable Status\n  location: class GomokuVersionState\nGomokuVersionState.java:47: error: cannot find symbol\n        return new Result(Status.SUCCESS, revision, generation, winner);\n                          ^\n  symbol:   variable Status\n  location: class GomokuVersionState\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\n[loading /modules/java.base/java/util/Optional.class]\n[loading /modules/java.base/java/lang/Enum$EnumDesc.class]\n[loading /modules/java.base/java/lang/constant/DynamicConstantDesc.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/CloneNotSupportedException.class]\n[loading /modules/java.base/java/lang/Class.class]\nGomokuVersionState.java:144: error: cannot find symbol\n                   \"board=\" + Arrays.deepToString(board) +\n                              ^\n  symbol:   variable Arrays\n  location: class Snapshot\n[total 77ms]\n5 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "InventoryTransactionBuffer.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking InventoryTransactionBuffer]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Cloneable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Long.class]\nInventoryTransactionBuffer.java:47: error: cannot find symbol\n            if (currentStage.ownerId.equals(ownerId) && currentStage.generation == generation) {\n                                                                    ^\n  symbol:   variable generation\n  location: variable currentStage of type OwnerStagingSlot\n[loading /modules/java.base/java/lang/Math.class]\nInventoryTransactionBuffer.java:77: error: cannot find symbol\n            if (currentStage.ownerId.equals(ownerId) && currentStage.generation == generation) {\n                                                                    ^\n  symbol:   variable generation\n  location: variable currentStage of type OwnerStagingSlot\n[total 65ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "Job.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  location: class Snapshot\nJob.java:155: error: cannot find symbol\n    public Snapshot(Mode mode, int pendingJobs, int runningCount, int limit, boolean closed) {\n                    ^\n  symbol:   class Mode\n  location: class Snapshot\nJob.java:163: error: cannot find symbol\n    public Mode getMode() {\n           ^\n  symbol:   class Mode\n  location: class Snapshot\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ThermostaticBuildOrchestrator]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/Thread.class]\n[loading /modules/java.base/jdk/internal/vm/annotation/Contended.class]\n[loading /modules/java.base/java/lang/Runnable.class]\n[loading /modules/java.base/java/util/Optional.class]\n[loading /modules/java.base/java/lang/Enum$EnumDesc.class]\n[loading /modules/java.base/java/lang/constant/DynamicConstantDesc.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/CloneNotSupportedException.class]\n[loading /modules/java.base/java/lang/Class.class]\n[checking Snapshot]\n[total 78ms]\n3 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "LexicalGraphProvider.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  symbol:   class ArrayList\n  location: class Session\nLexicalGraphProvider.java:92: error: cannot find symbol\n            ArrayList<String> matches = new ArrayList<>();\n                                            ^\n  symbol:   class ArrayList\n  location: class Session\nLexicalGraphProvider.java:98: error: cannot find symbol\n            Collections.sort(matches, (a, b) -> {\n            ^\n  symbol:   variable Collections\n  location: class Session\nLexicalGraphProvider.java:107: error: cannot find symbol\n            ArrayList<Integer> result = new ArrayList<>();\n            ^\n  symbol:   class ArrayList\n  location: class Session\nLexicalGraphProvider.java:107: error: cannot find symbol\n            ArrayList<Integer> result = new ArrayList<>();\n                                            ^\n  symbol:   class ArrayList\n  location: class Session\nLexicalGraphProvider.java:109: error: cannot find symbol\n                if (Arrays.asList(vocabulary).contains(context[i])) {\n                    ^\n  symbol:   variable Arrays\n  location: class Session\nLexicalGraphProvider.java:117: error: constructor LexicalGraphProvider in class LexicalGraphProvider cannot be applied to given types;\n            return new LexicalGraphProvider(vocabulary, context);\n                   ^\n  required: no arguments\n  found:    String[],String[]\n  reason: actual and formal argument lists differ in length\n[total 67ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n15 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "OrderStatus.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 12,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `Warehouse.reserveOrder(...)` indirectly reads without synchronization from `this.orders.[_]`, which races with the write in method `Warehouse.cancelOrder(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.reserveOrder(long,long[]):boolean",
+          "file": "OrderStatus.java",
+          "line": 16,
+          "column": -1,
+          "key": "OrderStatus.java|reserveOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "d085e9c6f7814a0c54b1cded4cac5230"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `Warehouse.reserveOrder(...)` reads with synchronization from `this.available.[_]`, which races with the unsynchronized write in method `Warehouse.restock(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.reserveOrder(long,long[]):boolean",
+          "file": "OrderStatus.java",
+          "line": 31,
+          "column": -1,
+          "key": "OrderStatus.java|reserveOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "2177ae120729557c03ff55ff5bca810a"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `Warehouse.reserveOrder(...)` indirectly writes to field `this.orders.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.reserveOrder(long,long[]):boolean",
+          "file": "OrderStatus.java",
+          "line": 35,
+          "column": -1,
+          "key": "OrderStatus.java|reserveOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "023e37f69dcb439d99b224958c57c619"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `Warehouse.shipOrder(...)` indirectly reads without synchronization from `this.orders.[_]`, which races with the write in method `Warehouse.cancelOrder(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.shipOrder(long):boolean",
+          "file": "OrderStatus.java",
+          "line": 40,
+          "column": -1,
+          "key": "OrderStatus.java|shipOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "3eb091f76933ff233177539743a98d7d"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `Warehouse.shipOrder(...)` reads with synchronization from `this.available.[_]`, which races with the unsynchronized write in method `Warehouse.restock(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.shipOrder(long):boolean",
+          "file": "OrderStatus.java",
+          "line": 49,
+          "column": -1,
+          "key": "OrderStatus.java|shipOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "5427963d741a40ba310c403fd26d92d1"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `Warehouse.shipOrder(...)` indirectly writes to field `this.orders.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.shipOrder(long):boolean",
+          "file": "OrderStatus.java",
+          "line": 53,
+          "column": -1,
+          "key": "OrderStatus.java|shipOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "59c56b1d3ffa8c202ddfaa95a4334975"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `Warehouse.cancelOrder(...)` indirectly reads without synchronization from `this.orders.[_]`, which races with the write in method `Warehouse.cancelOrder(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.cancelOrder(long):boolean",
+          "file": "OrderStatus.java",
+          "line": 58,
+          "column": -1,
+          "key": "OrderStatus.java|cancelOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "f150599915422af7eb33ef856d473b08"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `Warehouse.cancelOrder(...)` reads with synchronization from `this.available.[_]`, which races with the unsynchronized write in method `Warehouse.restock(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.cancelOrder(long):boolean",
+          "file": "OrderStatus.java",
+          "line": 67,
+          "column": -1,
+          "key": "OrderStatus.java|cancelOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "b435cf084558778535b0dbe919735035"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `Warehouse.cancelOrder(...)` indirectly writes to field `this.orders.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.cancelOrder(long):boolean",
+          "file": "OrderStatus.java",
+          "line": 71,
+          "column": -1,
+          "key": "OrderStatus.java|cancelOrder|THREAD_SAFETY_VIOLATION",
+          "hash": "ae46322b325a91546f2339bd368306ed"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `Warehouse.restock(...)` reads with synchronization from `this.available.[_]`, which races with the unsynchronized write in method `Warehouse.restock(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.restock(int,long):boolean",
+          "file": "OrderStatus.java",
+          "line": 80,
+          "column": -1,
+          "key": "OrderStatus.java|restock|THREAD_SAFETY_VIOLATION",
+          "hash": "9d8606ece4a2f1209f59daabec89505c"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `Warehouse.restock(...)` writes to field `this.available.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.restock(int,long):boolean",
+          "file": "OrderStatus.java",
+          "line": 85,
+          "column": -1,
+          "key": "OrderStatus.java|restock|THREAD_SAFETY_VIOLATION",
+          "hash": "61d75a42cbebc7cf53dede6d1fa88a0b"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `Warehouse.snapshot()` reads with synchronization from `this.orders.[_]`, which races with the unsynchronized write in method `Warehouse.cancelOrder(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "Warehouse.snapshot():Warehouse$OrderRecord[]",
+          "file": "OrderStatus.java",
+          "line": 94,
+          "column": -1,
+          "key": "OrderStatus.java|snapshot|THREAD_SAFETY_VIOLATION",
+          "hash": "03eeb689d994437cf7b58122837192e6"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "PersistedScheduleContext.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\nPersistedScheduleContext.java:5: error: cannot find symbol\n    private final ScheduleSink sink;\n                  ^\n  symbol:   class ScheduleSink\n  location: class PersistedScheduleContext\nPersistedScheduleContext.java:12: error: cannot find symbol\n    public PersistedScheduleContext(ScheduleSink sink, int capacity) {\n                                    ^\n  symbol:   class ScheduleSink\n  location: class PersistedScheduleContext\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking PersistedScheduleContext]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Math.class]\n[loading /modules/java.base/java/lang/Cloneable.class]\n[total 62ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "RPGCharacter.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.net/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.management/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/java.management.rmi/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[total 24ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/annotation/Annotation.class]\nSecureMetricAggregator.java:66: error: cannot find symbol\n    private final Clock clock;\n                  ^\n  symbol:   class Clock\n  location: class SecureMetricAggregator\n[loading /modules/java.base/java/lang/Comparable.class]\nSecureMetricAggregator.java:70: error: cannot find symbol\n    public SecureMetricAggregator(Clock clock) {\n                                  ^\n  symbol:   class Clock\n  location: class SecureMetricAggregator\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/Override.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking SecureMetricAggregator]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Class.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Number.class]\n[loading /modules/java.base/java/util/Comparator.class]\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/util/stream/Stream.class]\n[loading /modules/java.base/java/util/stream/DoubleStream.class]\n[loading /modules/java.base/java/util/stream/BaseStream.class]\n[loading /modules/java.base/java/util/function/DoubleUnaryOperator.class]\n[loading /modules/java.base/java/lang/Math.class]\n[total 90ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "State.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/Class.class]\nState.java:143: error: self-reference in initializer\n        OPEN(OPEN),\n             ^\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\nState.java:144: error: self-reference in initializer\n        READING(READING),\n                ^\nState.java:145: error: self-reference in initializer\n        COMPLETING(COMPLETING),\n                   ^\nState.java:146: error: self-reference in initializer\n        CLOSED(CLOSED),\n               ^\nState.java:147: error: self-reference in initializer\n        FAILED(FAILED);\n               ^\nState.java:186: error: non-static method copy(byte[]) cannot be referenced from a static context\n            return buffer != null ? copy(buffer) : null;\n                                    ^\nState.java:202: error: non-static method copy(byte[]) cannot be referenced from a static context\n            return buffer != null ? copy(buffer) : null;\n                                    ^\n[checking ChunkSource]\n[checking CompletionListener]\n[total 80ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n8 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "TaggedCapacityBuffer.java:109: error: cannot find symbol\n                if (tags[i] != null && !tags[i].isEmpty()) count++;\n                                               ^\n  symbol:   method isEmpty()\n  location: class String[]\nTaggedCapacityBuffer.java:116: error: cannot find symbol\n                if (tags[i] != null && !tags[i].isEmpty()) {\n                                               ^\n  symbol:   method isEmpty()\n  location: class String[]\nTaggedCapacityBuffer.java:134: error: cannot find symbol\n            if (tags[i] != null && tags[i].contains(tag)) return true;\n                                          ^\n  symbol:   method contains(String)\n  location: class String[]\nTaggedCapacityBuffer.java:143: error: cannot find symbol\n            if (tags[i] != null && tags[i].contains(tag)) return i;\n                                          ^\n  symbol:   method contains(String)\n  location: class String[]\nTaggedCapacityBuffer.java:159: error: cannot find symbol\n            if (!a.contains(tag)) return false;\n                  ^\n  symbol:   method contains(String)\n  location: variable a of type String[]\nTaggedCapacityBuffer.java:165: error: incompatible types: byte[] cannot be converted to byte\n        buffer[tail] = payload;\n                       ^\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Number.class]\nTaggedCapacityBuffer.java:172: error: incompatible types: byte cannot be converted to byte[]\n        byte[] payload = buffer[index];\n                               ^\n[loading /modules/java.base/java/lang/System.class]\n[total 68ms]\n7 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking TemporalForexCache]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Long.class]\nTemporalForexCache.java:45: error: double cannot be dereferenced\n                rates[currencyIndex(currencies[i])].rate = rates[i];\n                                                   ^\nTemporalForexCache.java:46: error: double cannot be dereferenced\n                rates[currencyIndex(currencies[i])].expiration = observationTime + ttl;\n                                                   ^\nTemporalForexCache.java:59: error: double cannot be dereferenced\n            if (now >= fromRate.expiration || now >= toRate.expiration) {\n                               ^\nTemporalForexCache.java:59: error: double cannot be dereferenced\n            if (now >= fromRate.expiration || now >= toRate.expiration) {\n                                                           ^\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Cloneable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Number.class]\n[total 66ms]\n4 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ThermostaticCircuitStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 4,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `UserSpaceProvisioner.activate(...)` indirectly reads without synchronization from `this.users.[_]`, which races with the write in method `UserSpaceProvisioner.register(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "UserSpaceProvisioner.activate(java.lang.String):void",
+          "file": "UserSpaceProvisioner.java",
+          "line": 64,
+          "column": -1,
+          "key": "UserSpaceProvisioner.java|activate|THREAD_SAFETY_VIOLATION",
+          "hash": "70dda16fa5a0a5e4f18d0b05655a0b3c"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `UserSpaceProvisioner.reinstall(...)` indirectly reads without synchronization from `this.users.[_]`, which races with the write in method `UserSpaceProvisioner.register(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "UserSpaceProvisioner.reinstall(java.lang.String,java.lang.String[]):void",
+          "file": "UserSpaceProvisioner.java",
+          "line": 106,
+          "column": -1,
+          "key": "UserSpaceProvisioner.java|reinstall|THREAD_SAFETY_VIOLATION",
+          "hash": "90070a477995f3f35692e52650fe5eeb"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `UserSpaceProvisioner.verify(...)` indirectly reads without synchronization from `this.users.[_]`, which races with the write in method `UserSpaceProvisioner.register(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "UserSpaceProvisioner.verify(java.lang.String):java.lang.String[]",
+          "file": "UserSpaceProvisioner.java",
+          "line": 124,
+          "column": -1,
+          "key": "UserSpaceProvisioner.java|verify|THREAD_SAFETY_VIOLATION",
+          "hash": "285e8605f37d0cee330eeaf0f2f9cb24"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `UserSpaceProvisioner.snapshotMetrics()` reads without synchronization from `this.users.[_]`, which races with the write in method `UserSpaceProvisioner.register(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "UserSpaceProvisioner.snapshotMetrics():void",
+          "file": "UserSpaceProvisioner.java",
+          "line": 138,
+          "column": -1,
+          "key": "UserSpaceProvisioner.java|snapshotMetrics|THREAD_SAFETY_VIOLATION",
+          "hash": "0915238d9bf4c1ee4e8ea0294501bcc6"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "VerifiableMailbox.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\nVerifiableMailbox.java:28: error: cannot find symbol\n                if (Arrays.equals(messages, (int) i * content.length, (int) (i + 1) * content.length, content, 0, content.length)) {\n                    ^\n  symbol:   variable Arrays\n  location: class VerifiableMailbox\n[loading /modules/java.base/java/lang/System.class]\nVerifiableMailbox.java:39: error: cannot find symbol\n            byte[] newMessage = Arrays.copyOf(content, content.length);\n                                ^\n  symbol:   variable Arrays\n  location: class VerifiableMailbox\nVerifiableMailbox.java:40: error: cannot find symbol\n            messages = Arrays.copyOf(messages, messages.length + content.length);\n                       ^\n  symbol:   variable Arrays\n  location: class VerifiableMailbox\nVerifiableMailbox.java:56: error: cannot find symbol\n            byte[] message = Arrays.copyOfRange(messages, (int) ((messageId - 1) * messages.length / capacity.length), (int) messageId * messages.length / capacity.length);\n                             ^\n  symbol:   variable Arrays\n  location: class VerifiableMailbox\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\nVerifiableMailbox.java:76: error: cannot find symbol\n                byte[] message = Arrays.copyOfRange(messages, (int) ((i - 1) * messages.length / capacity.length), (int) i * messages.length / capacity.length);\n                                 ^\n  symbol:   variable Arrays\n  location: class VerifiableMailbox\n[loading /modules/java.base/java/lang/Throwable.class]\n[total 68ms]\n9 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "VersionedSlotManager.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking VersionedSlotManager]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Cloneable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\nVersionedSlotManager.java:67: error: incompatible types: possible lossy conversion from long to int\n                return new MutationResult(STALE_REVISION, revision, INVALID_REVISION);\n                                                                    ^\nVersionedSlotManager.java:71: error: incompatible types: possible lossy conversion from long to int\n                return new MutationResult(CONFLICT, revision, INVALID_REVISION);\n                                                              ^\nVersionedSlotManager.java:75: error: cannot find symbol\n            slots = Arrays.copyOf(slots, slots.length + 1);\n                    ^\n  symbol:   variable Arrays\n  location: class VersionedSlotManager\nVersionedSlotManager.java:85: error: incompatible types: possible lossy conversion from long to int\n                return new MutationResult(STALE_REVISION, revision, INVALID_REVISION);\n                                                                    ^\nVersionedSlotManager.java:88: error: incompatible types: possible lossy conversion from long to int\n            int index = findSlotByReservationId(reservationId);\n                                                ^\nVersionedSlotManager.java:90: error: incompatible types: possible lossy conversion from long to int\n                return new MutationResult(NOT_FOUND, revision, INVALID_REVISION);\n                                                               ^\nVersionedSlotManager.java:95: error: incompatible types: possible lossy conversion from long to int\n            return new MutationResult(SUCCESS, revision, INVALID_REVISION);\n                                                         ^\n[total 59ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n7 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    }
+  ]
+}

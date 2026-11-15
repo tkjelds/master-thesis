@@ -1,0 +1,132 @@
+{
+  "timestamp": "date:2026-11-06T22-20",
+  "model": "google%2Fgemma-4-e4b@reasoning-off",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-3/datastructures/ArrayQueue.java:181: error: method insert(int) is already defined in class ArrayQueue\n    public void insert(int item) throws InterruptedException {\n                ^\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-3/datastructures/ArrayQueue.java:185: error: method remove() is already defined in class ArrayQueue\n    public int remove() throws InterruptedException {\n               ^\n2 errors\n"
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "CustomConcurrentMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "collection.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-3/datastructures/collection.java:2: error: ConcurrentBoundedBuffer is not abstract and does not override abstract method run() in Runnable\nclass ConcurrentBoundedBuffer implements Runnable {\n^\n1 error\n"
+    },
+    {
+      "file": "counter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "delay_queue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "deque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "dictionary.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-3/datastructures/dictionary.java:44: error: incompatible types: Object cannot be converted to Entry\n                current = table[checkIndex];\n                               ^\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-3/datastructures/dictionary.java:73: error: incompatible types: Object cannot be converted to Entry\n                Entry current = table[checkIndex];\n                                     ^\nGenerations/date:2026-11-04T10-00-bw9bwb8e/lm-studio/google%2Fgemma-4-e4b@reasoning-off/run-3/datastructures/dictionary.java:99: error: incompatible types: Object cannot be converted to Entry\n                Entry current = table[checkIndex];\n                                     ^\n3 errors\n"
+    },
+    {
+      "file": "linked_deque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "linked_queue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "priority_queue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "queue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_map.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_set.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "stack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

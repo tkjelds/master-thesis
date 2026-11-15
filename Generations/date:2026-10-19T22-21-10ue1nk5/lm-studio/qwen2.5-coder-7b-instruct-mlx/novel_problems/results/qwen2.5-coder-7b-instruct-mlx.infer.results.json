@@ -1,0 +1,145 @@
+{
+  "timestamp": "date:2026-10-19T22-55",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "AdaptiveTrustVault.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\nAdaptiveTrustVault.java:57: error: cannot find symbol\n                Map<String, Entry> entries = getEntries();\n                ^\n  symbol:   class Map\n  location: class AdaptiveTrustVault\nAdaptiveTrustVault.java:58: error: cannot find symbol\n                for (Iterator<Map.Entry<String, Entry>> it = entries.entrySet().iterator(); it.hasNext();) {\n                     ^\n  symbol:   class Iterator\n  location: class AdaptiveTrustVault\nAdaptiveTrustVault.java:58: error: package Map does not exist\n                for (Iterator<Map.Entry<String, Entry>> it = entries.entrySet().iterator(); it.hasNext();) {\n                                 ^\nAdaptiveTrustVault.java:59: error: package Map does not exist\n                    Map.Entry<String, Entry> entry = it.next();\n                       ^\nAdaptiveTrustVault.java:72: error: cannot find symbol\n            Map<String, Entry> entries = getEntries();\n            ^\n  symbol:   class Map\n  location: class AdaptiveTrustVault\nAdaptiveTrustVault.java:79: error: cannot find symbol\n        return new HashMap<>();\n                   ^\n  symbol:   class HashMap\n  location: class AdaptiveTrustVault\n[loading /modules/java.base/java/lang/System.class]\nAdaptiveTrustVault.java:95: error: cannot find symbol\n        Map<String, Entry> entries = getEntries();\n        ^\n  symbol:   class Map\n  location: class AdaptiveTrustVault\n[total 72ms]\n11 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HarmonicBufferedStream.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 4,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `HarmonicBufferedStream$ChunkSource.read()` of un-annotated interface `HarmonicBufferedStream$ChunkSource`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "HarmonicBufferedStream.readChunk():byte[]",
+          "file": "HarmonicBufferedStream.java",
+          "line": 43,
+          "column": -1,
+          "key": "HarmonicBufferedStream.java|readChunk|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "277293af65f1e3e2e05195d0db0d649b"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `HarmonicBufferedStream.readChunk()` reads without synchronization from `this.buffer`, which races with the write in method `HarmonicBufferedStream.readChunk()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "HarmonicBufferedStream.readChunk():byte[]",
+          "file": "HarmonicBufferedStream.java",
+          "line": 66,
+          "column": -1,
+          "key": "HarmonicBufferedStream.java|readChunk|THREAD_SAFETY_VIOLATION",
+          "hash": "72a8f0171710b3dcbf652dafdcc2088d"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `HarmonicBufferedStream.close()` reads without synchronization from `this.buffer`, which races with the write in method `HarmonicBufferedStream.readChunk()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "HarmonicBufferedStream.close():void",
+          "file": "HarmonicBufferedStream.java",
+          "line": 117,
+          "column": -1,
+          "key": "HarmonicBufferedStream.java|close|THREAD_SAFETY_VIOLATION",
+          "hash": "cf4c5496dc4fe1d9f2d7ebddf1d9d29d"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `HarmonicBufferedStream.close()` writes to field `this.listener` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "HarmonicBufferedStream.close():void",
+          "file": "HarmonicBufferedStream.java",
+          "line": 119,
+          "column": -1,
+          "key": "HarmonicBufferedStream.java|close|THREAD_SAFETY_VIOLATION",
+          "hash": "5cd7c377867f9adf70676f2a995bb4d9"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  location: class HierarchicalScheduler\nHierarchicalScheduler.java:13: error: cannot find symbol\n        this.reservations = new ArrayList<>();\n                                ^\n  symbol:   class ArrayList\n  location: class HierarchicalScheduler\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\nHierarchicalScheduler.java:58: error: cannot find symbol\n            Iterator<Reservation> iterator = reservations.iterator();\n            ^\n  symbol:   class Iterator\n  location: class HierarchicalScheduler\nHierarchicalScheduler.java:77: error: cannot find symbol\n            List<Reservation> snapshotList = new ArrayList<>(reservations);\n            ^\n  symbol:   class List\n  location: class HierarchicalScheduler\nHierarchicalScheduler.java:77: error: cannot find symbol\n            List<Reservation> snapshotList = new ArrayList<>(reservations);\n                                                 ^\n  symbol:   class ArrayList\n  location: class HierarchicalScheduler\nHierarchicalScheduler.java:79: error: cannot find symbol\n                snapshotList.addAll(Arrays.asList(child.snapshot()));\n                                    ^\n  symbol:   variable Arrays\n  location: class HierarchicalScheduler\n[total 63ms]\n8 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ResolvingVendingMachine]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/ArithmeticException.class]\nResolvingVendingMachine.java:45: error: incompatible types: possible lossy conversion from long to int\n        if (transactionId <= 0 || transactions[transactionId - 1] != null) {\n                                                             ^\nResolvingVendingMachine.java:62: error: incompatible types: possible lossy conversion from long to int\n            transactions[transactionId - 1] = new Transaction(transactionId, quantities);\n                                       ^\nResolvingVendingMachine.java:70: error: incompatible types: possible lossy conversion from long to int\n            if (transactionId <= 0 || transactions[transactionId - 1] == null) {\n                                                                 ^\nResolvingVendingMachine.java:74: error: incompatible types: possible lossy conversion from long to int\n            Transaction transaction = transactions[transactionId - 1];\n                                                                 ^\nResolvingVendingMachine.java:79: error: incompatible types: possible lossy conversion from long to int\n            transactions[transactionId - 1] = null;\n                                       ^\n[loading /modules/java.base/java/lang/Cloneable.class]\n[total 62ms]\n5 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "SecureMetricAggregator.java:44: error: cannot find symbol\n        System.arraycopy(newBatch.measurements, 0, combined, existingBatch.measurements.length, newBatch.measurements.length);\n                                                                                                        ^\n  symbol:   variable measurements\n  location: variable newBatch of type Batch\n[loading /modules/java.base/java/lang/System.class]\nSecureMetricAggregator.java:45: error: cannot find symbol\n        existingBatch.measurementCount += newBatch.measurements.length;\n                                                  ^\n  symbol:   variable measurements\n  location: variable newBatch of type Batch\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Math.class]\nSecureMetricAggregator.java:84: error: cannot find symbol\n            for (int j = 0; j < batch.measurements.length; j++) {\n                                     ^\n  symbol:   variable measurements\n  location: variable batch of type Batch\nSecureMetricAggregator.java:85: error: cannot find symbol\n                int index = (int) ((batch.measurements[j] - mean) / Math.sqrt(sumOfSquares / count)) + frequencies.length / 2;\n                                         ^\n  symbol:   variable measurements\n  location: variable batch of type Batch\nSecureMetricAggregator.java:139: error: non-static method computeSum(double[]) cannot be referenced from a static context\n            this.sum = computeSum(measurements);\n                       ^\nSecureMetricAggregator.java:140: error: non-static method computeSumOfSquares(double[]) cannot be referenced from a static context\n            this.sumOfSquares = computeSumOfSquares(measurements);\n                                ^\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Number.class]\n[total 87ms]\n12 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "                for (; evictionStart < head; evictionStart++) {\n                                             ^\n  symbol:   variable evictionStart\n  location: class TaggedCapacityBuffer\n[loading /modules/java.base/java/lang/Override.class]\nTaggedCapacityBuffer.java:103: error: head has private access in TaggedCapacityBuffer\n                    this.head = TaggedCapacityBuffer.this.head;\n                        ^\nTaggedCapacityBuffer.java:104: error: tail has private access in TaggedCapacityBuffer\n                    this.tail = TaggedCapacityBuffer.this.tail;\n                        ^\nTaggedCapacityBuffer.java:105: error: occupancy has private access in TaggedCapacityBuffer\n                    this.occupancy = TaggedCapacityBuffer.this.occupancy;\n                        ^\nTaggedCapacityBuffer.java:106: error: buffer has private access in TaggedCapacityBuffer\n                    this.buffer = cloneBuffer(TaggedCapacityBuffer.this.buffer);\n                        ^\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/Cloneable.class]\nTaggedCapacityBuffer.java:147: error: cannot find symbol\n        return head != tail && getTags(tail).contains(tag);\n                                            ^\n  symbol:   method contains(String)\n  location: class String[]\nTaggedCapacityBuffer.java:151: error: cannot find symbol\n        return head != tail && getTags(tail).contains(tag);\n                                            ^\n  symbol:   method contains(String)\n  location: class String[]\nTaggedCapacityBuffer.java:175: error: cannot find symbol\n        if (head == tail || !getTags(head).contains(tag)) return null;\n                                          ^\n  symbol:   method contains(String)\n  location: class String[]\n[total 68ms]\n9 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  location: class TemporalForexCache\n[loading /modules/java.base/java/lang/Cloneable.class]\nTemporalForexCache.java:44: error: cannot find symbol\n        long[] newExpirations = indices.map(i -> clock.now() + ttl).toArray();\n                                       ^\n  symbol:   method map((i)->clock[...]+ ttl)\n  location: variable indices of type int[]\nTemporalForexCache.java:46: error: incompatible types: TemporalForexCache.RateEntry cannot be converted to double\n            rates[indices[i]] = newRates[i];\n                                        ^\nTemporalForexCache.java:52: error: no suitable method found for checkInputs(String,String,double)\n        checkInputs(from, to, amount);\n        ^\n    method TemporalForexCache.checkInputs(String,double,long) is not applicable\n      (argument mismatch; String cannot be converted to double)\n    method TemporalForexCache.checkInputs(String[],double[],long) is not applicable\n      (argument mismatch; String cannot be converted to String[])\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[loading /modules/java.base/java/lang/Number.class]\n[loading /modules/java.base/java/lang/Math.class]\nTemporalForexCache.java:155: error: cannot find symbol\n            this.currencies = Arrays.copyOf(currencies, currencies.length);\n                              ^\n  symbol:   variable Arrays\n  location: class Snapshot\nTemporalForexCache.java:156: error: cannot find symbol\n            this.rates = Arrays.copyOf(rates, rates.length);\n                         ^\n  symbol:   variable Arrays\n  location: class Snapshot\n[total 79ms]\n6 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ThermostaticBuildOrchestrator.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Enum.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ThermostaticBuildOrchestrator]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Thread.class]\n[loading /modules/java.base/jdk/internal/vm/annotation/Contended.class]\n[loading /modules/java.base/java/lang/Runnable.class]\nThermostaticBuildOrchestrator.java:92: error: cannot find symbol\n            this.mode = determineMode(load);\n                                      ^\n  symbol:   variable load\n  location: class ThermostaticBuildOrchestrator\n[loading /modules/java.base/java/util/Optional.class]\n[loading /modules/java.base/java/lang/Enum$EnumDesc.class]\n[loading /modules/java.base/java/lang/constant/DynamicConstantDesc.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/CloneNotSupportedException.class]\n[loading /modules/java.base/java/lang/Class.class]\n[total 81ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  symbol:   variable VERIFIED\n  location: class Generation\nUserSpaceProvisioner.java:146: error: cannot find symbol\n            User newUser = new User(user, null, Generation.VERIFIED, userObj.manifest);\n                                                          ^\n  symbol:   variable VERIFIED\n  location: class Generation\nUserSpaceProvisioner.java:149: error: cannot find symbol\n            userObj.state = Generation.VERIFIED;\n                                      ^\n  symbol:   variable VERIFIED\n  location: class Generation\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/io/PrintStream.class]\n[loading /modules/java.base/java/lang/Appendable.class]\n[loading /modules/java.base/java/io/Closeable.class]\n[loading /modules/java.base/java/io/FilterOutputStream.class]\n[loading /modules/java.base/java/io/OutputStream.class]\n[loading /modules/java.base/java/io/Flushable.class]\nUserSpaceProvisioner.java:209: error: cannot assign a value to final variable users\n            users = newUsers;\n            ^\nUserSpaceProvisioner.java:215: error: incompatible types: Object cannot be converted to Object[]\n        final Object[] monitor = new Object();\n                                 ^\nUserSpaceProvisioner.java:225: error: incompatible types: bad type in conditional expression\n            this.manifest = initialManifest != null ? initialManifest.clone() : null;\n                                                                           ^\n    String[] cannot be converted to String\n[loading /modules/java.base/java/util/Optional.class]\n[loading /modules/java.base/java/lang/Enum$EnumDesc.class]\n[loading /modules/java.base/java/lang/constant/DynamicConstantDesc.class]\n[loading /modules/java.base/java/lang/CloneNotSupportedException.class]\n[loading /modules/java.base/java/lang/Class.class]\n[total 85ms]\n16 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "VersionedSlotManager.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking VersionedSlotManager]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Cloneable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\nVersionedSlotManager.java:53: error: cannot find symbol\n            Slot[] newSlots = Arrays.copyOf(slots, slots.length + 1);\n                              ^\n  symbol:   variable Arrays\n  location: class VersionedSlotManager\nVersionedSlotManager.java:55: error: cannot find symbol\n            Arrays.sort(newSlots, (s1, s2) -> Long.compare(s1.start, s2.start));\n            ^\n  symbol:   variable Arrays\n  location: class VersionedSlotManager\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Number.class]\nVersionedSlotManager.java:74: error: cannot find symbol\n            Slot[] newSlots = Arrays.stream(slots).filter(s -> s.id != reservationId).toArray(Slot[]::new);\n                              ^\n  symbol:   variable Arrays\n  location: class VersionedSlotManager\n[loading /modules/java.base/java/lang/Integer.class]\n[total 63ms]\n3 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    }
+  ]
+}

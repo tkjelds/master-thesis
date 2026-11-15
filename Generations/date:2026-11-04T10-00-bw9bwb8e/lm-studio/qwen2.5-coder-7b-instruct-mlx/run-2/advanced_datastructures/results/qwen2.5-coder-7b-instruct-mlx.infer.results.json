@@ -1,0 +1,210 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  location: class Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\nBTree.java:221: error: cannot find symbol\n            leftSibling.keys = Arrays.copyOf(leftSibling.keys, leftSibling.keys.length - 1);\n                               ^\n  symbol:   variable Arrays\n  location: class Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\nBTree.java:223: error: cannot find symbol\n                leftSibling.children = Arrays.copyOf(leftSibling.children, leftSibling.children.length - 1);\n                                       ^\n  symbol:   variable Arrays\n  location: class Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\nBTree.java:235: error: cannot find symbol\n            rightSibling.keys = Arrays.copyOfRange(rightSibling.keys, 1, rightSibling.keys.length);\n                                ^\n  symbol:   variable Arrays\n  location: class Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\nBTree.java:237: error: cannot find symbol\n                rightSibling.children = Arrays.copyOfRange(rightSibling.children, 1, rightSibling.children.length);\n                                        ^\n  symbol:   variable Arrays\n  location: class Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\n[total 87ms]\nNote: BTree.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n32 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\nBinarySearchTree.java:21: error: non-static type variable T cannot be referenced from a static context\n        T value;\n        ^\nBinarySearchTree.java:24: error: non-static type variable T cannot be referenced from a static context\n        Node(T value) {\n             ^\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/SuppressWarnings.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking Order]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[checking BinarySearchTree]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[total 63ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "                                     ^\nHashedArrayList.java:80: error: incompatible types: Object cannot be converted to int\n            if (hashTable[i] != null && ((T) array[hashTable[i]]).equals(oldValue)) {\n                                                            ^\nHashedArrayList.java:82: error: bad operand types for binary operator '!='\n                while (hashTable[indexInHashTable] != null && hashTable[indexInHashTable] != index) {\n                                                                                          ^\n  first type:  Object\n  second type: int\nHashedArrayList.java:101: error: bad operand types for binary operator '!='\n        while (hashTable[indexInHashTable] != null && hashTable[indexInHashTable] != index) {\n                                                                                  ^\n  first type:  Object\n  second type: int\nHashedArrayList.java:122: error: incompatible types: Object cannot be converted to int\n            if (hashTable[i] != null && ((T) array[hashTable[i]]).equals(item)) {\n                                                            ^\nHashedArrayList.java:124: error: bad operand types for binary operator '!='\n                while (hashTable[indexInHashTable] != null && hashTable[indexInHashTable] != i) {\n                                                                                          ^\n  first type:  Object\n  second type: int\nHashedArrayList.java:147: error: incompatible types: Object cannot be converted to int\n            if (hashTable[i] != null && ((T) array[hashTable[i]]).equals(item)) {\n                                                            ^\nHashedArrayList.java:157: error: incompatible types: Object cannot be converted to int\n            if (hashTable[i] != null && ((T) array[hashTable[i]]).equals(item)) {\n                                                            ^\nHashedArrayList.java:158: error: incompatible types: Object cannot be converted to int\n                return hashTable[i];\n                                ^\n[loading /modules/java.base/java/lang/System.class]\n[total 68ms]\nNote: HashedArrayList.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n10 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "    @Override\n    ^\nHashedLinkedList.java:146: error: method does not override or implement a method from a supertype\n    @Override\n    ^\n[loading /modules/java.base/java/lang/IllegalStateException.class]\nHashedLinkedList.java:152: error: method does not override or implement a method from a supertype\n    @Override\n    ^\nHashedLinkedList.java:158: error: method does not override or implement a method from a supertype\n    @Override\n    ^\nHashedLinkedList.java:164: error: method does not override or implement a method from a supertype\n    @Override\n    ^\nHashedLinkedList.java:173: error: Node<CAP#1> cannot be safely cast to Node<T>\n            if (current instanceof Node<T> && ((Node<T>) current).hash == hash && item.equals(((Node<T>) current).item)) {\n                ^\n  where T is a type-variable:\n    T extends Object declared in class HashedLinkedList\n  where CAP#1 is a fresh type-variable:\n    CAP#1 extends Object from capture of ?\nHashedLinkedList.java:184: error: incompatible types: Node<T> cannot be converted to Node<CAP#1>\n            last.next = newNode;\n                        ^\n  where T is a type-variable:\n    T extends Object declared in class HashedLinkedList\n  where CAP#1 is a fresh type-variable:\n    CAP#1 extends Object from capture of ?\nHashedLinkedList.java:211: error: method does not override or implement a method from a supertype\n    @Override\n    ^\n[total 81ms]\nNote: HashedLinkedList.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n15 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking Order]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[wrote /var/folders/ty/3ggb372d4nq6jdqxbb0wyzs40000gn/T/infer-racerd-wl_uedd2/classes/Order.class]\n[checking IntervalHeap]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\nIntervalHeap.java:52: error: incompatible types: Object cannot be converted to T\n        handleDelete(0, order.compare(lowHeap[size - 1], highHeap[size - 1]) < 0 ? lowHeap : highHeap, size - 1);\n                                             ^\n  where T is a type-variable:\n    T extends Object declared in class IntervalHeap\nIntervalHeap.java:62: error: incompatible types: Object cannot be converted to T\n        handleDelete(0, order.compare(lowHeap[size - 1], highHeap[size - 1]) > 0 ? lowHeap : highHeap, size - 1);\n                                             ^\n  where T is a type-variable:\n    T extends Object declared in class IntervalHeap\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/Class.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Number.class]\n[total 80ms]\nNote: IntervalHeap.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.management/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/util/function/BiConsumer.class]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/SuppressWarnings.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking MysteriousHashMap]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Math.class]\nMysteriousHashMap.java:110: error: cannot assign a value to final variable value\n                            node.value = v;\n                                ^\n[total 78ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\nTreeBag.java:67: error: bad operand type Object for unary operator '++'\n                counts[index]++;\n                             ^\nTreeBag.java:80: error: bad operand type Object for unary operator '--'\n            counts[index]--;\n                         ^\nTreeBag.java:81: error: bad operand types for binary operator '=='\n            if (counts[index] == 0) {\n                              ^\n  first type:  Object\n  second type: int\n[loading /modules/java.base/java/lang/Class.class]\n[loading /modules/java.base/java/lang/reflect/GenericDeclaration.class]\n[loading /modules/java.base/java/lang/reflect/AnnotatedElement.class]\n[loading /modules/java.base/java/lang/reflect/Type.class]\n[loading /modules/java.base/java/lang/invoke/TypeDescriptor.class]\n[loading /modules/java.base/java/lang/invoke/TypeDescriptor$OfField.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/IndexOutOfBoundsException.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[total 89ms]\nNote: TreeBag.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n8 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "TreeDictionary.java:392: error: cannot find symbol\n                count += ((x.left != null) ? x.left.size : 0) + 1;\n                                                   ^\n  symbol:   variable size\n  location: variable left of type Node<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class Node\n    V extends Object declared in class Node\nTreeDictionary.java:395: error: cannot find symbol\n                return count + ((x.left != null) ? x.left.size : 0);\n                                                         ^\n  symbol:   variable size\n  location: variable left of type Node<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class Node\n    V extends Object declared in class Node\nTreeDictionary.java:413: error: cannot find symbol\n        int index = size - s;\n                           ^\n  symbol:   variable s\n  location: class TreeDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class TreeDictionary\n    V extends Object declared in class TreeDictionary\nTreeDictionary.java:415: error: cannot find symbol\n        s--;\n        ^\n  symbol:   variable s\n  location: class TreeDictionary<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class TreeDictionary\n    V extends Object declared in class TreeDictionary\n[total 102ms]\nNote: TreeDictionary.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n6 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "TreeSet.java:210: error: unexpected type\n                    colorOf(w) = colorOf(parentOf(x));\n                           ^\n  required: variable\n  found:    value\nTreeSet.java:211: error: unexpected type\n                    colorOf(parentOf(x)) = false;\n                           ^\n  required: variable\n  found:    value\nTreeSet.java:212: error: unexpected type\n                    colorOf(leftChildOf(w)) = false;\n                           ^\n  required: variable\n  found:    value\nTreeSet.java:218: error: unexpected type\n        colorOf(x) = false;\n               ^\n  required: variable\n  found:    value\nTreeSet.java:295: error: cannot find symbol\n        return (node != null) ? node.left.count + node.right.count + 1 : 0;\n                                         ^\n  symbol:   variable count\n  location: variable left of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\nTreeSet.java:295: error: cannot find symbol\n        return (node != null) ? node.left.count + node.right.count + 1 : 0;\n                                                            ^\n  symbol:   variable count\n  location: variable right of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\n[total 102ms]\n34 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "red_black_tree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 9,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `RedBlackTree.add(...)` writes to field `this.root` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "RedBlackTree.add(java.lang.Object):boolean",
+          "file": "red_black_tree.java",
+          "line": 125,
+          "column": -1,
+          "key": "red_black_tree.java|add|THREAD_SAFETY_VIOLATION",
+          "hash": "b0024d14454a9984352c79668f9e3902"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `RedBlackTree.remove(...)` writes to field `this.root` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "RedBlackTree.remove(java.lang.Object):boolean",
+          "file": "red_black_tree.java",
+          "line": 132,
+          "column": -1,
+          "key": "red_black_tree.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "96e07c283596f70827dabc2f0aae1678"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `RedBlackTree.contains(...)` reads without synchronization from `this.root`, which races with the write in method `RedBlackTree.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "RedBlackTree.contains(java.lang.Object):boolean",
+          "file": "red_black_tree.java",
+          "line": 138,
+          "column": -1,
+          "key": "red_black_tree.java|contains|THREAD_SAFETY_VIOLATION",
+          "hash": "efc429b4b748fc35d4c1bd505c0392f6"
+        },
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `Order.compare(...)` of un-annotated interface `Order`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "RedBlackTree.contains(java.lang.Object):boolean",
+          "file": "red_black_tree.java",
+          "line": 140,
+          "column": -1,
+          "key": "red_black_tree.java|contains|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "c7b1a10f841d640f517c85d3e2d26082"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `RedBlackTree.first()` reads without synchronization from `this.root`, which races with the write in method `RedBlackTree.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "RedBlackTree.first():java.lang.Object",
+          "file": "red_black_tree.java",
+          "line": 149,
+          "column": -1,
+          "key": "red_black_tree.java|first|THREAD_SAFETY_VIOLATION",
+          "hash": "cedbd68a11b25dd6b2a8a14d2b60a420"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `RedBlackTree.first()` indirectly reads without synchronization from `this.root.left`, which races with the write in method `RedBlackTree.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "RedBlackTree.first():java.lang.Object",
+          "file": "red_black_tree.java",
+          "line": 150,
+          "column": -1,
+          "key": "red_black_tree.java|first|THREAD_SAFETY_VIOLATION",
+          "hash": "ebffa5edb009f8b942ec9c750825d65a"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `RedBlackTree.last()` reads without synchronization from `this.root`, which races with the write in method `RedBlackTree.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "RedBlackTree.last():java.lang.Object",
+          "file": "red_black_tree.java",
+          "line": 154,
+          "column": -1,
+          "key": "red_black_tree.java|last|THREAD_SAFETY_VIOLATION",
+          "hash": "a6dcf72e8e580843d4e2c482274d4ab7"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `RedBlackTree.size()` reads without synchronization from `this.root`, which races with the write in method `RedBlackTree.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "RedBlackTree.size():int",
+          "file": "red_black_tree.java",
+          "line": 161,
+          "column": -1,
+          "key": "red_black_tree.java|size|THREAD_SAFETY_VIOLATION",
+          "hash": "f559902264d1038f7866ef0ecb86f919"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `RedBlackTree.snapshot()` reads without synchronization from `this.root`, which races with the write in method `RedBlackTree.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "RedBlackTree.snapshot():java.lang.Object[]",
+          "file": "red_black_tree.java",
+          "line": 170,
+          "column": -1,
+          "key": "red_black_tree.java|snapshot|THREAD_SAFETY_VIOLATION",
+          "hash": "37af66f1458a1ecc45e6481acb4641f8"
+        }
+      ],
+      "stderr": ""
+    }
+  ]
+}

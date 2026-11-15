@@ -1,0 +1,90 @@
+{
+  "timestamp": "date:2026-11-06T21-00",
+  "model": "gpt-6.1-terra",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/BTree.java",
+      "prompt_name": "advanced_datastructures/b_tree",
+      "problem": "b_tree",
+      "analyzed": true,
+      "probability": 0.5158,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/BinarySearchTree.java",
+      "prompt_name": "advanced_datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "analyzed": true,
+      "probability": 0.7163,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/HashedArrayList.java",
+      "prompt_name": "advanced_datastructures/HashedArrayList",
+      "problem": "HashedArrayList",
+      "analyzed": true,
+      "probability": 0.6519,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/HashedLinkedList.java",
+      "prompt_name": "advanced_datastructures/HashedLinkedList",
+      "problem": "HashedLinkedList",
+      "analyzed": true,
+      "probability": 0.6508,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/IntervalHeap.java",
+      "prompt_name": "advanced_datastructures/IntervalHeap",
+      "problem": "IntervalHeap",
+      "analyzed": true,
+      "probability": 0.5981,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/MysteriousHashMap.java",
+      "prompt_name": "advanced_datastructures/MysteriousHashMap",
+      "problem": "MysteriousHashMap",
+      "analyzed": true,
+      "probability": 0.6452,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/RedBlackTree.java",
+      "prompt_name": "advanced_datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "analyzed": true,
+      "probability": 0.6308,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/TreeBag.java",
+      "prompt_name": "advanced_datastructures/TreeBag",
+      "problem": "TreeBag",
+      "analyzed": true,
+      "probability": 0.5613,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/TreeDictionary.java",
+      "prompt_name": "advanced_datastructures/TreeDictionary",
+      "problem": "TreeDictionary",
+      "analyzed": true,
+      "probability": 0.5545,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-11-04T10-00-bw9bwb8e/openai/gpt-6.1-terra/run-2/advanced_datastructures/TreeSet.java",
+      "prompt_name": "advanced_datastructures/TreeSet",
+      "problem": "TreeSet",
+      "analyzed": true,
+      "probability": 0.6261,
+      "error": ""
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+public final class ConcurrentMap<K, V> {
+    private static final int DEFAULT_CAPACITY = 16;
+
+    private static final class Node<K, V> {
+        final K key;
+        final int hash;
+        V value;
+        Node<K, V> next;
+
+        Node(K key, int hash, V value, Node<K, V> next) {
+            this.key = key;
+            this.hash = hash;
+            this.value = value;
+            this.next = next;
+        }
+    }
+
+    private final Object mutex = new Object();
+    private Node<K, V>[] buckets;
+    private int size;
+
+    public ConcurrentMap() {
+        this(DEFAULT_CAPACITY);
+    }
+
+    @SuppressWarnings("unchecked")
+    public ConcurrentMap(int initialCapacity) {
+        if (initialCapacity < 1) {
+            throw new IllegalArgumentException("Capacity must be positive");
+        }
+        buckets = (Node<K, V>[]) new Node[initialCapacity];
+    }
+
+    public V get(K key) {
+        requireKey(key);
+        int hash = hash(key);
+
+        synchronized (mutex) {
+            Node<K, V> node = findNode(key, hash);
+            return node == null ? null : node.value;
+        }
+    }
+
+    public boolean containsKey(K key) {
+        requireKey(key);
+        int hash = hash(key);
+
+        synchronized (mutex) {
+            return findNode(key, hash) != null;
+        }
+    }
+
+    public boolean containsValue(Object value) {
+        synchronized (mutex) {
+            for (int i = 0; i < buckets.length; i++) {
+                for (Node<K, V> node = buckets[i]; node != null; node = node.next) {
+                    if (value == null ? node.value == null : value.equals(node.value)) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
+    }
+
+    /**
+     * Associates the value with the key and returns the previous value, or null
+     * if the key was not already present. Null values are permitted.
+     */
+    public V put(K key, V value) {
+        requireKey(key);
+        int hash = hash(key);
+
+        synchronized (mutex) {
+            Node<K, V> existing = findNode(key, hash);
+            if (existing != null) {
+                V previous = existing.value;
+                existing.value = value;
+                return previous;
+            }
+
+            if (size + 1 > resizeThreshold(buckets.length)
+                    && buckets.length <= Integer.MAX_VALUE / 2) {
+                resize(buckets.length * 2);
+            }
+
+            int index = indexFor(hash, buckets.length);
+            buckets[index] = new Node<K, V>(key, hash, value, buckets[index]);
+            size++;
+            return null;
+        }
+    }
+
+    /**
+     * Removes the key and returns its previous value, or null if it was absent.
+     * Use containsKey to distinguish an absent key from a key mapped to null.
+     */
+    public V remove(K key) {
+        requireKey(key);
+        int hash = hash(key);
+
+        synchronized (mutex) {
+            int index = indexFor(hash, buckets.length);
+            Node<K, V> previous = null;
+            Node<K, V> node = buckets[index];
+
+            while (node != null) {
+                if (node.hash == hash && key.equals(node.key)) {
+                    if (previous == null) {
+                        buckets[index] = node.next;
+                    } else {
+                        previous.next = node.next;
+                    }
+                    size--;
+                    return node.value;
+                }
+                previous = node;
+                node = node.next;
+            }
+            return null;
+        }
+    }
+
+    public int size() {
+        synchronized (mutex) {
+            return size;
+        }
+    }
+
+    public boolean isEmpty() {
+        synchronized (mutex) {
+            return size == 0;
+        }
+    }
+
+    @SuppressWarnings("unchecked")
+    public void clear() {
+        synchronized (mutex) {
+            buckets = (Node<K, V>[]) new Node[buckets.length];
+            size = 0;
+        }
+    }
+
+    private Node<K, V> findNode(K key, int hash) {
+        int index = indexFor(hash, buckets.length);
+        for (Node<K, V> node = buckets[index]; node != null; node = node.next) {
+            if (node.hash == hash && key.equals(node.key)) {
+                return node;
+            }
+        }
+        return null;
+    }
+
+    @SuppressWarnings("unchecked")
+    private void resize(int newCapacity) {
+        Node<K, V>[] newBuckets = (Node<K, V>[]) new Node[newCapacity];
+
+        for (int i = 0; i < buckets.length; i++) {
+            Node<K, V> node = buckets[i];
+            while (node != null) {
+                Node<K, V> next = node.next;
+                int index = indexFor(node.hash, newCapacity);
+                node.next = newBuckets[index];
+                newBuckets[index] = node;
+                node = next;
+            }
+        }
+
+        buckets = newBuckets;
+    }
+
+    private static int resizeThreshold(int capacity) {
+        return capacity - (capacity >>> 2);
+    }
+
+    private static int indexFor(int hash, int capacity) {
+        return (hash & 0x7fffffff) % capacity;
+    }
+
+    private static int hash(Object key) {
+        int hash = key.hashCode();
+        return hash ^ (hash >>> 16);
+    }
+
+    private static void requireKey(Object key) {
+        if (key == null) {
+            throw new NullPointerException("Null keys are not supported");
+        }
+    }
+}

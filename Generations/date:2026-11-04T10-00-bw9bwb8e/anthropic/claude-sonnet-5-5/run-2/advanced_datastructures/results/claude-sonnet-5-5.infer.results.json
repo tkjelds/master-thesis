@@ -1,0 +1,106 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "claude-sonnet-5-5",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `BiConsumer.accept(...)` of un-annotated interface `BiConsumer`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "MysteriousHashMap.forEach(BiConsumer):void",
+          "file": "MysteriousHashMap.java",
+          "line": 196,
+          "column": -1,
+          "key": "MysteriousHashMap.java|forEach|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "97b85b266ec68f978dc018be9d8f19ee"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/java.management.rmi/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.jconsole/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[total 26ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    }
+  ]
+}

@@ -1,0 +1,249 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "Bag.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking Bag]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/Error.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\nBag.java:44: error: unreported exception InterruptedException; must be caught or declared to be thrown\n            remove();\n                  ^\n[total 56ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentArray.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDeque.toString()` reads without synchronization from `this.elements`, which races with the write in method `ConcurrentDeque.addLast(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDeque.toString():java.lang.String",
+          "file": "ConcurrentDeque.java",
+          "line": 90,
+          "column": -1,
+          "key": "ConcurrentDeque.java|toString|THREAD_SAFETY_VIOLATION",
+          "hash": "f69c365ca5e83d67e34be169025c3793"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentHashMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 6,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.size()` reads without synchronization from `this.size`, which races with the write in method `LinkedDeque.removeFirst()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.size():int",
+          "file": "LinkedDeque.java",
+          "line": 27,
+          "column": -1,
+          "key": "LinkedDeque.java|size|THREAD_SAFETY_VIOLATION",
+          "hash": "6a3597849f07fb589a8e4c0dbdbc8690"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.isEmpty()` reads without synchronization from `this.size`, which races with the write in method `LinkedDeque.removeFirst()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.isEmpty():boolean",
+          "file": "LinkedDeque.java",
+          "line": 31,
+          "column": -1,
+          "key": "LinkedDeque.java|isEmpty|THREAD_SAFETY_VIOLATION",
+          "hash": "2e888547acdc6c8ce5bdb8d1e4805cbf"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.removeFirst()` indirectly reads without synchronization from `this.size`, which races with the write in method `LinkedDeque.removeFirst()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.removeFirst():java.lang.Object",
+          "file": "LinkedDeque.java",
+          "line": 59,
+          "column": -1,
+          "key": "LinkedDeque.java|removeFirst|THREAD_SAFETY_VIOLATION",
+          "hash": "3cf55ed53bca9cac2c192e3a1e4da2d3"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.removeLast()` indirectly reads without synchronization from `this.size`, which races with the write in method `LinkedDeque.removeFirst()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.removeLast():java.lang.Object",
+          "file": "LinkedDeque.java",
+          "line": 82,
+          "column": -1,
+          "key": "LinkedDeque.java|removeLast|THREAD_SAFETY_VIOLATION",
+          "hash": "923596094fdf05e8978f190d759c0cad"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.peekFirst()` indirectly reads without synchronization from `this.size`, which races with the write in method `LinkedDeque.removeFirst()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.peekFirst():java.lang.Object",
+          "file": "LinkedDeque.java",
+          "line": 105,
+          "column": -1,
+          "key": "LinkedDeque.java|peekFirst|THREAD_SAFETY_VIOLATION",
+          "hash": "a6340206bb3c86a7b9d7bafbba73a99b"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `LinkedDeque.peekLast()` indirectly reads without synchronization from `this.size`, which races with the write in method `LinkedDeque.removeFirst()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "LinkedDeque.peekLast():java.lang.Object",
+          "file": "LinkedDeque.java",
+          "line": 121,
+          "column": -1,
+          "key": "LinkedDeque.java|peekLast|THREAD_SAFETY_VIOLATION",
+          "hash": "533bfc3de1b5f55c0380256fe219b795"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "PriorityQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "            Node<E> curr = pred.next[level];\n                                    ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:45: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n                curr = pred.next[level];\n                                ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:86: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n                Node<E> curr = pred.next[level];\n                                        ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:94: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n        Node<E> curr = pred.next[0];\n                                ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:101: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n            Node<E> curr = pred.next[0];\n                                    ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:106: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n                    curr = pred.next[level];\n                                    ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\nSkipListSet.java:146: error: incompatible types: AtomicReference<Node<E>> cannot be converted to Node<E>\n        Node<E> curr = head.next[0];\n                                ^\n  where E is a type-variable:\n    E extends Comparable<E> declared in class SkipListSet\n[total 77ms]\n9 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ThreadSafeCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "linked_list.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_map.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "timestamp": "date:2026-11-06T20-36",
+  "model": "gpt-6-luna",
+  "tool": "sokrates",
+  "analysis_mode": "isolated-source-file",
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 369,
+        "unit_count": 20,
+        "unit_size_total_loc": 334,
+        "unit_size_max_loc": 49,
+        "unit_size_mean_loc": 16.7,
+        "conditional_complexity_total": 91,
+        "conditional_complexity_max": 16,
+        "conditional_complexity_mean": 4.55
+      },
+      "error": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 163,
+        "unit_count": 8,
+        "unit_size_total_loc": 137,
+        "unit_size_max_loc": 45,
+        "unit_size_mean_loc": 17.125,
+        "conditional_complexity_total": 37,
+        "conditional_complexity_max": 13,
+        "conditional_complexity_mean": 4.625
+      },
+      "error": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 236,
+        "unit_count": 20,
+        "unit_size_total_loc": 205,
+        "unit_size_max_loc": 30,
+        "unit_size_mean_loc": 10.25,
+        "conditional_complexity_total": 50,
+        "conditional_complexity_max": 6,
+        "conditional_complexity_mean": 2.5
+      },
+      "error": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 259,
+        "unit_count": 22,
+        "unit_size_total_loc": 221,
+        "unit_size_max_loc": 24,
+        "unit_size_mean_loc": 10.045454545454545,
+        "conditional_complexity_total": 49,
+        "conditional_complexity_max": 6,
+        "conditional_complexity_mean": 2.227272727272727
+      },
+      "error": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 273,
+        "unit_count": 19,
+        "unit_size_total_loc": 254,
+        "unit_size_max_loc": 39,
+        "unit_size_mean_loc": 13.368421052631579,
+        "conditional_complexity_total": 66,
+        "conditional_complexity_max": 10,
+        "conditional_complexity_mean": 3.473684210526316
+      },
+      "error": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 188,
+        "unit_count": 11,
+        "unit_size_total_loc": 156,
+        "unit_size_max_loc": 51,
+        "unit_size_mean_loc": 14.181818181818182,
+        "conditional_complexity_total": 42,
+        "conditional_complexity_max": 11,
+        "conditional_complexity_mean": 3.8181818181818183
+      },
+      "error": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 324,
+        "unit_count": 15,
+        "unit_size_total_loc": 294,
+        "unit_size_max_loc": 63,
+        "unit_size_mean_loc": 19.6,
+        "conditional_complexity_total": 66,
+        "conditional_complexity_max": 16,
+        "conditional_complexity_mean": 4.4
+      },
+      "error": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 310,
+        "unit_count": 36,
+        "unit_size_total_loc": 278,
+        "unit_size_max_loc": 33,
+        "unit_size_mean_loc": 7.722222222222222,
+        "conditional_complexity_total": 92,
+        "conditional_complexity_max": 12,
+        "conditional_complexity_mean": 2.5555555555555554
+      },
+      "error": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 311,
+        "unit_count": 32,
+        "unit_size_total_loc": 276,
+        "unit_size_max_loc": 35,
+        "unit_size_mean_loc": 8.625,
+        "conditional_complexity_total": 84,
+        "conditional_complexity_max": 12,
+        "conditional_complexity_mean": 2.625
+      },
+      "error": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": true,
+      "metrics": {
+        "lines_of_code": 294,
+        "unit_count": 29,
+        "unit_size_total_loc": 266,
+        "unit_size_max_loc": 29,
+        "unit_size_mean_loc": 9.172413793103448,
+        "conditional_complexity_total": 88,
+        "conditional_complexity_max": 12,
+        "conditional_complexity_mean": 3.0344827586206895
+      },
+      "error": ""
+    }
+  ]
+}

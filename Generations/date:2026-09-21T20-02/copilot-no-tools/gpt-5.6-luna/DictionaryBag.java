@@ -1,4 +1,7 @@
+@DictionaryBag.ThreadSafe
 public final class DictionaryBag<K, V> {
+    @interface ThreadSafe {}
+
     private static final int DEFAULT_BUCKET_COUNT = 16;
     private static final int UNBOUNDED = -1;
 

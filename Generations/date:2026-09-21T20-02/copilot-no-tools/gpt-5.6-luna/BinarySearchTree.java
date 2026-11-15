@@ -1,4 +1,7 @@
+@BinarySearchTree.ThreadSafe
 public class BinarySearchTree {
+    @interface ThreadSafe {}
+
     private static final class Node {
         private final int value;
         private Node left;

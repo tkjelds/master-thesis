@@ -1,0 +1,92 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "claude-haiku-5-5",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.xml/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/java.management.rmi/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[total 26ms]\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

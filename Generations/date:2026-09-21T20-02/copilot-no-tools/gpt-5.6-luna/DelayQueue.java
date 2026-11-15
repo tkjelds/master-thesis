@@ -1,4 +1,7 @@
+@DelayQueue.ThreadSafe
 public final class DelayQueue<E> {
+    @interface ThreadSafe {}
+
     private static final class Node<E> {
         final E value;
         final long deadline;

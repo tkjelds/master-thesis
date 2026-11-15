@@ -1,0 +1,76 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/SuppressWarnings.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking BinarySearchTree]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\nBinarySearchTree.java:138: error: incompatible types: T cannot be converted to Node<T>\n                if (node != null) nodes[i++] = node.value;\n                                                   ^\n  where T is a type-variable:\n    T extends Object declared in class BinarySearchTree\n[loading /modules/java.base/java/util/Arrays.class]\n[loading /modules/java.base/java/lang/Class.class]\n[loading /modules/java.base/java/lang/Math.class]\n[total 92ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\nHashedLinkedList.java:27: error: incompatible types: Node<T> cannot be converted to boolean\n        return add(size, item);\n                  ^\n  where T is a type-variable:\n    T extends Object declared in class HashedLinkedList\nHashedLinkedList.java:32: error: incompatible types: Node<T> cannot be converted to boolean\n        return add(0, item);\n                  ^\n  where T is a type-variable:\n    T extends Object declared in class HashedLinkedList\n[loading /modules/java.base/java/lang/IndexOutOfBoundsException.class]\nHashedLinkedList.java:38: error: incompatible types: Node<T> cannot be converted to boolean\n        return add(index, item);\n                  ^\n  where T is a type-variable:\n    T extends Object declared in class HashedLinkedList\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[total 72ms]\nNote: HashedLinkedList.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n3 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "            Map.Entry<K, V> oldEntry = findEntry(index, k);\n               ^\nMysteriousHashMap.java:108: error: non-static method rehashStripe(int) cannot be referenced from a static context\n                    rehashStripe(index);\n                    ^\nMysteriousHashMap.java:111: error: package Map does not exist\n                Map.Entry<K, V> newEntry = new AbstractMap.SimpleImmutableEntry<>(k, v);\n                   ^\nMysteriousHashMap.java:111: error: package AbstractMap does not exist\n                Map.Entry<K, V> newEntry = new AbstractMap.SimpleImmutableEntry<>(k, v);\n                                                          ^\nMysteriousHashMap.java:120: error: package Map does not exist\n            Map.Entry<K, V> entry = findEntry(index, k);\n               ^\nMysteriousHashMap.java:125: error: package bucket does not exist\n                bucket.entries.remove(entry);\n                      ^\nMysteriousHashMap.java:140: error: package Map does not exist\n                    for (Map.Entry<K, V> entry : bucket.entries) {\n                            ^\nMysteriousHashMap.java:149: error: package Map does not exist\n            for (Map.Entry<K, V> entry : buckets[index].entries) {\n                    ^\nMysteriousHashMap.java:158: error: cannot find symbol\n            List<Map.Entry<K, V>> entries = new ArrayList<>();\n                                                ^\n  symbol:   class ArrayList\n  location: class Bucket<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class Bucket\n    V extends Object declared in class Bucket\nMysteriousHashMap.java:171: error: package Map does not exist\n                    for (Map.Entry<K, V> entry : bucket.entries) {\n                            ^\n[total 87ms]\n21 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "Order.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "                boolean rightInvariants = checkInvariants(right) && (right != null ? order.compare(node.item, right.item) < 0 : true);\n                                                                                                       ^\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in class Snapshot\n    T#2 extends Object declared in class TreeSet\nOrder.java:399: error: cannot find symbol\n                boolean blackHeightConsistent = (isExternal ? true : (left.isRed() == right.isRed()));\n                                                                          ^\n  symbol:   method isRed()\n  location: variable left of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Snapshot\nOrder.java:399: error: cannot find symbol\n                boolean blackHeightConsistent = (isExternal ? true : (left.isRed() == right.isRed()));\n                                                                                           ^\n  symbol:   method isRed()\n  location: variable right of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Snapshot\nOrder.java:402: error: cannot find symbol\n            int leftBlackHeight = (isExternal ? 1 : (left != null ? left.blackHeight() : 0));\n                                                                        ^\n  symbol:   method blackHeight()\n  location: variable left of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Snapshot\nOrder.java:403: error: cannot find symbol\n            int rightBlackHeight = (isExternal ? 1 : (right != null ? right.blackHeight() : 0));\n                                                                           ^\n  symbol:   method blackHeight()\n  location: variable right of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Snapshot\n[total 103ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n36 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking Order]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[checking Snapshot]\n[checking TreeBag]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Boolean.class]\nTreeBag.java:77: error: incompatible types: boolean cannot be converted to Node\n            node.right = remove(node.right, item);\n                               ^\nTreeBag.java:79: error: incompatible types: boolean cannot be converted to Node\n            node.left = remove(node.left, item);\n                              ^\nTreeBag.java:85: error: cannot assign a value to final variable item\n                    node.item = successor.item;\n                        ^\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Void.class]\n[loading /modules/java.base/java/lang/IndexOutOfBoundsException.class]\n[loading /modules/java.base/java/lang/Math.class]\n[total 87ms]\n5 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[checking Entry]\n[checking Snapshot]\n[checking TreeDictionary]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Byte.class]\n[loading /modules/java.base/java/lang/Character.class]\n[loading /modules/java.base/java/lang/Short.class]\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/Float.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Double.class]\n[loading /modules/java.base/java/lang/Boolean.class]\n[loading /modules/java.base/java/lang/Void.class]\n[loading /modules/java.base/java/lang/IndexOutOfBoundsException.class]\nTreeDictionary.java:250: error: cannot find symbol\n            if (x.left != null && x.left.count() > index) x = x.left;\n                                        ^\n  symbol:   method count()\n  location: variable left of type Node\nTreeDictionary.java:252: error: cannot find symbol\n                index -= (x.left != null ? x.left.count() : 0) + 1;\n                                                 ^\n  symbol:   method count()\n  location: variable left of type Node\nTreeDictionary.java:269: error: cannot find symbol\n                rank += (x.left != null ? x.left.count() : 0) + 1;\n                                                ^\n  symbol:   method count()\n  location: variable left of type Node\n[total 82ms]\n7 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "red_black_tree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "claude-sonnet-5-5",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSkipListSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 23,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.put(...)` indirectly reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.put(java.lang.Comparable,java.lang.Object):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 169,
+          "column": -1,
+          "key": "SkipListMap.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "bb02a6484952b6d5ce30d62511729d3b"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.putIfAbsent(...)` indirectly reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.putIfAbsent(java.lang.Comparable,java.lang.Object):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 182,
+          "column": -1,
+          "key": "SkipListMap.java|putIfAbsent|THREAD_SAFETY_VIOLATION",
+          "hash": "749131d895b4cb16280a30e3c5f36587"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.get(...)` indirectly reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.get(java.lang.Comparable):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 195,
+          "column": -1,
+          "key": "SkipListMap.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "bb4654373b27dfd596779cc177b1f2b0"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.containsKey(...)` indirectly reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.containsKey(java.lang.Comparable):boolean",
+          "file": "SkipListMap.java",
+          "line": 203,
+          "column": -1,
+          "key": "SkipListMap.java|containsKey|THREAD_SAFETY_VIOLATION",
+          "hash": "4fad39675974a8dcb42c4dfa9bd366a2"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.remove(...)` reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.remove(java.lang.Comparable):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 216,
+          "column": -1,
+          "key": "SkipListMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "e1dd561dda00ebfba7a66ccf869a926c"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.remove(...)` reads without synchronization from `this.head.next.[_]`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.remove(java.lang.Comparable):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 231,
+          "column": -1,
+          "key": "SkipListMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "9ae5d9a229963515d8cd6a4992522f30"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.remove(...)` writes to field `this.level` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.remove(java.lang.Comparable):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 232,
+          "column": -1,
+          "key": "SkipListMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "abe29ee026f58fc7b14214954807293c"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.remove(...)` writes to field `this.size` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.remove(java.lang.Comparable):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 234,
+          "column": -1,
+          "key": "SkipListMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "b56c23c9a0f8a016b4658213c1eb6da9"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.replace(...)` indirectly reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.replace(java.lang.Comparable,java.lang.Object):java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 248,
+          "column": -1,
+          "key": "SkipListMap.java|replace|THREAD_SAFETY_VIOLATION",
+          "hash": "09631873a9911401243448551d0ca00f"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.size()` reads without synchronization from `this.size`, which races with the write in method `SkipListMap.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.size():int",
+          "file": "SkipListMap.java",
+          "line": 263,
+          "column": -1,
+          "key": "SkipListMap.java|size|THREAD_SAFETY_VIOLATION",
+          "hash": "c6292c4cfd051ab7f35194f6a896d929"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.isEmpty()` indirectly reads without synchronization from `this.size`, which races with the write in method `SkipListMap.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.isEmpty():boolean",
+          "file": "SkipListMap.java",
+          "line": 270,
+          "column": -1,
+          "key": "SkipListMap.java|isEmpty|THREAD_SAFETY_VIOLATION",
+          "hash": "4ede0817891cef8ac1c55cbf51aa0a8a"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.clear()` writes to field `this.head.next.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.clear():void",
+          "file": "SkipListMap.java",
+          "line": 277,
+          "column": -1,
+          "key": "SkipListMap.java|clear|THREAD_SAFETY_VIOLATION",
+          "hash": "35acb2c6b24e36dbf446c83903cd60ac"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.clear()` writes to field `this.level` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.clear():void",
+          "file": "SkipListMap.java",
+          "line": 279,
+          "column": -1,
+          "key": "SkipListMap.java|clear|THREAD_SAFETY_VIOLATION",
+          "hash": "22933ad04d4c7db0ca5bf9915cd65d10"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.clear()` writes to field `this.size` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.clear():void",
+          "file": "SkipListMap.java",
+          "line": 280,
+          "column": -1,
+          "key": "SkipListMap.java|clear|THREAD_SAFETY_VIOLATION",
+          "hash": "ee94005fb35fc3ae45841fb71d973d0e"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.firstKey()` reads without synchronization from `this.head.next.[_]`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.firstKey():java.lang.Comparable",
+          "file": "SkipListMap.java",
+          "line": 290,
+          "column": -1,
+          "key": "SkipListMap.java|firstKey|THREAD_SAFETY_VIOLATION",
+          "hash": "09a823e30260f3856537ab33a8545385"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.lastKey()` reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.lastKey():java.lang.Comparable",
+          "file": "SkipListMap.java",
+          "line": 302,
+          "column": -1,
+          "key": "SkipListMap.java|lastKey|THREAD_SAFETY_VIOLATION",
+          "hash": "f2fbc118f873fd9dbf274abdceb0bbd4"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.floorKey(...)` reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.floorKey(java.lang.Comparable):java.lang.Comparable",
+          "file": "SkipListMap.java",
+          "line": 321,
+          "column": -1,
+          "key": "SkipListMap.java|floorKey|THREAD_SAFETY_VIOLATION",
+          "hash": "661be763746bc4572175602c225d36f0"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.ceilingKey(...)` reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.ceilingKey(java.lang.Comparable):java.lang.Comparable",
+          "file": "SkipListMap.java",
+          "line": 340,
+          "column": -1,
+          "key": "SkipListMap.java|ceilingKey|THREAD_SAFETY_VIOLATION",
+          "hash": "8b1a690159e4039fd5db9b62e2cec7c8"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.pollFirstValue()` reads without synchronization from `this.head.next.[_]`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.pollFirstValue():java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 356,
+          "column": -1,
+          "key": "SkipListMap.java|pollFirstValue|THREAD_SAFETY_VIOLATION",
+          "hash": "d5c20bef7659936371a5e00babe13a3a"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListMap.pollFirstValue()` reads without synchronization from `this.level`, which races with the write in method `SkipListMap.clear()`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.pollFirstValue():java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 360,
+          "column": -1,
+          "key": "SkipListMap.java|pollFirstValue|THREAD_SAFETY_VIOLATION",
+          "hash": "64839fb07d9bc6a59012f6ac67d52308"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.pollFirstValue()` writes to field `this.head.next.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.pollFirstValue():java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 362,
+          "column": -1,
+          "key": "SkipListMap.java|pollFirstValue|THREAD_SAFETY_VIOLATION",
+          "hash": "118425ae7656333b334ad56e022d6f7f"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.pollFirstValue()` writes to field `this.level` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.pollFirstValue():java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 366,
+          "column": -1,
+          "key": "SkipListMap.java|pollFirstValue|THREAD_SAFETY_VIOLATION",
+          "hash": "cafe98f62f7e8de39d3242c213708528"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `SkipListMap.pollFirstValue()` writes to field `this.size` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListMap.pollFirstValue():java.lang.Object",
+          "file": "SkipListMap.java",
+          "line": 368,
+          "column": -1,
+          "key": "SkipListMap.java|pollFirstValue|THREAD_SAFETY_VIOLATION",
+          "hash": "51202b27deb9ced870cbf9a2892693d1"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "StripedConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

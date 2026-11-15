@@ -1,0 +1,485 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "google%2Fgemma-4-e4b@reasoning-off",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 12,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDictionary.put(...)` reads without synchronization from `this.keys.[_]`, which races with the write in method `ConcurrentDictionary.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.put(java.lang.Object,java.lang.Object):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 53,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "6bfe09d264eb2589ab6160accc6659d7"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentDictionary.put(...)` writes to field `this.keys.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.put(java.lang.Object,java.lang.Object):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 55,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "3b582e91a5cc6cf69aacae8240dca8d5"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentDictionary.put(...)` writes to field `this.values.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.put(java.lang.Object,java.lang.Object):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 56,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "a55bea3715c3455055505248fcdf0721"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentDictionary.put(...)` writes to field `this.size` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.put(java.lang.Object,java.lang.Object):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 57,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "13e9f6efa072d4f69cee1807ed23e034"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDictionary.get(...)` reads without synchronization from `this.keys.[_]`, which races with the write in method `ConcurrentDictionary.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.get(java.lang.Object):java.lang.Object",
+          "file": "ConcurrentDictionary.java",
+          "line": 85,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "582adf1b5ff8c8aea9267e14137de31a"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDictionary.get(...)` reads without synchronization from `this.values.[_]`, which races with the write in method `ConcurrentDictionary.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.get(java.lang.Object):java.lang.Object",
+          "file": "ConcurrentDictionary.java",
+          "line": 90,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "0f2de347e8ab47dafcdc55737824a633"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDictionary.remove(...)` reads without synchronization from `this.keys.[_]`, which races with the write in method `ConcurrentDictionary.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.remove(java.lang.Object):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 108,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "bfa7c3a607840ef8eacc65477a97928e"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentDictionary.remove(...)` writes to field `this.keys.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.remove(java.lang.Object):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 113,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "695fa72147d2649145b60252f81c32e9"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentDictionary.remove(...)` writes to field `this.values.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.remove(java.lang.Object):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 114,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "92edb89d6ec8b1bb27c72b8b1688f29a"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `ConcurrentDictionary.remove(...)` writes to field `this.size` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.remove(java.lang.Object):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 123,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "4f8b078e9587b672d8499630d8c9909e"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDictionary.size()` reads without synchronization from `this.size`, which races with the write in method `ConcurrentDictionary.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.size():int",
+          "file": "ConcurrentDictionary.java",
+          "line": 133,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|size|THREAD_SAFETY_VIOLATION",
+          "hash": "5e6ca41bea6798761f485b18d3f207a6"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentDictionary.waitForSize(...)` reads with synchronization from `this.size`, which races with the unsynchronized write in method `ConcurrentDictionary.put(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentDictionary.waitForSize(int):void",
+          "file": "ConcurrentDictionary.java",
+          "line": 141,
+          "column": -1,
+          "key": "ConcurrentDictionary.java|waitForSize|THREAD_SAFETY_VIOLATION",
+          "hash": "50b77b11d59d8fd3c37fefd5641ba5c0"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentQueue.insert(...)` reads without synchronization from `this.count`, which races with the write in method `ConcurrentQueue.tryInsert(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentQueue.insert(java.lang.Object):void",
+          "file": "ConcurrentQueue.java",
+          "line": 42,
+          "column": -1,
+          "key": "ConcurrentQueue.java|insert|THREAD_SAFETY_VIOLATION",
+          "hash": "a64ec9417e1977ddde75d3aea92eabdd"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentQueue.remove()` reads without synchronization from `this.count`, which races with the write in method `ConcurrentQueue.tryInsert(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentQueue.remove():java.lang.Object",
+          "file": "ConcurrentQueue.java",
+          "line": 68,
+          "column": -1,
+          "key": "ConcurrentQueue.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "053e068e2744c2978ccd92f4fc091233"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "MyConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 10,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `MyConcurrentMap.put(...)` reads with synchronization from `this.keys.[_]`, which races with the unsynchronized write in method `MyConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.put(java.lang.Object,java.lang.Object):void",
+          "file": "MyConcurrentMap.java",
+          "line": 40,
+          "column": -1,
+          "key": "MyConcurrentMap.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "1e6c64b09c8fc51eb6b8439948b0f9ae"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `MyConcurrentMap.put(...)` reads with synchronization from `this.size`, which races with the unsynchronized write in method `MyConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.put(java.lang.Object,java.lang.Object):void",
+          "file": "MyConcurrentMap.java",
+          "line": 44,
+          "column": -1,
+          "key": "MyConcurrentMap.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "f81f5e7d52bd49fd40a872a322d7b1b4"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `MyConcurrentMap.get(...)` reads without synchronization from `this.keys.[_]`, which races with the write in method `MyConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.get(java.lang.Object):java.lang.Object",
+          "file": "MyConcurrentMap.java",
+          "line": 91,
+          "column": -1,
+          "key": "MyConcurrentMap.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "d9314748a80538372402388bcc0554e4"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `MyConcurrentMap.get(...)` reads without synchronization from `this.values.[_]`, which races with the write in method `MyConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.get(java.lang.Object):java.lang.Object",
+          "file": "MyConcurrentMap.java",
+          "line": 98,
+          "column": -1,
+          "key": "MyConcurrentMap.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "fea4e43a10e038ed60f56a07e80b0ff8"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `MyConcurrentMap.remove(...)` reads without synchronization from `this.keys.[_]`, which races with the write in method `MyConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.remove(java.lang.Object):java.lang.Object",
+          "file": "MyConcurrentMap.java",
+          "line": 127,
+          "column": -1,
+          "key": "MyConcurrentMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "6e7b3ac7140232ab4d3f9485ff5aa007"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `MyConcurrentMap.remove(...)` writes to field `this.keys.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.remove(java.lang.Object):java.lang.Object",
+          "file": "MyConcurrentMap.java",
+          "line": 137,
+          "column": -1,
+          "key": "MyConcurrentMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "1bfb8aa883755ddb81359c7d609b46a2"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `MyConcurrentMap.remove(...)` writes to field `this.values.[_]` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.remove(java.lang.Object):java.lang.Object",
+          "file": "MyConcurrentMap.java",
+          "line": 138,
+          "column": -1,
+          "key": "MyConcurrentMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "538428883fb7430166465534571624e2"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected write. Non-private method `MyConcurrentMap.remove(...)` writes to field `this.size` outside of synchronization.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.remove(java.lang.Object):java.lang.Object",
+          "file": "MyConcurrentMap.java",
+          "line": 139,
+          "column": -1,
+          "key": "MyConcurrentMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "d5e0893945fcfc53f369d23f806079c6"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `MyConcurrentMap.remove(...)` reads without synchronization from `this.values.[_]`, which races with the write in method `MyConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.remove(java.lang.Object):java.lang.Object",
+          "file": "MyConcurrentMap.java",
+          "line": 140,
+          "column": -1,
+          "key": "MyConcurrentMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "6f916c476062c3364a02d549a94fa237"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `MyConcurrentMap.size()` reads with synchronization from `this.size`, which races with the unsynchronized write in method `MyConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "MyConcurrentMap.size():int",
+          "file": "MyConcurrentMap.java",
+          "line": 159,
+          "column": -1,
+          "key": "MyConcurrentMap.java|size|THREAD_SAFETY_VIOLATION",
+          "hash": "b4eed19d782c20420839a0bb8f2a8ae1"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "MyPriorityQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.management/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.unsupported/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/java.smartcardio/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[total 26ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "array_queue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "bag.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.jcmd/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.net/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[total 26ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "collection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "counter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "delay_queue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.dynalink/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking DelayQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\ndelay_queue.java:35: error: cannot find symbol\n            while (isFull()) {\n                   ^\n  symbol:   method isFull()\n  location: class DelayQueue\n[total 58ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "linked_deque.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/java.management.rmi/module-info.class]\n[loading /modules/jdk.management/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.net/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/java.xml.crypto/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[total 24ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "linked_list.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "linked_queue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/java.transaction.xa/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/java.management/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking LinkedListQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Throwable.class]\nlinked_queue.java:82: error: missing return statement\n    }\n    ^\n[loading /modules/java.base/java/lang/Error.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[total 55ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "list.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "skip_list_map.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\nskip_list_map.java:25: error: constructor Node(int,Object,int) is already defined in class Node\n        Node(int key, Object value, int level) {\n        ^\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking SkipListMap]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/Math.class]\n[total 62ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "skip_list_set.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `SkipListSet.contains(...)` reads without synchronization from `this.currentMaxLevel`, which races with the write in method `SkipListSet.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "SkipListSet.contains(java.lang.Object):boolean",
+          "file": "skip_list_set.java",
+          "line": 92,
+          "column": -1,
+          "key": "skip_list_set.java|contains|THREAD_SAFETY_VIOLATION",
+          "hash": "d7a2c017138fc0c820c5e034ffd0f48a"
+        }
+      ],
+      "stderr": ""
+    }
+  ]
+}

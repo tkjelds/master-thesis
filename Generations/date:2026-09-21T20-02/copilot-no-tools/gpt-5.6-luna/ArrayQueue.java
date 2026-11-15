@@ -1,4 +1,7 @@
+@ArrayQueue.ThreadSafe
 public final class ArrayQueue<E> {
+    @interface ThreadSafe {}
+
     private final Object[] elements;
     private int head;
     private int tail;

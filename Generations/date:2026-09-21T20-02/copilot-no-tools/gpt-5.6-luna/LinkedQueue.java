@@ -1,4 +1,7 @@
+@LinkedQueue.ThreadSafe
 public class LinkedQueue<T> {
+    @interface ThreadSafe {}
+
     private static final class Node<E> {
         private final E value;
         private Node<E> next;

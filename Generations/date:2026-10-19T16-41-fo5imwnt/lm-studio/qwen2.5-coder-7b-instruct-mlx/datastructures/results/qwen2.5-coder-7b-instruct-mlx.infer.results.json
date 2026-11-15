@@ -1,0 +1,212 @@
+{
+  "timestamp": "date:2026-10-19T17-31",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 3,
+      "issues": [
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentMap.get(...)` reads without synchronization from `this.buckets.[_]`, which races with the write in method `ConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentMap.get(java.lang.Object):java.lang.Object",
+          "file": "ConcurrentMap.java",
+          "line": 19,
+          "column": -1,
+          "key": "ConcurrentMap.java|get|THREAD_SAFETY_VIOLATION",
+          "hash": "573e00ae954d2d69e4e91b3913fa746a"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentMap.put(...)` reads without synchronization from `this.buckets.[_]`, which races with the write in method `ConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentMap.put(java.lang.Object,java.lang.Object):java.lang.Object",
+          "file": "ConcurrentMap.java",
+          "line": 26,
+          "column": -1,
+          "key": "ConcurrentMap.java|put|THREAD_SAFETY_VIOLATION",
+          "hash": "3b69396fb3a756b6679aa9457e783756"
+        },
+        {
+          "bug_type": "THREAD_SAFETY_VIOLATION",
+          "bug_type_hum": "Thread Safety Violation",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Read/Write race. Non-private method `ConcurrentMap.remove(...)` reads without synchronization from `this.buckets.[_]`, which races with the write in method `ConcurrentMap.remove(...)`.\n Reporting because the current class is annotated `@ThreadSafe`, so we assume that this method can run in parallel with other non-private methods in the class (including itself).",
+          "procedure": "ConcurrentMap.remove(java.lang.Object):java.lang.Object",
+          "file": "ConcurrentMap.java",
+          "line": 33,
+          "column": -1,
+          "key": "ConcurrentMap.java|remove|THREAD_SAFETY_VIOLATION",
+          "hash": "3a71fdf6f3ff8a43e812acdfd45298e2"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "Counter.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  where T is a type-variable:\n    T extends Object declared in class Entry\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking DelayQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/util/Collection.class]\n[loading /modules/java.base/java/util/AbstractList.class]\n[loading /modules/java.base/java/util/AbstractCollection.class]\n[loading /modules/java.base/java/lang/Iterable.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/util/Comparator.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/System.class]\nDelayQueue.java:59: error: cannot find symbol\n        public static final Comparator<Entry<?>> COMPARATOR = new Comparator<Entry<?>>() {\n                                                                  ^\n  symbol:   class Comparator\n  location: class Entry<T>\n  where T is a type-variable:\n    T extends Object declared in class Entry\n[loading /modules/java.base/java/lang/Override.class]\nDelayQueue.java:60: error: method does not override or implement a method from a supertype\n            @Override\n            ^\n[loading /modules/java.base/java/lang/Long.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[loading /modules/java.base/java/lang/Number.class]\n[total 72ms]\n3 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "DictionaryBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "PriorityBlockingQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "                        s.right.color = Color.BLACK;\n                                        ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\nRedBlackTree.java:239: error: cannot find symbol\n                        s.color = Color.RED;\n                                  ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\nRedBlackTree.java:244: error: cannot find symbol\n                    x.parent.color = Color.BLACK;\n                                     ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\nRedBlackTree.java:245: error: cannot find symbol\n                    s.left.color = Color.BLACK;\n                                   ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\nRedBlackTree.java:251: error: cannot find symbol\n        x.color = Color.BLACK;\n                  ^\n  symbol:   variable Color\n  location: class RedBlackTree<T>\n  where T is a type-variable:\n    T extends Comparable<T> declared in class RedBlackTree\n[total 100ms]\n41 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.net/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.jdeps/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.dynalink/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking SkipListSet]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/Long.class]\nSkipListSet.java:15: error: incompatible types: Node[] cannot be converted to Node\n            Node curr = head.right;\n                            ^\n[loading /modules/java.base/java/lang/Math.class]\n[total 61ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ThreadSafeDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "b_tres.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

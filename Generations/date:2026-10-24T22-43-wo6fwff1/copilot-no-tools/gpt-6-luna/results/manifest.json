@@ -1,0 +1,13 @@
+{
+  "generations": [
+    {
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "category": "datastructures",
+      "client": "copilot-no-tools",
+      "model": "gpt-6-luna",
+      "java_file": "../datastructures/ConcurrentMap.java",
+      "prompt_file": "../../../../../prompts/date:2026-10-24T22-43.json"
+    }
+  ]
+}

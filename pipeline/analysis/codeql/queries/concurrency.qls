@@ -1,0 +1,4 @@
+- description: Concurrency findings in thread-safe Java classes
+- queries: .
+- include:
+    kind: problem

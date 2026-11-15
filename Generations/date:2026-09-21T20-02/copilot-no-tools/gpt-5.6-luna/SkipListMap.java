@@ -1,4 +1,7 @@
+@SkipListMap.ThreadSafe
 public final class SkipListMap<K extends Comparable<? super K>, V> {
+    @interface ThreadSafe {}
+
     private static final int MAX_LEVEL = 32;
 
  private final Node<K, V> head;

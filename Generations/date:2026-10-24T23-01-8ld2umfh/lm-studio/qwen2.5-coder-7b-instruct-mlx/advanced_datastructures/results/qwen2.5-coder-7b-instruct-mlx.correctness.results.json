@@ -1,0 +1,90 @@
+{
+  "timestamp": "date:2026-10-25T00-04",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/HashedArrayList.java",
+      "prompt_name": "advanced_datastructures/HashedArrayList",
+      "problem": "HashedArrayList",
+      "analyzed": true,
+      "probability": 0.4914,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/HashedLinkedList.java",
+      "prompt_name": "advanced_datastructures/HashedLinkedList",
+      "problem": "HashedLinkedList",
+      "analyzed": true,
+      "probability": 0.5775,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/IntervalHeap.java",
+      "prompt_name": "advanced_datastructures/IntervalHeap",
+      "problem": "IntervalHeap",
+      "analyzed": true,
+      "probability": 0.5521,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/MysteriousHashMap.java",
+      "prompt_name": "advanced_datastructures/MysteriousHashMap",
+      "problem": "MysteriousHashMap",
+      "analyzed": true,
+      "probability": 0.6215,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/Order.java",
+      "prompt_name": "advanced_datastructures/TreeBag",
+      "problem": "TreeBag",
+      "analyzed": true,
+      "probability": 0.4969,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/TreeDictionary.java",
+      "prompt_name": "advanced_datastructures/TreeDictionary",
+      "problem": "TreeDictionary",
+      "analyzed": true,
+      "probability": 0.5535,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/TreeSet.java",
+      "prompt_name": "advanced_datastructures/TreeSet",
+      "problem": "TreeSet",
+      "analyzed": true,
+      "probability": 0.4958,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/b_tree.java",
+      "prompt_name": "advanced_datastructures/b_tree",
+      "problem": "b_tree",
+      "analyzed": true,
+      "probability": 0.391,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/binary_search_tree.java",
+      "prompt_name": "advanced_datastructures/binary_search_tree",
+      "problem": "binary_search_tree",
+      "analyzed": true,
+      "probability": 0.6988,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/advanced_datastructures/red_black_tree.java",
+      "prompt_name": "advanced_datastructures/red_black_tree",
+      "problem": "red_black_tree",
+      "analyzed": true,
+      "probability": 0.473,
+      "error": ""
+    }
+  ]
+}

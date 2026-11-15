@@ -7,7 +7,14 @@ authors = [
     { name = "tkjelds", email = "tkjelds385@gmail.com" }
 ]
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "anthropic>=2.3.0",
+    "matplotlib>=3.11.2",
+    "openai>=3.41.0",
+    "pandas>=3.1.0",
+    "python-dotenv>=1.2.4",
+    "seaborn>=0.13.2",
+]
 
 [build-system]
 requires = ["uv_build>=0.12.13,<0.13.0"]

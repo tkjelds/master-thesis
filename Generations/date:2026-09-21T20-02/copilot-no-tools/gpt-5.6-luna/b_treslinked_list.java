@@ -1,4 +1,7 @@
+@b_treslinked_list.ThreadSafe
 public final class b_treslinked_list<E> {
+    @interface ThreadSafe {}
+
     private final int capacity;
     private Node<E> head;
     private Node<E> tail;

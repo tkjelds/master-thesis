@@ -354,6 +354,11 @@ venv/
 env/
 ENV/
 
+# API credentials
+.env
+.env.*
+!.env.example
+
 # Test and tooling caches
 .pytest_cache/
 .mypy_cache/
@@ -365,3 +370,10 @@ give-me-a-guide-on-how-to-install-and-use-infer-an.md
 
 # CodeQL databases
 Generations/**/results/*.codeql-db/
+
+# CodeQL raw results and query compilation cache
+Generations/**/results/*.codeql.sarif
+pipeline/analysis/codeql/queries/.cache/
+
+# Infer raw results
+Generations/**/results/*.infer-out/

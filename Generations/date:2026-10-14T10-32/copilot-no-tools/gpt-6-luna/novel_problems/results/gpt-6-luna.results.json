@@ -1,0 +1,76 @@
+{
+  "timestamp": "date:2026-10-14T11-20",
+  "model": "gpt-6-luna",
+  "files": [
+    {
+      "file": "AdaptiveTrustVault.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "HarmonicBufferedStream.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "HierarchicalScheduler.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ResolvingVendingMachine.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "SecureMetricAggregator.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TaggedCapacityBuffer.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "TemporalForexCache.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "Generations/date:2026-10-14T10-32/copilot-no-tools/gpt-6-luna/novel_problems/TemporalForexCache.java:74: error: unclosed string literal\n         throw new IllegalArgumentException(\"currency and rate arrays must be nonempty and have\n                                            ^\nGenerations/date:2026-10-14T10-32/copilot-no-tools/gpt-6-luna/novel_problems/TemporalForexCache.java:75: error: unclosed string literal\nequal lengths\");\n             ^\n2 errors\n"
+    },
+    {
+      "file": "ThermostaticBuildOrchestrator.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "UserSpaceProvisioner.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "VersionedSlotManager.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ]
+}

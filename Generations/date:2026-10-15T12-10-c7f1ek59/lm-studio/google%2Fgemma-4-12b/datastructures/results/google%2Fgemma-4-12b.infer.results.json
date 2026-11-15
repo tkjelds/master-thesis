@@ -1,0 +1,124 @@
+{
+  "timestamp": "date:2026-10-15T21-42",
+  "model": "google%2Fgemma-4-12b",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBoundedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.xml/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ConcurrentDeque]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\nConcurrentDeque.java:22: error: cannot infer type arguments for Node<>\n        this.head = new Node<>();\n                    ^\n  reason: cannot infer type-variable(s) T\n    (actual and formal argument lists differ in length)\n  where T is a type-variable:\n    T extends Object declared in class Node\nConcurrentDeque.java:23: error: cannot infer type arguments for Node<>\n        this.tail = new Node<>();\n                    ^\n  reason: cannot infer type-variable(s) T\n    (actual and formal argument lists differ in length)\n  where T is a type-variable:\n    T extends Object declared in class Node\n[loading /modules/java.base/java/lang/Exception.class]\n[total 61ms]\nNote: ConcurrentDeque.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentMap.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.crypto.ec/module-info.class]\n[loading /modules/java.se/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/com.azul.tooling/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/jdk.unsupported/module-info.class]\n[loading /modules/jdk.management/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/java.net.http/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/java.instrument/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/java.rmi/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.accessibility/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/com.azul.crs.client/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/jdk.jlink/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[total 24ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentPriorityQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.dynalink/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.charsets/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.jfr/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.httpserver/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/java.compiler/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.management/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.incubator.vector/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/jdk.jconsole/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/java.smartcardio/module-info.class]\n[loading /modules/java.scripting/module-info.class]\n[loading /modules/java.sql.rowset/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/jdk.unsupported/module-info.class]\n[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.xml.dom/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/jdk.internal.ed/module-info.class]\n[total 49ms]\n100 errors\nonly showing the first 100 errors, of 958 total; use -Xmaxerrs if you would like to see more\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "       ^\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/SuppressWarnings.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ConcurrentQueue]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\n[loading /modules/java.base/java/lang/Thread.class]\n[loading /modules/java.base/jdk/internal/vm/annotation/Contended.class]\n[loading /modules/java.base/java/lang/Runnable.class]\n[checking QueueDemo]\n[loading /modules/java.base/java/lang/Integer.class]\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/io/PrintStream.class]\n[loading /modules/java.base/java/lang/Appendable.class]\n[loading /modules/java.base/java/io/Closeable.class]\n[loading /modules/java.base/java/io/FilterOutputStream.class]\n[loading /modules/java.base/java/io/OutputStream.class]\n[loading /modules/java.base/java/io/Flushable.class]\n[loading /modules/java.base/java/lang/Comparable.class]\n[loading /modules/java.base/java/lang/CharSequence.class]\n[loading /modules/java.base/java/lang/constant/Constable.class]\n[loading /modules/java.base/java/lang/constant/ConstantDesc.class]\n[total 72ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.logging/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/jdk.jdwp.agent/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.hotspot.agent/module-info.class]\n[loading /modules/java.desktop/module-info.class]\n[loading /modules/jdk.management/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/jdk.management.agent/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/jdk.unsupported.desktop/module-info.class]\n[loading /modules/jdk.nio.mapmode/module-info.class]\n[loading /modules/jdk.naming.dns/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\nConcurrentSet.java:178: error: method resize() is already defined in class ConcurrentSet\n    private void resize() {\n                 ^\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking ConcurrentSet]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[total 58ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "DelayQueue.java:16: error: cannot find symbol\n            this.expiryTime = expiry;\n                              ^\n  symbol:   variable expiry\n  location: class Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/InterruptedException.class]\nDelayQueue.java:63: error: cannot find symbol\n            } else if (expiry < headDummy.next.expiry) {\n                                              ^\n  symbol:   variable expiry\n  location: variable next of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\nDelayQueue.java:70: error: cannot find symbol\n                while (current.next != null && current.next.expiry <= expiry) {\n                                                           ^\n  symbol:   variable expiry\n  location: variable next of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\nDelayQueue.java:101: error: cannot find symbol\n                } else if (headDummy.next.expiry <= System.currentTimeMillis()) {\n                                         ^\n  symbol:   variable expiry\n  location: variable next of type Node<T>\n  where T is a type-variable:\n    T extends Object declared in class Node\n[total 63ms]\n4 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "LinkedDeque.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "SkipListSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}

@@ -1,4 +1,7 @@
+@ConcurrentList.ThreadSafe
 public final class ConcurrentList<T> {
+    @interface ThreadSafe {}
+
     private final Object[] elements;
     private int head;
     private int size;

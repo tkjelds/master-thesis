@@ -1,4 +1,7 @@
+@ConcurrentMap.ThreadSafe
 public final class ConcurrentMap<K, V> {
+    @interface ThreadSafe {}
+
     private static final int DEFAULT_CAPACITY = 16;
     private static final int MAXIMUM_CAPACITY = 1 << 30;
     private static final float LOAD_FACTOR = 0.75f;

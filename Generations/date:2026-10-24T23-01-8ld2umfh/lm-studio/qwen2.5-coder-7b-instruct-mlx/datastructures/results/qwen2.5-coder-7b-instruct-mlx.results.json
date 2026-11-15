@@ -1,0 +1,132 @@
+{
+  "timestamp": "date:2026-10-24T23-57",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "files": [
+    {
+      "file": "ArrayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentBag.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCollection.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentCounter.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/ConcurrentDeque.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "ConcurrentLinkedList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ConcurrentStack.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "DelayQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "LinkedDeque.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "LinkedQueue.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "SkipListMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "Note: /Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/SkipListMap.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n"
+    },
+    {
+      "file": "SkipListSet.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeArrayList.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeConcurrentMap.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "ThreadSafeDictionary.java",
+      "compiled": true,
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "file": "priority_queue.java",
+      "compiled": false,
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/priority_queue.java:37: error: cannot find symbol\n            if (elements[index].compareTo(elements[parent]) <= 0) {\n                               ^\n  symbol:   method compareTo(Object)\n  location: class Object\n/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/priority_queue.java:51: error: cannot find symbol\n            if (right < size && elements[right].compareTo(elements[largest]) > 0) {\n                                               ^\n  symbol:   method compareTo(Object)\n  location: class Object\n/Users/tore/master-thesis/Generations/date:2026-10-24T23-01-8ld2umfh/lm-studio/qwen2.5-coder-7b-instruct-mlx/datastructures/priority_queue.java:55: error: cannot find symbol\n            if (elements[index].compareTo(elements[largest]) >= 0) {\n                               ^\n  symbol:   method compareTo(Object)\n  location: class Object\n3 errors\n"
+    }
+  ]
+}

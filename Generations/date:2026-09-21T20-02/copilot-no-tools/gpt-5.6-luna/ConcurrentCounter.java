@@ -1,4 +1,7 @@
+@ConcurrentCounter.ThreadSafe
 public final class ConcurrentCounter {
+    @interface ThreadSafe {}
+
     private long value;
 
  public ConcurrentCounter() {

@@ -1,0 +1,173 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "claude-sonnet-5-5",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "BinarySearchTree.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/java.scripting/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.jpackage/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/jdk.security.auth/module-info.class]\n[loading /modules/java.smartcardio/module-info.class]\n[loading /modules/jdk.internal.vm.ci/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.localedata/module-info.class]\n[loading /modules/jdk.internal.le/module-info.class]\n[loading /modules/jdk.jdi/module-info.class]\n[loading /modules/jdk.jshell/module-info.class]\n[loading /modules/java.naming/module-info.class]\n[loading /modules/java.security.jgss/module-info.class]\n[loading /modules/jdk.internal.vm.compiler/module-info.class]\n[loading /modules/java.datatransfer/module-info.class]\n[loading /modules/jdk.unsupported/module-info.class]\n[loading /modules/jdk.naming.rmi/module-info.class]\n[loading /modules/jdk.attach/module-info.class]\n[loading /modules/jdk.incubator.foreign/module-info.class]\n[loading /modules/jdk.security.jgss/module-info.class]\n[loading /modules/jdk.internal.jvmstat/module-info.class]\n[loading /modules/jdk.management.jfr/module-info.class]\n[loading /modules/jdk.jsobject/module-info.class]\n[loading /modules/java.xml/module-info.class]\n[loading /modules/jdk.dynalink/module-info.class]\n[loading /modules/jdk.internal.vm.compiler.management/module-info.class]\n[loading /modules/jdk.sctp/module-info.class]\n[loading /modules/jdk.jartool/module-info.class]\n[loading /modules/jdk.zipfs/module-info.class]\n[loading /modules/jdk.net/module-info.class]\n[loading /modules/jdk.crypto.cryptoki/module-info.class]\n[loading /modules/jdk.jstatd/module-info.class]\n[loading /modules/jdk.editpad/module-info.class]\n[total 25ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 1,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `BiConsumer.accept(...)` of un-annotated interface `BiConsumer`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "MysteriousHashMap.forEach(BiConsumer):void",
+          "file": "MysteriousHashMap.java",
+          "line": 212,
+          "column": -1,
+          "key": "MysteriousHashMap.java|forEach|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "97b85b266ec68f978dc018be9d8f19ee"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "RedBlackTree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 3,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `Order.compare(...)` of un-annotated interface `Order`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "TreeDictionary.get(java.lang.Object):java.lang.Object",
+          "file": "TreeDictionary.java",
+          "line": 120,
+          "column": -1,
+          "key": "TreeDictionary.java|get|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "2028dc05cc8bcaa5b3915307eb6f4113"
+        },
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `Order.compare(...)` of un-annotated interface `Order`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "TreeDictionary.containsKey(java.lang.Object):boolean",
+          "file": "TreeDictionary.java",
+          "line": 142,
+          "column": -1,
+          "key": "TreeDictionary.java|containsKey|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "eedbc64ea8495563faf0d3ee0b37d5a2"
+        },
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `Order.compare(...)` of un-annotated interface `Order`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "TreeDictionary.rank(java.lang.Object):int",
+          "file": "TreeDictionary.java",
+          "line": 168,
+          "column": -1,
+          "key": "TreeDictionary.java|rank|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "746450185e5dc5bb39fa2f5d1592a080"
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "file": "TreeSet.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 2,
+      "issues": [
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `Order.compare(...)` of un-annotated interface `Order`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "TreeSet.contains(java.lang.Object):boolean",
+          "file": "TreeSet.java",
+          "line": 252,
+          "column": -1,
+          "key": "TreeSet.java|contains|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "2b997acf915b1ef17cd7d01b1a256d03"
+        },
+        {
+          "bug_type": "INTERFACE_NOT_THREAD_SAFE",
+          "bug_type_hum": "Interface Not Thread Safe",
+          "category": "Concurrency",
+          "severity": "WARNING",
+          "qualifier": "Unprotected call to method `Order.compare(...)` of un-annotated interface `Order`. Consider annotating the interface with `@ThreadSafe` or adding a lock.\n Reporting because the current class is annotated `@ThreadSafe`.",
+          "procedure": "TreeSet.rank(java.lang.Object):int",
+          "file": "TreeSet.java",
+          "line": 269,
+          "column": -1,
+          "key": "TreeSet.java|rank|INTERFACE_NOT_THREAD_SAFE",
+          "hash": "0e9937ae7e0ce5c2111f62b17c974532"
+        }
+      ],
+      "stderr": ""
+    }
+  ]
+}

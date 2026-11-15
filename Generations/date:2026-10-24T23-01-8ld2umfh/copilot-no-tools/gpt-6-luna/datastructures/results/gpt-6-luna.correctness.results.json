@@ -1,0 +1,154 @@
+{
+  "timestamp": "date:2026-10-25T00-04",
+  "model": "gpt-6-luna",
+  "tool": "ollama-correctness",
+  "evaluator_model": "kev:4b-mlx-bf16",
+  "evaluator_digest": "458360f7747d939ccabc5452f2960ff440477a9308fea3cebee45009d981a165",
+  "rubric_version": "functional-v1",
+  "files": [
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ArrayQueue.java",
+      "prompt_name": "datastructures/array_queue",
+      "problem": "array_queue",
+      "analyzed": true,
+      "probability": 0.6973,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentBag.java",
+      "prompt_name": "datastructures/bag",
+      "problem": "bag",
+      "analyzed": true,
+      "probability": 0.6895,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentBoundedQueue.java",
+      "prompt_name": "datastructures/collection",
+      "problem": "collection",
+      "analyzed": true,
+      "probability": 0.6773,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentCounter.java",
+      "prompt_name": "datastructures/counter",
+      "problem": "counter",
+      "analyzed": true,
+      "probability": 0.8697,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentDeque.java",
+      "prompt_name": "datastructures/deque",
+      "problem": "deque",
+      "analyzed": true,
+      "probability": 0.674,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentDictionary.java",
+      "prompt_name": "datastructures/dictionary",
+      "problem": "dictionary",
+      "analyzed": true,
+      "probability": 0.6961,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentLinkedList.java",
+      "prompt_name": "datastructures/linked_list",
+      "problem": "linked_list",
+      "analyzed": true,
+      "probability": 0.7046,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentList.java",
+      "prompt_name": "datastructures/list",
+      "problem": "list",
+      "analyzed": true,
+      "probability": 0.7779,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentMap.java",
+      "prompt_name": "datastructures/map",
+      "problem": "map",
+      "analyzed": true,
+      "probability": 0.6763,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentPriorityQueue.java",
+      "prompt_name": "datastructures/priority_queue",
+      "problem": "priority_queue",
+      "analyzed": true,
+      "probability": 0.6909,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentQueue.java",
+      "prompt_name": "datastructures/queue",
+      "problem": "queue",
+      "analyzed": true,
+      "probability": 0.6167,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentSet.java",
+      "prompt_name": "datastructures/set",
+      "problem": "set",
+      "analyzed": true,
+      "probability": 0.7689,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/ConcurrentStack.java",
+      "prompt_name": "datastructures/stack",
+      "problem": "stack",
+      "analyzed": true,
+      "probability": 0.7341,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/DelayQueue.java",
+      "prompt_name": "datastructures/delay_queue",
+      "problem": "delay_queue",
+      "analyzed": true,
+      "probability": 0.6557,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/LinkedDeque.java",
+      "prompt_name": "datastructures/linked_deque",
+      "problem": "linked_deque",
+      "analyzed": true,
+      "probability": 0.7378,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/LinkedQueue.java",
+      "prompt_name": "datastructures/linked_queue",
+      "problem": "linked_queue",
+      "analyzed": true,
+      "probability": 0.7599,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/SkipListMap.java",
+      "prompt_name": "datastructures/skip_list_map",
+      "problem": "skip_list_map",
+      "analyzed": true,
+      "probability": 0.6785,
+      "error": ""
+    },
+    {
+      "file": "Generations/date:2026-10-24T23-01-8ld2umfh/copilot-no-tools/gpt-6-luna/datastructures/SkipListSet.java",
+      "prompt_name": "datastructures/skip_list_set",
+      "problem": "skip_list_set",
+      "analyzed": true,
+      "probability": 0.6771,
+      "error": ""
+    }
+  ]
+}

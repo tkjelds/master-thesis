@@ -1,0 +1,92 @@
+{
+  "timestamp": "date:2026-11-06T19-13",
+  "model": "qwen2.5-coder-7b-instruct-mlx",
+  "tool": "infer",
+  "infer_version": "Infer version v1.3.0",
+  "checkers": [
+    "racerd",
+    "starvation"
+  ],
+  "files": [
+    {
+      "file": "BTree.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "                                     ^\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in class Node\n    T#2 extends Object declared in class BTree\nBTree.java:269: error: non-static variable order cannot be referenced from a static context\n                } else if (order.compare(arr[mid], item) == 0) {\n                           ^\nBTree.java:269: error: incompatible types: T#1 cannot be converted to T#2\n                } else if (order.compare(arr[mid], item) == 0) {\n                                            ^\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in class Node\n    T#2 extends Object declared in class BTree\nBTree.java:283: error: non-static variable order cannot be referenced from a static context\n                if (order.compare(arr[mid], item) < 0) {\n                    ^\nBTree.java:283: error: incompatible types: T#1 cannot be converted to T#2\n                if (order.compare(arr[mid], item) < 0) {\n                                     ^\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in class Node\n    T#2 extends Object declared in class BTree\nBTree.java:285: error: non-static variable order cannot be referenced from a static context\n                } else if (order.compare(arr[mid], item) == 0) {\n                           ^\nBTree.java:285: error: incompatible types: T#1 cannot be converted to T#2\n                } else if (order.compare(arr[mid], item) == 0) {\n                                            ^\n  where T#1,T#2 are type-variables:\n    T#1 extends Object declared in class Node\n    T#2 extends Object declared in class BTree\n[total 88ms]\nNote: BTree.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n25 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HashedArrayList.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "HashedArrayList.java:129: error: bad operand types for binary operator '=='\n            if (hashIndex[i] == index) {\n                             ^\n  first type:  Object\n  second type: int\nHashedArrayList.java:143: error: incompatible types: Object cannot be converted to int\n        int oldItemIndex = hashIndex[index];\n                                    ^\nHashedArrayList.java:147: error: bad operand types for binary operator '=='\n            if (hashIndex[i] == oldItemIndex) {\n                             ^\n  first type:  Object\n  second type: int\nHashedArrayList.java:170: error: incompatible types: Object cannot be converted to int\n            if (hashIndex[i] != null && array[hashIndex[i]].equals(item)) {\n                                                       ^\nHashedArrayList.java:171: error: incompatible types: Object cannot be converted to int\n                int oldItemIndex = hashIndex[i];\n                                            ^\nHashedArrayList.java:173: error: bad operand types for binary operator '=='\n                    if (hashIndex[j] == oldItemIndex) {\n                                     ^\n  first type:  Object\n  second type: int\nHashedArrayList.java:196: error: incompatible types: Object cannot be converted to int\n            if (hashIndex[i] != null && array[hashIndex[i]].equals(item)) {\n                                                       ^\nHashedArrayList.java:206: error: incompatible types: Object cannot be converted to int\n            if (hashIndex[i] != null && array[hashIndex[i]].equals(item)) {\n                                                       ^\nHashedArrayList.java:207: error: incompatible types: Object cannot be converted to int\n                return hashIndex[i];\n                                ^\n[loading /modules/java.base/java/lang/Cloneable.class]\n[total 70ms]\n13 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "HashedLinkedList.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "IntervalHeap.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "[loading /modules/jdk.internal.opt/module-info.class]\n[loading /modules/java.security.sasl/module-info.class]\n[loading /modules/jdk.random/module-info.class]\n[loading /modules/jdk.compiler/module-info.class]\n[loading /modules/java.prefs/module-info.class]\n[loading /modules/jdk.javadoc/module-info.class]\n[loading /modules/java.sql/module-info.class]\n[search path for source files: .]\n[search path for class files: /Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home/lib/modules,.]\n[loading /modules/java.base/java/lang/ref/WeakReference.class]\n[loading /modules/java.base/java/lang/Object.class]\n[loading /modules/java.base/java/lang/annotation/Annotation.class]\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/SuppressWarnings.class]\n[loading /modules/java.base/java/lang/String.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking Order]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\nIntervalHeap.java:7: error: missing method body, or declare abstract\n    int compare(T left, T right);\n        ^\n[checking Handle]\n[checking IntervalHeap]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/System.class]\n[loading /modules/java.base/java/lang/IllegalStateException.class]\n[loading /modules/java.base/java/lang/IllegalArgumentException.class]\n[total 72ms]\n1 error\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "MysteriousHashMap.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  where K is a type-variable:\n    K extends Object declared in class MysteriousHashMap\nMysteriousHashMap.java:136: error: cannot find symbol\n                    buckets[index] = newBucket;\n                            ^\n  symbol:   variable index\n  location: class MysteriousHashMap<K,V>.Stripe\n  where K,V are type-variables:\n    K extends Object declared in class MysteriousHashMap\n    V extends Object declared in class MysteriousHashMap\n[loading /modules/java.base/java/lang/System.class]\nMysteriousHashMap.java:182: error: cannot assign a value to final variable nodes\n                nodes = newNodes;\n                ^\nMysteriousHashMap.java:193: error: cannot assign a value to final variable nodes\n                        nodes = newNodes;\n                        ^\nMysteriousHashMap.java:206: error: cannot assign a value to final variable nodes\n                        nodes = newNodes;\n                        ^\nMysteriousHashMap.java:267: error: cannot find symbol\n                    Node node = stripe.get(i);\n                    ^\n  symbol:   class Node\n  location: class MysteriousHashMap<K,V>\n  where K,V are type-variables:\n    K extends Object declared in class MysteriousHashMap\n    V extends Object declared in class MysteriousHashMap\nMysteriousHashMap.java:267: error: incompatible types: int cannot be converted to K\n                    Node node = stripe.get(i);\n                                           ^\n  where K is a type-variable:\n    K extends Object declared in class MysteriousHashMap\n[total 86ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n35 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "Snapshot.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "Snapshot.java:301: error: class Snapshot is already defined in class TreeSet\n    public interface Snapshot<T> {\n           ^\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/Override.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking TreeSet]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\nSnapshot.java:80: error: cannot infer type arguments for Node<>\n        if (node == null) return new Node<>(item);\n                                 ^\n  reason: inference variable T has incompatible upper bounds Object\n  where T is a type-variable:\n    T extends Object declared in class Node\nSnapshot.java:136: error: incompatible types: T cannot be converted to Node<T>\n            Node<T> min = findMin(node.right);\n                                 ^\n  where T is a type-variable:\n    T extends Object declared in class TreeSet\nSnapshot.java:164: error: cannot assign a value to final variable item\n        a.item = b.item;\n         ^\nSnapshot.java:165: error: cannot assign a value to final variable item\n        b.item = temp;\n         ^\n[loading /modules/java.base/java/lang/IndexOutOfBoundsException.class]\n[total 84ms]\n11 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TreeBag.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "TreeBag.java:263: error: non-static type variable T cannot be referenced from a static context\n        T item;\n        ^\nTreeBag.java:268: error: non-static type variable T cannot be referenced from a static context\n        Node(T item) {\n             ^\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/Override.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking Order]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[checking Snapshot]\n[loading /modules/java.base/java/util/Iterator.class]\n[loading /modules/java.base/java/util/ListIterator.class]\n[loading /modules/java.base/java/util/function/IntFunction.class]\n[loading /modules/java.base/java/util/Spliterator.class]\n[loading /modules/java.base/java/util/stream/Stream.class]\n[loading /modules/java.base/java/util/function/Predicate.class]\n[loading /modules/java.base/java/util/function/Consumer.class]\n[loading /modules/java.base/java/util/Comparator.class]\n[loading /modules/java.base/java/util/function/UnaryOperator.class]\n[loading /modules/java.base/java/lang/IndexOutOfBoundsException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[checking TreeBag]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/Math.class]\n[total 89ms]\nNote: TreeBag.java uses unchecked or unsafe operations.\nNote: Recompile with -Xlint:unchecked for details.\n2 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "TreeDictionary.java",
+      "analyzed": false,
+      "exit_code": 1,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": "  location: class TreeDictionary\n[loading /modules/java.base/java/lang/Deprecated.class]\n[loading /modules/java.base/java/lang/annotation/Retention.class]\n[loading /modules/java.base/java/lang/annotation/RetentionPolicy.class]\n[loading /modules/java.base/java/lang/annotation/Target.class]\n[loading /modules/java.base/java/lang/annotation/ElementType.class]\n[checking Order]\n[loading /modules/java.base/java/io/Serializable.class]\n[loading /modules/java.base/java/lang/Throwable.class]\n[loading /modules/java.base/java/lang/AutoCloseable.class]\n[checking TreeDictionary]\n[loading /modules/java.base/java/lang/NullPointerException.class]\n[loading /modules/java.base/java/lang/RuntimeException.class]\n[loading /modules/java.base/java/lang/Exception.class]\n[loading /modules/java.base/java/lang/Number.class]\n[loading /modules/java.base/java/lang/IndexOutOfBoundsException.class]\n[checking Entry]\n[checking Snapshot]\nTreeDictionary.java:383: error: order has private access in TreeDictionary\n        this.tree = new TreeDictionary<>(tree.order);\n                                             ^\nTreeDictionary.java:384: error: root has private access in TreeDictionary\n        tree.inorderTraversal(tree.root, (AtomicInteger count) -> {\n                                  ^\nTreeDictionary.java:384: error: incompatible types: AtomicInteger is not a functional interface\n        tree.inorderTraversal(tree.root, (AtomicInteger count) -> {\n            ^\nTreeDictionary.java:385: error: int cannot be dereferenced\n            tree.put(tree.entryAt(count.get().key()).key(), tree.entryAt(count.get().key()).value());\n                                             ^\nTreeDictionary.java:385: error: int cannot be dereferenced\n            tree.put(tree.entryAt(count.get().key()).key(), tree.entryAt(count.get().key()).value());\n                                                                                    ^\n[total 90ms]\nNote: Some messages have been simplified; recompile with -Xdiags:verbose to get full output\n6 errors\n\n*** Infer needs a working compilation command to run.\n\n"
+    },
+    {
+      "file": "binary_search_tree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    },
+    {
+      "file": "red_black_tree.java",
+      "analyzed": true,
+      "exit_code": 0,
+      "issue_count": 0,
+      "issues": [],
+      "stderr": ""
+    }
+  ]
+}
